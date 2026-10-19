@@ -992,13 +992,13 @@ html {
 .apollo-products-section {
   position: relative;
   width: 100%;
-  background-color: var(--steel-light-100);
+  background-color: #E85607;
   background-image: 
-    radial-gradient(circle at 10% 15%, rgba(255, 90, 0, 0.04) 0%, transparent 40%),
-    radial-gradient(circle at 90% 85%, rgba(20, 24, 31, 0.03) 0%, transparent 45%),
-    linear-gradient(180deg, #FFFFFF 0%, #F5F7FA 35%, #EDF2F7 100%);
-  padding: clamp(72px, 8vw, 112px) 0 clamp(80px, 9vw, 120px) 0;
-  border-top: 1px solid var(--steel-light-300);
+    radial-gradient(circle at 18% 18%, #FF7222 0%, transparent 45%),
+    radial-gradient(circle at 82% 82%, #CE4400 0%, transparent 50%),
+    linear-gradient(155deg, #FA610B 0%, #E85507 50%, #D44700 100%);
+  padding: clamp(75px, 8vw, 115px) 0 clamp(85px, 9vw, 125px) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   overflow: hidden;
 }
 
@@ -1023,26 +1023,26 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--steel-light-50);
-  border: 1px solid var(--steel-light-300);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   padding: 6px 14px;
   border-radius: 20px;
   font-family: var(--font-heading);
   font-size: 11.5px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: 0.12em;
-  color: var(--apollo-orange);
+  color: #D44700;
   text-transform: uppercase;
   margin-bottom: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .products-badge .badge-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: var(--apollo-orange);
-  box-shadow: 0 0 6px var(--apollo-orange);
+  background-color: #FF5A00;
+  box-shadow: 0 0 6px #FF5A00;
 }
 
 .products-title {
@@ -1050,26 +1050,29 @@ html {
   font-size: clamp(34px, 3.4vw, 48px);
   font-weight: 850;
   letter-spacing: 0.02em;
-  color: var(--charcoal-900);
+  color: #FFFFFF;
   text-transform: uppercase;
   line-height: 1.15;
   margin-bottom: 12px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 .products-title-bar {
-  width: 52px;
+  width: 54px;
   height: 3.5px;
-  background-color: var(--apollo-orange);
+  background-color: #FFFFFF;
   border-radius: 2px;
   margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .products-subtitle {
   font-family: var(--font-body);
   font-size: clamp(15.5px, 1.1vw, 17.5px);
-  color: var(--charcoal-600);
+  color: rgba(255, 255, 255, 0.96);
   line-height: 1.6;
   margin: 0 auto;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
 }
 
 /* 3x2 Grid */
@@ -1083,7 +1086,7 @@ html {
 .product-card {
   position: relative;
   background-color: var(--steel-light-50);
-  border: 1px solid var(--steel-light-300);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 12px;
   overflow: hidden;
   display: flex;
@@ -1091,14 +1094,14 @@ html {
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
               box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
               border-color 0.35s ease;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   isolation: isolate;
 }
 
 .product-card:hover {
-  transform: translateY(-7px);
-  border-color: rgba(255, 90, 0, 0.55);
-  box-shadow: 0 18px 40px rgba(255, 90, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+  transform: translateY(-8px);
+  border-color: #FFFFFF;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
 }
 
 /* Curved Wave Banner across upper card */
