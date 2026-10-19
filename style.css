@@ -1302,29 +1302,32 @@ html {
 }
 
 /* ==========================================================================
-   WHY CHOOSE US SECTION (Layered Industrial Composition & Material Banner)
+   WHY CHOOSE US SECTION (Cream / Off-White Background + Orange Cards)
    ========================================================================== */
 
 .apollo-why-section {
   position: relative;
   width: 100%;
-  background-color: #0D1016;
+  background-color: #F8F5EE;
   background-image: 
-    radial-gradient(circle at 50% 12%, rgba(255, 90, 0, 0.14) 0%, transparent 60%),
-    radial-gradient(circle at 10% 80%, rgba(255, 90, 0, 0.05) 0%, transparent 45%),
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: auto, auto, 44px 44px, 44px 44px;
+    radial-gradient(circle at 18% 18%, rgba(255, 90, 0, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 82% 75%, rgba(0, 0, 0, 0.03) 0%, transparent 50%),
+    linear-gradient(180deg, #FBF8F2 0%, #F5F1E8 50%, #EDE7DC 100%);
   padding: clamp(75px, 8vw, 115px) 0 0 0;
   overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .why-grid-mesh {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(13, 16, 22, 0.6) 100%);
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 50% 45%, black 45%, transparent 95%);
+  -webkit-mask-image: radial-gradient(circle at 50% 45%, black 45%, transparent 95%);
   z-index: 1;
 }
 
@@ -1351,18 +1354,19 @@ html {
   flex-direction: column;
   align-items: center;
   position: relative;
-  filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.08));
 }
 
 /* "Why" White Sticker Badge with Folded Corner */
 .why-sticker-badge {
   position: relative;
   background-color: #FFFFFF;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
   color: #0D1016;
   padding: 10px 42px 14px 36px;
   border-radius: 12px;
   transform: rotate(-3.5deg);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.07);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1389,32 +1393,31 @@ html {
   right: 0;
   width: 0;
   height: 0;
-  border-top: 18px solid #0D1016;
-  border-left: 18px solid #CBD5E1;
+  border-top: 18px solid #F5F1E8;
+  border-left: 18px solid #D5DCE2;
   border-bottom-left-radius: 4px;
 }
 
 /* "Choose Us" Dark Ticket with Industrial Pin */
 .choose-ticket-badge {
   position: relative;
-  background: #141923;
-  border: 2px solid rgba(255, 90, 0, 0.6);
+  background: #101419;
+  border: 2px solid var(--apollo-orange);
   color: #FFFFFF;
   padding: 14px 52px 16px 46px;
   border-radius: 14px;
   margin-top: -24px;
   margin-left: clamp(24px, 4vw, 54px);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 90, 0, 0.15);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16), 0 0 16px rgba(255, 90, 0, 0.2);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   z-index: 3;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .why-heading-lockup:hover .choose-ticket-badge {
   transform: translateY(-2px);
-  border-color: var(--apollo-orange);
 }
 
 .ticket-text {
@@ -1431,7 +1434,7 @@ html {
   top: -16px;
   right: 16px;
   color: var(--apollo-orange);
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
 }
 
 /* 2. Introduction Text with Scroll Indicator */
@@ -1446,7 +1449,8 @@ html {
 .why-intro-text {
   font-family: var(--font-body);
   font-size: clamp(15.5px, 1.1vw, 17.5px);
-  color: #CBD5E1;
+  color: #2D3748;
+  font-weight: 500;
   line-height: 1.65;
   margin: 0 auto;
 }
@@ -1455,24 +1459,23 @@ html {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #FFFFFF;
-  color: #0D1016;
+  background-color: #101419;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 22px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: default;
 }
 
 .why-scroll-indicator:hover {
   background-color: var(--apollo-orange);
-  color: #FFFFFF;
   transform: translateY(3px);
 }
 
-/* 3. Why Choose Us 4 Cards in One Row */
+/* 3. Why Choose Us 4 Cards in One Row (Orange Cards + Dark Text) */
 .why-cards-track {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1483,82 +1486,78 @@ html {
 
 .why-card {
   position: relative;
-  background: rgba(18, 23, 32, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
-  padding: 30px 22px 24px 22px;
+  background: linear-gradient(155deg, #FF6817 0%, #FF5A00 55%, #ED4F00 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  padding: 30px 22px 26px 22px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 26px rgba(230, 80, 0, 0.22), 0 3px 8px rgba(0, 0, 0, 0.06);
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
-              border-color 0.35s ease,
-              box-shadow 0.35s ease;
+              box-shadow 0.35s ease,
+              border-color 0.35s ease;
   isolation: isolate;
-  backdrop-filter: blur(8px);
 }
 
 .why-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(255, 90, 0, 0.65);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.55), 0 0 24px rgba(255, 90, 0, 0.2);
+  box-shadow: 0 18px 44px rgba(220, 75, 0, 0.35), 0 6px 14px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Card Circular Icon Area */
+/* Card Circular Icon Area (Pure White with Dark Charcoal Icon) */
 .card-icon-wrapper {
   width: 72px;
   height: 72px;
   border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #0D1016;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 22px;
-  transition: transform 0.35s ease;
-}
-
-.card-icon-wrapper.is-orange {
-  background: linear-gradient(135deg, #FF6A14 0%, #E85000 100%);
-  color: #FFFFFF;
-  box-shadow: 0 8px 20px rgba(255, 90, 0, 0.35);
-}
-
-.card-icon-wrapper.is-white {
-  background-color: #FFFFFF;
-  color: #0D1016;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .why-card:hover .card-icon-wrapper {
   transform: scale(1.08);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
 }
 
 /* Card Number */
 .card-number {
   font-family: var(--font-mono);
   font-size: 13.5px;
-  font-weight: 800;
-  color: var(--apollo-orange);
+  font-weight: 850;
+  color: #0D1016;
+  background: rgba(255, 255, 255, 0.42);
+  padding: 2px 8px;
+  border-radius: 4px;
   letter-spacing: 0.08em;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* Card Heading */
+/* Card Heading (Deep Black / Dark Charcoal for High Contrast) */
 .card-heading {
   font-family: var(--font-heading);
-  font-size: 18.5px;
-  font-weight: 850;
-  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 900;
+  color: #0D1016;
   text-transform: uppercase;
   line-height: 1.25;
   margin-bottom: 12px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.025em;
 }
 
-/* Card Description */
+/* Card Description (Deep Dark Charcoal) */
 .card-description {
   font-family: var(--font-body);
-  font-size: 14px;
-  color: #94A3B8;
+  font-size: 14.5px;
+  font-weight: 550;
+  color: #1A212B;
   line-height: 1.6;
   margin-bottom: 22px;
   flex-grow: 1;
@@ -1572,8 +1571,8 @@ html {
 }
 
 .card-arrow {
-  color: var(--apollo-orange);
-  stroke: var(--apollo-orange);
+  color: #0D1016;
+  stroke: #0D1016;
   transition: transform 0.25s ease;
 }
 
@@ -1581,12 +1580,7 @@ html {
   transform: translateX(6px);
 }
 
-/* Connector arrows between cards (hidden on small viewports) */
-.card-connector-arrow {
-  display: none; /* Keep grid layout strictly clean and balanced across all viewports */
-}
-
-/* 4. Material Name Banner (Slanted Continuous Marquee) */
+/* 4. Material Name Banner (Slanted Continuous Marquee in Orange + Dark Text) */
 .why-material-banner-wrapper {
   width: 100%;
   overflow: hidden;
@@ -1601,7 +1595,7 @@ html {
   background: linear-gradient(90deg, #FF6614 0%, #FF5A00 50%, #E54E00 100%);
   transform: rotate(-1.5deg);
   padding: clamp(16px, 1.6vw, 22px) 0;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5), 0 0 24px rgba(255, 90, 0, 0.25);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15), 0 0 24px rgba(255, 90, 0, 0.25);
   overflow: hidden;
   display: flex;
 }
