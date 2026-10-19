@@ -194,27 +194,34 @@ html, body {
   flex-shrink: 0;
 }
 
-/* GET QUOTE Button: Apollo Orange with smooth bottom-to-top wave effect */
+/* GET QUOTE Button: Clean rectangular button, rounded corners, orange border, white background
+   On hover: smooth curved liquid wave animates from bottom/right across button */
 .btn-apollo-quote {
   position: relative;
   overflow: hidden;
-  border: none;
-  background-color: var(--apollo-orange);
-  color: var(--steel-light-50);
+  background-color: var(--steel-light-50);
+  color: var(--apollo-orange);
+  border: 2px solid var(--apollo-orange);
+  border-radius: 6px;
   font-family: var(--font-heading);
-  font-size: clamp(14px, 1vw, 16.5px);
+  font-size: clamp(14px, 1vw, 16px);
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 13px clamp(20px, 1.8vw, 30px);
-  border-radius: 5px;
+  padding: 12px clamp(20px, 1.8vw, 30px);
   cursor: pointer;
-  box-shadow: 0 4px 16px var(--apollo-orange-glow);
+  box-shadow: 0 2px 10px rgba(255, 90, 0, 0.1);
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  gap: 10px;
+  transition: color 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              transform 250ms ease;
   z-index: 1;
+  /* Prevent subpixel flicker and contain curved overflow strictly within rounded corners */
+  transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
 }
 
 .btn-apollo-quote:focus-visible {
@@ -224,38 +231,65 @@ html, body {
 
 .btn-apollo-quote:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 90, 0, 0.45);
+  box-shadow: 0 8px 24px rgba(255, 90, 0, 0.35);
 }
 
 .btn-apollo-quote:active {
   transform: translateY(0);
 }
 
+/* Organic curved wave / liquid fill originating from bottom-right corner */
 .btn-apollo-quote .quote-wave {
   position: absolute;
-  bottom: -150%;
-  left: -25%;
-  width: 150%;
-  height: 280%;
-  background: linear-gradient(180deg, #FF7B29 0%, #D94800 50%, #B83800 100%);
-  border-radius: 42%;
-  transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  bottom: -40px;
+  right: -40px;
+  width: 380px;
+  height: 380px;
+  background: linear-gradient(135deg, #FF6A14 0%, #FF5A00 60%, #E84E00 100%);
+  border-radius: 46% 54% 48% 52% / 42% 58% 44% 56%;
+  transform: translate(65%, 65%) rotate(-25deg);
+  transition: transform 460ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   z-index: 1;
 }
 
-.btn-apollo-quote:hover .quote-wave {
-  transform: translateY(-82%) rotate(25deg);
+/* Subtle liquid crest highlight at leading curve edge */
+.btn-apollo-quote .quote-wave::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border-top: 3px solid rgba(255, 255, 255, 0.35);
+  border-left: 3px solid rgba(255, 255, 255, 0.2);
+  pointer-events: none;
 }
 
+.btn-apollo-quote:hover .quote-wave,
+.btn-apollo-quote:active .quote-wave {
+  transform: translate(-12%, -12%) rotate(0deg);
+}
+
+/* Text and arrow remain crisply visible above the wave at all times */
 .btn-apollo-quote .quote-text,
 .btn-apollo-quote .quote-arrow {
   position: relative;
   z-index: 2;
-  transition: transform 0.3s ease;
+  color: var(--apollo-orange);
+  stroke: var(--apollo-orange);
+  transition: color 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              transform 460ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-apollo-quote:hover .quote-arrow {
+.btn-apollo-quote:hover .quote-text,
+.btn-apollo-quote:active .quote-text {
+  color: #FFFFFF;
+}
+
+.btn-apollo-quote:hover .quote-arrow,
+.btn-apollo-quote:active .quote-arrow {
+  color: #FFFFFF;
+  stroke: #FFFFFF;
   transform: translateX(4px);
 }
 
@@ -504,8 +538,8 @@ html, body {
   overflow: hidden;
   background-color: var(--apollo-orange);
   color: var(--steel-light-50);
-  border: none;
-  border-radius: 4px;
+  border: 2px solid var(--apollo-orange);
+  border-radius: 6px;
   padding: clamp(14px, 1.8vh, 17px) clamp(24px, 2vw, 34px);
   font-family: var(--font-heading);
   font-size: clamp(15px, 1.05vw, 17px);
@@ -516,9 +550,12 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 6px 20px var(--apollo-orange-glow);
+  box-shadow: 0 4px 16px var(--apollo-orange-glow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   z-index: 1;
+  transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
 }
 
 .btn-cta-primary:hover {
@@ -559,14 +596,14 @@ html, body {
   transform: translateX(5px);
 }
 
-/* Secondary CTA Button (White Background + Charcoal Border) */
+/* Secondary CTA Button (Clean rectangular button, orange border, white background, bottom-right wave fill) */
 .btn-cta-secondary {
   position: relative;
   overflow: hidden;
   background-color: var(--steel-light-50);
-  color: var(--charcoal-900);
-  border: 2px solid var(--charcoal-800);
-  border-radius: 4px;
+  color: var(--apollo-orange);
+  border: 2px solid var(--apollo-orange);
+  border-radius: 6px;
   padding: clamp(12px, 1.6vh, 15px) clamp(22px, 1.8vw, 30px);
   font-family: var(--font-heading);
   font-size: clamp(15px, 1.05vw, 17px);
@@ -577,47 +614,74 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-  transition: color 0.35s ease, border-color 0.35s ease, transform 0.25s ease;
+  box-shadow: 0 2px 10px rgba(255, 90, 0, 0.1);
+  transition: color 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              transform 250ms ease;
   z-index: 1;
+  transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
 }
 
 .btn-cta-secondary:hover {
-  border-color: var(--apollo-orange);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 90, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(255, 90, 0, 0.35);
+}
+
+.btn-cta-secondary:active {
+  transform: translateY(0);
 }
 
 .btn-cta-secondary .btn-secondary-fill {
   position: absolute;
-  bottom: -150%;
-  left: -20%;
-  width: 140%;
-  height: 280%;
-  background-color: var(--apollo-orange);
-  border-radius: 40%;
-  transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  bottom: -40px;
+  right: -40px;
+  width: 380px;
+  height: 380px;
+  background: linear-gradient(135deg, #FF6A14 0%, #FF5A00 60%, #E84E00 100%);
+  border-radius: 46% 54% 48% 52% / 42% 58% 44% 56%;
+  transform: translate(65%, 65%) rotate(-25deg);
+  transition: transform 460ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   z-index: 1;
 }
 
-.btn-cta-secondary:hover .btn-secondary-fill {
-  transform: translateY(-80%) rotate(20deg);
+.btn-cta-secondary .btn-secondary-fill::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border-top: 3px solid rgba(255, 255, 255, 0.35);
+  border-left: 3px solid rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+.btn-cta-secondary:hover .btn-secondary-fill,
+.btn-cta-secondary:active .btn-secondary-fill {
+  transform: translate(-12%, -12%) rotate(0deg);
 }
 
 .btn-cta-secondary .btn-secondary-text,
 .btn-cta-secondary .btn-secondary-arrow {
   position: relative;
   z-index: 2;
-  transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--apollo-orange);
+  stroke: var(--apollo-orange);
+  transition: color 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke 460ms cubic-bezier(0.4, 0, 0.2, 1),
+              transform 460ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-cta-secondary:hover .btn-secondary-text,
-.btn-cta-secondary:hover .btn-secondary-arrow {
-  color: var(--steel-light-50);
+.btn-cta-secondary:active .btn-secondary-text {
+  color: #FFFFFF;
 }
 
-.btn-cta-secondary:hover .btn-secondary-arrow {
+.btn-cta-secondary:hover .btn-secondary-arrow,
+.btn-cta-secondary:active .btn-secondary-arrow {
+  color: #FFFFFF;
+  stroke: #FFFFFF;
   transform: translateX(5px);
 }
 
