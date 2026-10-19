@@ -1,0 +1,15 @@
+{
+  "name": "apollo-forge-and-fitting",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Apollo Forge & Fitting - Premium Industrial Website",
+  "scripts": {
+    "dev": "vite --host --open",
+    "start": "vite --host --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

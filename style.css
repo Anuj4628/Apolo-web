@@ -1,0 +1,1020 @@
+/* ==========================================================================
+   APOLLO FORGE & FITTING - BRIGHT & PREMIUM INDUSTRIAL DESIGN SYSTEM
+   Brand Palette:
+   - 60% Light / Bright: Pure White, Warm Off-White (#F8FAFC), Light Grey (#F1F5F9)
+   - 25% Industrial Photography: Bright, clean, visible machinery & metallic luster
+   - 10% Charcoal: #111418, #1E2229 (supporting typography & contrast)
+   - 5% Apollo Orange Accent: #FF5A00 (strategic brand accents, buttons, lines)
+   ========================================================================== */
+
+:root {
+  /* Brand Palette */
+  --apollo-orange: #FF5A00;
+  --apollo-orange-hover: #E04E00;
+  --apollo-orange-dark: #1F242C;
+  --apollo-orange-glow: rgba(255, 90, 0, 0.35);
+  --apollo-orange-subtle: rgba(255, 90, 0, 0.08);
+  
+  --charcoal-900: #0F1216;
+  --charcoal-850: #14181F;
+  --charcoal-800: #1C212A;
+  --charcoal-700: #2D3440;
+  --charcoal-600: #4B5563;
+  
+  --steel-light-50: #FFFFFF;
+  --steel-light-100: #F8FAFC;
+  --steel-light-200: #F1F5F9;
+  --steel-light-300: #E2E8F0;
+  --steel-light-400: #CBD5E1;
+  --steel-light-500: #94A3B8;
+  --steel-light-600: #64748B;
+  
+  /* Typography */
+  --font-heading: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Barlow', monospace;
+
+  /* Dimensions */
+  --nav-height: 100px;
+  --slide-duration: 5500ms;
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--steel-light-100);
+  color: var(--charcoal-850);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* Restrict total page to 100vh on desktop/laptop to eliminate unwanted vertical scroll */
+@media (min-height: 600px) and (min-width: 1024px) {
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/* ==========================================================================
+   NAVBAR (Clean, White, Premium)
+   Structure: [APOLLO LOGO] Home About Us Products Materials Certificates Contact [GET QUOTE]
+   ========================================================================== */
+
+.apollo-header {
+  position: relative;
+  width: 100%;
+  height: var(--nav-height);
+  background: var(--steel-light-50);
+  border-bottom: 1px solid var(--steel-light-300);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1720px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 3.5vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+/* Apollo Brand Logo */
+.brand-area {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: default;
+  outline: none;
+}
+
+.apollo-brand-img {
+  height: clamp(66px, 4.8vw, 72px);
+  width: auto;
+  max-width: 320px;
+  min-height: 65px;
+  aspect-ratio: 1023 / 233;
+  object-fit: contain;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transition: transform 0.25s ease;
+}
+
+/* Navigation Links (Visual Only) */
+.nav-menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: clamp(18px, 2.3vw, 36px);
+}
+
+.nav-menu-item {
+  position: relative;
+}
+
+.nav-item-link {
+  font-family: var(--font-heading);
+  font-size: clamp(16px, 1.1vw, 18.5px);
+  font-weight: 750;
+  letter-spacing: 0.035em;
+  color: var(--charcoal-850);
+  text-transform: uppercase;
+  padding: 8px 4px;
+  display: inline-block;
+  cursor: default;
+  user-select: none;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Subtle Animated Orange Underline on Hover & Active */
+.nav-item-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(--apollo-orange);
+  transition: width 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border-radius: 2px;
+}
+
+.nav-item-link.is-active {
+  color: var(--apollo-orange);
+}
+
+.nav-item-link.is-active::after {
+  width: 100%;
+}
+
+.nav-item-link:hover {
+  color: var(--apollo-orange);
+}
+
+.nav-item-link:hover::after {
+  width: 100%;
+}
+
+/* Header Action CTA */
+.header-action-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+/* GET QUOTE Button: Apollo Orange with smooth bottom-to-top wave effect */
+.btn-apollo-quote {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: var(--apollo-orange);
+  color: var(--steel-light-50);
+  font-family: var(--font-heading);
+  font-size: clamp(14px, 1vw, 16.5px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 13px clamp(20px, 1.8vw, 30px);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px var(--apollo-orange-glow);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  z-index: 1;
+}
+
+.btn-apollo-quote:focus-visible {
+  outline: 2px solid var(--apollo-orange);
+  outline-offset: 3px;
+}
+
+.btn-apollo-quote:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 90, 0, 0.45);
+}
+
+.btn-apollo-quote:active {
+  transform: translateY(0);
+}
+
+.btn-apollo-quote .quote-wave {
+  position: absolute;
+  bottom: -150%;
+  left: -25%;
+  width: 150%;
+  height: 280%;
+  background: linear-gradient(180deg, #FF7B29 0%, #D94800 50%, #B83800 100%);
+  border-radius: 42%;
+  transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.btn-apollo-quote:hover .quote-wave {
+  transform: translateY(-82%) rotate(25deg);
+}
+
+.btn-apollo-quote .quote-text,
+.btn-apollo-quote .quote-arrow {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.btn-apollo-quote:hover .quote-arrow {
+  transform: translateX(4px);
+}
+
+/* Mobile Hamburger */
+.mobile-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobile-hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--charcoal-850);
+  border-radius: 2px;
+}
+
+
+/* ==========================================================================
+   HERO SECTION (BRIGHT & PREMIUM)
+   - Left Side: Bright/Light Content Panel (0 0, 58% 0, 44% 100%, 0 100%)
+   - Right Side: Bright Industrial Image (~50-55% width)
+   - Diagonal Orange Divider Line: Rises from lower-left to upper-right ( / )
+   ========================================================================== */
+
+.hero-viewport {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--nav-height));
+  min-height: 590px;
+  max-height: 940px;
+  overflow: hidden;
+  background-color: var(--steel-light-100);
+}
+
+.hero-slides-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Slide */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.85s cubic-bezier(0.25, 1, 0.35, 1), 
+              visibility 0.85s ease;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* Industrial Photography on Right (56% width, clean high-exposure) */
+.slide-image-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #E2E8F0;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  transform: scale(1.0);
+  filter: none;
+  display: block;
+}
+
+.hero-slide.active .slide-img {
+  transform: scale(1.0);
+}
+
+/* No overlay, darkening, tint, or blur */
+.image-light-blend {
+  display: none !important;
+}
+
+/* Premium Steel / Slate Content Panel on Left
+   Diagonal cut: rises from lower-left (44%) to upper-right (58%) = ( / ) */
+.slide-bright-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.55) 0%, transparent 55%),
+    linear-gradient(135deg, #DFE5EA 0%, #D5DCE2 45%, #C8D1D8 85%, #BFCAD2 100%);
+  clip-path: polygon(0 0, 100% 0, 75.8% 100%, 0 100%);
+  /* 75.8% of 58% width = 44% of total screen width! */
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  padding-left: clamp(28px, 6vw, 96px);
+  padding-right: clamp(48px, 6vw, 110px);
+  overflow: hidden;
+  box-shadow: 12px 0 40px rgba(15, 23, 42, 0.08);
+}
+
+/* Subtle Technical Grid & Diagonal Engineering Texture */
+.panel-tech-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(17, 24, 39, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.035) 1px, transparent 1px),
+    repeating-linear-gradient(45deg, transparent, transparent 24px, rgba(255, 255, 255, 0.18) 24px, rgba(255, 255, 255, 0.18) 25px);
+  background-size: 40px 40px, 40px 40px, auto;
+  pointer-events: none;
+}
+
+/* Panel Content Container */
+.panel-content-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Technical Eyebrow */
+.slide-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: clamp(12px, 1.8vh, 22px);
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.65s ease 0.15s, transform 0.65s ease 0.15s;
+}
+
+.hero-slide.active .slide-eyebrow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.eyebrow-accent-bar {
+  width: 32px;
+  height: 3px;
+  background-color: var(--apollo-orange);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.eyebrow-text {
+  font-family: var(--font-heading);
+  font-size: clamp(13px, 1vw, 15.5px);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #12161E;
+}
+
+/* Large Impact Heading: 56px–72px Desktop */
+.slide-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 4.2vw, 68px);
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(14px, 2.2vh, 26px);
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.28s,
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.28s;
+}
+
+.hero-slide.active .slide-heading {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Charcoal Primary Words */
+.text-charcoal {
+  color: #101419;
+}
+
+/* Strategic Apollo Orange Words */
+.text-orange {
+  color: var(--apollo-orange);
+  position: relative;
+  display: inline-block;
+}
+
+/* Description Paragraph: 18–20px, High Readability on Steel Slate Background */
+.slide-description {
+  font-family: var(--font-body);
+  font-size: clamp(17px, 1.15vw, 20px);
+  font-weight: 500;
+  line-height: 1.65;
+  color: #1A212B;
+  max-width: 560px;
+  margin-bottom: clamp(20px, 3.2vh, 36px);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.75s ease 0.4s, transform 0.75s ease 0.4s;
+}
+
+.hero-slide.active .slide-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA Row: Primary + Secondary + Certification Badge */
+.slide-cta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(14px, 1.5vw, 22px);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease 0.52s, transform 0.8s ease 0.52s;
+}
+
+.hero-slide.active .slide-cta-row {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Primary CTA Button (Apollo Orange) */
+.btn-cta-primary {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--apollo-orange);
+  color: var(--steel-light-50);
+  border: none;
+  border-radius: 4px;
+  padding: clamp(14px, 1.8vh, 17px) clamp(24px, 2vw, 34px);
+  font-family: var(--font-heading);
+  font-size: clamp(15px, 1.05vw, 17px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 20px var(--apollo-orange-glow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  z-index: 1;
+}
+
+.btn-cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(255, 90, 0, 0.45);
+}
+
+.btn-cta-primary:active {
+  transform: translateY(0);
+}
+
+/* Smooth Charcoal Wave Fill on Hover */
+.btn-cta-primary .btn-fill-wave {
+  position: absolute;
+  bottom: -150%;
+  left: -20%;
+  width: 140%;
+  height: 280%;
+  background: linear-gradient(180deg, #1C212A 0%, #111418 100%);
+  border-radius: 40%;
+  transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.btn-cta-primary:hover .btn-fill-wave {
+  transform: translateY(-80%) rotate(20deg);
+}
+
+.btn-cta-primary .btn-cta-text,
+.btn-cta-primary .btn-arrow-icon {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.btn-cta-primary:hover .btn-arrow-icon {
+  transform: translateX(5px);
+}
+
+/* Secondary CTA Button (White Background + Charcoal Border) */
+.btn-cta-secondary {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--steel-light-50);
+  color: var(--charcoal-900);
+  border: 2px solid var(--charcoal-800);
+  border-radius: 4px;
+  padding: clamp(12px, 1.6vh, 15px) clamp(22px, 1.8vw, 30px);
+  font-family: var(--font-heading);
+  font-size: clamp(15px, 1.05vw, 17px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: color 0.35s ease, border-color 0.35s ease, transform 0.25s ease;
+  z-index: 1;
+}
+
+.btn-cta-secondary:hover {
+  border-color: var(--apollo-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 90, 0, 0.2);
+}
+
+.btn-cta-secondary .btn-secondary-fill {
+  position: absolute;
+  bottom: -150%;
+  left: -20%;
+  width: 140%;
+  height: 280%;
+  background-color: var(--apollo-orange);
+  border-radius: 40%;
+  transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.btn-cta-secondary:hover .btn-secondary-fill {
+  transform: translateY(-80%) rotate(20deg);
+}
+
+.btn-cta-secondary .btn-secondary-text,
+.btn-cta-secondary .btn-secondary-arrow {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-cta-secondary:hover .btn-secondary-text,
+.btn-cta-secondary:hover .btn-secondary-arrow {
+  color: var(--steel-light-50);
+}
+
+.btn-cta-secondary:hover .btn-secondary-arrow {
+  transform: translateX(5px);
+}
+
+/* Light & Clean Certification Badge */
+.light-spec-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: var(--steel-light-50);
+  border: 1px solid rgba(255, 90, 0, 0.35);
+  border-left: 3px solid var(--apollo-orange);
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--apollo-orange);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--apollo-orange);
+}
+
+.badge-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-title {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--charcoal-900);
+}
+
+.badge-sub {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--steel-light-600);
+}
+
+
+/* ==========================================================================
+   CORRECTED DIAGONAL ORANGE LINE ( / )
+   Rises from lower-left (x1=440, y1=1000) to upper-right (x2=580, y2=0)
+   Pixel-perfect alignment matching the diagonal image split.
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   CORRECTED DIAGONAL ORANGE LINE ( / )
+   Rises from lower-left (x1=440, y1=1000) to upper-right (x2=580, y2=0)
+   Pixel-perfect alignment matching the diagonal image split.
+   ========================================================================== */
+
+.hero-diagonal-boundary {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.diagonal-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.diagonal-coord-tag {
+  position: absolute;
+  bottom: 24px;
+  left: calc(44% + 18px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--charcoal-700);
+  background: rgba(255, 255, 255, 0.88);
+  padding: 4px 10px;
+  border: 1px solid var(--steel-light-300);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.tag-pulse {
+  width: 6px;
+  height: 6px;
+  background-color: var(--apollo-orange);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--apollo-orange);
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 0.5; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.25); }
+}
+
+
+/* ==========================================================================
+   SLIDE CONTROLS (LIGHT, TRANSLUCENT, PREMIUM)
+   01 / 04, thin orange progress line, interactive tabs
+   ========================================================================== */
+
+.slider-control-hub {
+  position: absolute;
+  bottom: clamp(20px, 3.5vh, 40px);
+  right: clamp(20px, 3.5vw, 60px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 1.6vw, 24px);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 12px clamp(16px, 1.8vw, 24px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-left: 3px solid var(--apollo-orange);
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Counter Display: 01 / 04 */
+.counter-display {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+.current-number {
+  font-size: clamp(20px, 1.4vw, 24px);
+  color: var(--charcoal-900);
+  letter-spacing: 0.05em;
+}
+
+.counter-separator {
+  font-size: 14px;
+  color: var(--apollo-orange);
+  margin: 0 2px;
+}
+
+.total-number {
+  font-size: 14px;
+  color: var(--steel-light-600);
+}
+
+/* Thin Premium Orange Progress Bar */
+.slider-progress-track {
+  width: clamp(75px, 7vw, 120px);
+  height: 3px;
+  background-color: var(--steel-light-300);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-progress-fill {
+  width: 0%;
+  height: 100%;
+  background-color: var(--apollo-orange);
+  box-shadow: 0 0 6px var(--apollo-orange);
+  transition: width 0.1s linear;
+}
+
+/* Slide Pills */
+.slide-pills-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.slide-pill {
+  background: var(--steel-light-50);
+  border: 1px solid var(--steel-light-300);
+  color: var(--charcoal-700);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.slide-pill:hover {
+  border-color: var(--apollo-orange);
+  color: var(--apollo-orange);
+}
+
+.slide-pill.active {
+  background-color: var(--apollo-orange-subtle);
+  border-color: var(--apollo-orange);
+  color: var(--apollo-orange);
+  font-weight: 800;
+}
+
+/* Arrow Controls */
+.slide-arrows {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 4px;
+}
+
+.arrow-btn {
+  background: var(--steel-light-100);
+  border: 1px solid var(--steel-light-300);
+  color: var(--charcoal-850);
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.arrow-btn:hover {
+  background-color: var(--apollo-orange);
+  border-color: var(--apollo-orange);
+  color: var(--steel-light-50);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px var(--apollo-orange-glow);
+}
+
+/* Micro Footer Watermark */
+.hero-tech-watermark {
+  position: absolute;
+  bottom: 12px;
+  left: clamp(28px, 6vw, 96px);
+  z-index: 5;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--steel-light-600);
+  pointer-events: none;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   Desktop / Laptop prioritized, clean tablet & mobile adaptation.
+   ========================================================================== */
+
+/* Laptop screens (e.g. 1366x768 to 1536x864) */
+@media (max-width: 1440px) {
+  :root {
+    --nav-height: 96px;
+  }
+  .apollo-brand-img {
+    height: clamp(62px, 4.5vw, 68px);
+    max-width: 300px;
+    min-height: 60px;
+  }
+  .slide-bright-panel {
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
+    padding-left: clamp(24px, 4.5vw, 64px);
+    padding-right: 48px;
+  }
+  .slide-image-wrapper {
+    width: 58%;
+  }
+  .slide-pills-list {
+    display: none; /* Keep control hub compact on smaller laptops */
+  }
+}
+
+/* Small Laptop / Landscape Tablet */
+@media (max-width: 1100px) {
+  .nav-menu-list {
+    gap: 16px;
+  }
+  .nav-item-link {
+    font-size: 15px;
+  }
+  .slide-bright-panel {
+    width: 66%;
+    clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
+  }
+  .slide-heading {
+    font-size: 40px;
+  }
+  .slide-description {
+    font-size: 17px;
+  }
+}
+
+/* Tablet (Portrait) */
+@media (max-width: 900px) {
+  :root {
+    --nav-height: 86px;
+  }
+  .apollo-brand-img {
+    height: clamp(52px, 6vw, 60px);
+    max-width: 265px;
+    min-height: 48px;
+  }
+  .nav-menu-wrapper {
+    display: none;
+  }
+  .mobile-hamburger {
+    display: flex;
+  }
+  .hero-viewport {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+  .hero-slides-track {
+    height: auto;
+    min-height: 740px;
+  }
+  .hero-slide {
+    position: relative;
+    height: auto;
+    min-height: 740px;
+    display: none;
+  }
+  .hero-slide.active {
+    display: block;
+  }
+  .slide-bright-panel {
+    position: relative;
+    width: 100%;
+    clip-path: none;
+    padding: 48px 24px 36px 24px;
+    background: linear-gradient(135deg, #DFE5EA 0%, #D5DCE2 50%, #C8D1D8 100%);
+  }
+  .slide-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 380px;
+  }
+  .hero-diagonal-boundary,
+  .hero-tech-watermark {
+    display: none;
+  }
+  .slider-control-hub {
+    position: static;
+    margin: 20px 24px 32px 24px;
+    justify-content: space-between;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  :root {
+    --nav-height: 74px;
+  }
+  .apollo-brand-img {
+    height: clamp(42px, 11vw, 48px);
+    max-width: 215px;
+    min-height: 38px;
+  }
+  .btn-apollo-quote {
+    padding: 10px 16px;
+    font-size: 13.5px;
+  }
+  .slide-heading {
+    font-size: 32px;
+    line-height: 1.12;
+  }
+  .slide-description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .slide-cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .btn-cta-primary,
+  .btn-cta-secondary,
+  .light-spec-badge {
+    width: 100%;
+    justify-content: center;
+  }
+  .slide-image-wrapper {
+    height: 280px;
+  }
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apollo Forge &amp; Fitting | Precision Forged Components &amp; Industrial Piping</title>
+  <meta name="description" content="Apollo Forge &amp; Fitting is an ISO 9001:2015 certified manufacturer of high-precision forged flanges, industrial piping, fittings, and high-tensile fasteners." />
+  
+  <!-- Modern Industrial Typography: Barlow (Heading & Nav) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-industrial-theme">
+
+  <!-- ==============================================
+       NAVBAR (Clean, White, Premium)
+       Structure: [APOLLO LOGO] Home About Us Products Materials Certificates Contact [GET QUOTE]
+       ============================================== -->
+  <header class="apollo-header" id="apolloHeader">
+    <div class="nav-container">
+      <!-- Apollo Official Brand Logo -->
+      <div class="brand-area" id="brandLogoArea">
+        <a href="#" class="brand-link" aria-label="Apollo Forge &amp; Fitting Homepage" tabindex="-1">
+          <img 
+            src="logo/Apollo Forge & Fitting Logo.png" 
+            alt="Apollo Forge and Fitting - Steel Makes World Around Us" 
+            class="apollo-brand-img"
+            width="1023"
+            height="233"
+          />
+        </a>
+      </div>
+
+      <!-- Navigation Menu Items (Non-clickable visual representation) -->
+      <nav class="nav-menu-wrapper" aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item">
+            <span class="nav-item-link is-active">Home</span>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link">About Us</span>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link">Products</span>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link">Materials</span>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link">Certificates</span>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link">Contact</span>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Far Right: GET QUOTE Button with bottom-to-top wave fill -->
+      <div class="header-action-area">
+        <button type="button" class="btn-apollo-quote" id="getQuoteBtn" aria-label="Get Quote">
+          <span class="quote-wave"></span>
+          <span class="quote-text">GET QUOTE</span>
+          <svg class="quote-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Indicator (Visual only) -->
+        <button class="mobile-hamburger" aria-label="Toggle navigation" type="button">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================================
+       HERO SECTION WITH 4 SLIDES (BRIGHT & PREMIUM)
+       Diagonal Split: Content Area on Left (Steel / Slate),
+       Industrial Image Area on Right (Exposure balanced, no heavy black),
+       Diagonal Orange Line rising from lower-left to upper-right ( / ).
+       ============================================== -->
+  <main class="hero-viewport" id="heroSection">
+    
+    <!-- Background Slides Container -->
+    <div class="hero-slides-track" id="heroSliderTrack">
+
+      <!-- SLIDE 1: FLANGES & FORGED FITTINGS -->
+      <article class="hero-slide active" data-slide-index="0">
+        <div class="slide-image-wrapper">
+          <img 
+            src="assets/images/slide-flanges.jpg" 
+            alt="Precision machined steel flanges, elbows and high-pressure fittings" 
+            class="slide-img" 
+            loading="eager"
+          />
+          <div class="image-light-blend"></div>
+        </div>
+
+        <div class="slide-bright-panel">
+          <div class="panel-tech-grid"></div>
+          <div class="panel-content-wrap">
+            
+            <!-- Technical Eyebrow -->
+            <div class="slide-eyebrow">
+              <span class="eyebrow-accent-bar"></span>
+              <span class="eyebrow-text">PRECISION FORGED COMPONENTS</span>
+            </div>
+
+            <!-- High Impact Heading: Charcoal + Strategic Apollo Orange -->
+            <h1 class="slide-heading">
+              <span class="text-charcoal">FORGED FOR</span> <span class="text-orange">STRENGTH.</span><br />
+              <span class="text-charcoal">ENGINEERED FOR</span> <span class="text-orange">PERFORMANCE.</span>
+            </h1>
+
+            <!-- Description (18-20px, high readability) -->
+            <p class="slide-description">
+              High-quality forged flanges and fittings engineered for demanding industrial applications, delivering strength, precision and dependable performance.
+            </p>
+
+            <!-- Dual CTA Row (Primary Orange + Secondary Charcoal/White) -->
+            <div class="slide-cta-row">
+              <button type="button" class="btn-cta-primary" aria-label="Explore Products">
+                <span class="btn-fill-wave"></span>
+                <span class="btn-cta-text">EXPLORE PRODUCTS</span>
+                <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <button type="button" class="btn-cta-secondary" aria-label="View Specifications">
+                <span class="btn-secondary-fill"></span>
+                <span class="btn-secondary-text">VIEW SPECIFICATIONS</span>
+                <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <!-- Light Certification Badge -->
+              <div class="light-spec-badge">
+                <span class="badge-dot"></span>
+                <div class="badge-text-group">
+                  <span class="badge-title">100% HYDRO TESTED</span>
+                  <span class="badge-sub">ASTM A105 / A182 CERTIFIED</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- SLIDE 2: PIPES & PIPING -->
+      <article class="hero-slide" data-slide-index="1">
+        <div class="slide-image-wrapper">
+          <img 
+            src="assets/images/slide-pipes.jpg" 
+            alt="Heavy-duty seamless industrial steel pipes and piping components" 
+            class="slide-img" 
+            loading="lazy"
+          />
+          <div class="image-light-blend"></div>
+        </div>
+
+        <div class="slide-bright-panel">
+          <div class="panel-tech-grid"></div>
+          <div class="panel-content-wrap">
+            
+            <div class="slide-eyebrow">
+              <span class="eyebrow-accent-bar"></span>
+              <span class="eyebrow-text">INDUSTRIAL PIPING SOLUTIONS</span>
+            </div>
+
+            <h2 class="slide-heading">
+              <span class="text-charcoal">BUILT FOR</span> <span class="text-orange">PRESSURE.</span><br />
+              <span class="text-charcoal">MADE TO</span> <span class="text-orange">PERFORM.</span>
+            </h2>
+
+            <p class="slide-description">
+              Reliable piping components and steel products designed for demanding applications across process, energy and industrial sectors.
+            </p>
+
+            <div class="slide-cta-row">
+              <button type="button" class="btn-cta-primary" aria-label="Explore Pipes &amp; Fittings">
+                <span class="btn-fill-wave"></span>
+                <span class="btn-cta-text">EXPLORE PIPES &amp; FITTINGS</span>
+                <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <button type="button" class="btn-cta-secondary" aria-label="Download Catalog">
+                <span class="btn-secondary-fill"></span>
+                <span class="btn-secondary-text">DOWNLOAD CATALOG</span>
+                <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div class="light-spec-badge">
+                <span class="badge-dot"></span>
+                <div class="badge-text-group">
+                  <span class="badge-title">API 5L &amp; ASTM A106</span>
+                  <span class="badge-sub">HIGH PRESSURE SCHEDULES</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- SLIDE 3: FASTENERS -->
+      <article class="hero-slide" data-slide-index="2">
+        <div class="slide-image-wrapper">
+          <img 
+            src="assets/images/slide-fasteners.jpg" 
+            alt="Precision-engineered industrial fasteners, hex bolts, stud bolts and washers" 
+            class="slide-img" 
+            loading="lazy"
+          />
+          <div class="image-light-blend"></div>
+        </div>
+
+        <div class="slide-bright-panel">
+          <div class="panel-tech-grid"></div>
+          <div class="panel-content-wrap">
+            
+            <div class="slide-eyebrow">
+              <span class="eyebrow-accent-bar"></span>
+              <span class="eyebrow-text">PRECISION ENGINEERED HARDWARE</span>
+            </div>
+
+            <h2 class="slide-heading">
+              <span class="text-charcoal">EVERY</span> <span class="text-orange">CONNECTION.</span><br />
+              <span class="text-charcoal">BUILT TO</span> <span class="text-orange">LAST.</span>
+            </h2>
+
+            <p class="slide-description">
+              Precision-engineered industrial fasteners designed for secure, reliable and high-performance connections in demanding applications.
+            </p>
+
+            <div class="slide-cta-row">
+              <button type="button" class="btn-cta-primary" aria-label="Explore Fasteners">
+                <span class="btn-fill-wave"></span>
+                <span class="btn-cta-text">EXPLORE FASTENERS</span>
+                <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <button type="button" class="btn-cta-secondary" aria-label="Material Grades">
+                <span class="btn-secondary-fill"></span>
+                <span class="btn-secondary-text">MATERIAL GRADES</span>
+                <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div class="light-spec-badge">
+                <span class="badge-dot"></span>
+                <div class="badge-text-group">
+                  <span class="badge-title">GRADE B7 / B8M</span>
+                  <span class="badge-sub">HIGH-TENSILE ALLOY STEEL</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- SLIDE 4: MANUFACTURING & QUALITY -->
+      <article class="hero-slide" data-slide-index="3">
+        <div class="slide-image-wrapper">
+          <img 
+            src="assets/images/slide-manufacturing.jpg" 
+            alt="State of the art heavy steel forging and CNC machining facility with laser inspection" 
+            class="slide-img" 
+            loading="lazy"
+          />
+          <div class="image-light-blend"></div>
+        </div>
+
+        <div class="slide-bright-panel">
+          <div class="panel-tech-grid"></div>
+          <div class="panel-content-wrap">
+            
+            <div class="slide-eyebrow">
+              <span class="eyebrow-accent-bar"></span>
+              <span class="eyebrow-text">ENGINEERING &bull; QUALITY &bull; RELIABILITY</span>
+            </div>
+
+            <h2 class="slide-heading">
+              <span class="text-charcoal">PRECISION</span> <span class="text-orange">MANUFACTURING.</span><br />
+              <span class="text-charcoal">INDUSTRIAL</span> <span class="text-orange">CONFIDENCE.</span>
+            </h2>
+
+            <p class="slide-description">
+              From material selection to precision manufacturing and inspection, every component is produced with a commitment to consistency, quality and reliability.
+            </p>
+
+            <div class="slide-cta-row">
+              <button type="button" class="btn-cta-primary" aria-label="Discover Our Capabilities">
+                <span class="btn-fill-wave"></span>
+                <span class="btn-cta-text">DISCOVER OUR CAPABILITIES</span>
+                <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <button type="button" class="btn-cta-secondary" aria-label="View Products">
+                <span class="btn-secondary-fill"></span>
+                <span class="btn-secondary-text">VIEW PRODUCTS</span>
+                <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div class="light-spec-badge">
+                <span class="badge-dot"></span>
+                <div class="badge-text-group">
+                  <span class="badge-title">ISO 9001:2015</span>
+                  <span class="badge-sub">GLOBAL AUDIT CERTIFIED</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ==============================================
+         CORRECTED DIAGONAL ORANGE LINE ( / )
+         Rises from lower-left (44% width, 100% height)
+         toward upper-right (58% width, 0% height)
+         Matching the diagonal image split.
+         ============================================== -->
+    <div class="hero-diagonal-boundary" aria-hidden="true">
+      <svg class="diagonal-svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <!-- Glow backing line -->
+        <line x1="440" y1="1000" x2="580" y2="0" stroke="rgba(255, 90, 0, 0.25)" stroke-width="8" vector-effect="non-scaling-stroke" />
+        <!-- Crisp Apollo Orange engineering blade -->
+        <line x1="440" y1="1000" x2="580" y2="0" stroke="#FF5A00" stroke-width="2.5" vector-effect="non-scaling-stroke" />
+      </svg>
+      <!-- Technical coordinate marker on the line -->
+      <div class="diagonal-coord-tag">
+        <span class="tag-pulse"></span>
+        <span class="tag-label">APOLLO // 23°02'N 72°34'E &bull; FORGE DIV</span>
+      </div>
+    </div>
+
+    <!-- ==============================================
+         SLIDE CONTROLS (LIGHT, TRANSLUCENT, PREMIUM)
+         04 / 04, thin orange progress line, interactive tabs
+         ============================================== -->
+    <div class="slider-control-hub">
+      <!-- Dynamic Slide Counter: 01 / 04 -->
+      <div class="counter-display">
+        <span class="current-number" id="slideCurrentNum">01</span>
+        <span class="counter-separator">/</span>
+        <span class="total-number">04</span>
+      </div>
+
+      <!-- Thin Premium Orange Progress Bar -->
+      <div class="slider-progress-track">
+        <div class="slider-progress-fill" id="slideProgressFill"></div>
+      </div>
+
+      <!-- Interactive Slide Nav Indicators -->
+      <div class="slide-pills-list" role="tablist" aria-label="Hero Slide Selector">
+        <button type="button" class="slide-pill active" data-target-slide="0" role="tab" aria-selected="true" aria-label="Slide 1: Flanges &amp; Fittings">
+          <span class="pill-title">01 FLANGES</span>
+        </button>
+        <button type="button" class="slide-pill" data-target-slide="1" role="tab" aria-selected="false" aria-label="Slide 2: Pipes &amp; Piping">
+          <span class="pill-title">02 PIPES</span>
+        </button>
+        <button type="button" class="slide-pill" data-target-slide="2" role="tab" aria-selected="false" aria-label="Slide 3: Fasteners">
+          <span class="pill-title">03 FASTENERS</span>
+        </button>
+        <button type="button" class="slide-pill" data-target-slide="3" role="tab" aria-selected="false" aria-label="Slide 4: Manufacturing &amp; Quality">
+          <span class="pill-title">04 MANUFACTURING</span>
+        </button>
+      </div>
+
+      <!-- Arrow Controls -->
+      <div class="slide-arrows">
+        <button type="button" class="arrow-btn" id="prevSlideBtn" aria-label="Previous Slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button type="button" class="arrow-btn" id="nextSlideBtn" aria-label="Next Slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Subtle Technical Watermark in Hero -->
+    <div class="hero-tech-watermark" aria-hidden="true">
+      <span>APOLLO FORGE &amp; FITTING &bull; HEAVY INDUSTRIAL PRECISION &bull; ISO 9001:2015</span>
+    </div>
+
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
