@@ -155,4 +155,104 @@
 
   // Note: Hover pause is intentionally OMITTED per strict requirement:
   // "The slider MUST continue changing even when the mouse cursor is over the hero section. Do NOT pause autoplay on hover."
+
+  // =========================================================================
+  // WHY CHOOSE US - Premium Industrial 3D Tilt Controller
+  // =========================================================================
+  function initWhyCardsTilt() {
+    // Respect user's motion preferences
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    // Only apply on fine pointer devices (desktops/laptops with mouse/trackpad)
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+
+    const cards = document.querySelectorAll('.why-card[data-tilt]');
+    if (!cards.length) return;
+
+    const MAX_ROTATION_DEG = 4; // strictly between 3-5 degrees per specification
+
+    cards.forEach((card) => {
+      let rect = null;
+      let rafId = null;
+      let targetRotX = 0;
+      let targetRotY = 0;
+      let currentRotX = 0;
+      let currentRotY = 0;
+      let isHovered = false;
+
+      function updateCardTransform() {
+        if (!isHovered) {
+          // Smooth return to resting state
+          currentRotX += (0 - currentRotX) * 0.18;
+          currentRotY += (0 - currentRotY) * 0.18;
+
+          if (Math.abs(currentRotX) < 0.04 && Math.abs(currentRotY) < 0.04) {
+            currentRotX = 0;
+            currentRotY = 0;
+            card.style.transform = '';
+            rafId = null;
+            return;
+          }
+        } else {
+          // Smoothly interpolate towards target tilt
+          currentRotX += (targetRotX - currentRotX) * 0.22;
+          currentRotY += (targetRotY - currentRotY) * 0.22;
+        }
+
+        const elevateY = isHovered ? -5 : 0;
+        card.style.transform = `perspective(1000px) rotateX(${currentRotX.toFixed(2)}deg) rotateY(${currentRotY.toFixed(2)}deg) translateY(${elevateY}px)`;
+        rafId = requestAnimationFrame(updateCardTransform);
+      }
+
+      card.addEventListener('pointerenter', function (e) {
+        rect = card.getBoundingClientRect();
+        isHovered = true;
+        if (!rafId) {
+          rafId = requestAnimationFrame(updateCardTransform);
+        }
+      });
+
+      card.addEventListener('pointermove', function (e) {
+        if (!rect) {
+          rect = card.getBoundingClientRect();
+        }
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        // Set CSS variables for the subtle cursor-following spotlight reflection
+        card.style.setProperty('--spotlight-x', `${x}px`);
+        card.style.setProperty('--spotlight-y', `${y}px`);
+
+        // Compute normalized coordinates (-1 to 1) from the card center
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const normX = Math.max(-1, Math.min(1, (x - centerX) / centerX));
+        const normY = Math.max(-1, Math.min(1, (y - centerY) / centerY));
+
+        // Subtle tilt: tilting towards the mouse
+        targetRotX = -normY * MAX_ROTATION_DEG;
+        targetRotY = normX * MAX_ROTATION_DEG;
+
+        if (!rafId) {
+          rafId = requestAnimationFrame(updateCardTransform);
+        }
+      });
+
+      card.addEventListener('pointerleave', function () {
+        isHovered = false;
+        rect = null;
+        targetRotX = 0;
+        targetRotY = 0;
+      });
+    });
+  }
+
+  // Initialize 3D Card Tilt
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initWhyCardsTilt);
+  } else {
+    initWhyCardsTilt();
+  }
 })();
