@@ -23,7 +23,7 @@
     <div class="nav-container">
       <!-- Apollo Official Brand Logo -->
       <div class="brand-area" id="brandLogoArea">
-        <a href="#" class="brand-link" aria-label="Apollo Forge &amp; Fitting Homepage" tabindex="-1">
+        <a href="#heroSection" class="brand-link" aria-label="Apollo Forge &amp; Fitting Homepage">
           <img 
             src="logo/Apollo Forge & Fitting Logo.png" 
             alt="Apollo Forge and Fitting - Steel Makes World Around Us" 
@@ -37,47 +37,67 @@
         </a>
       </div>
 
-      <!-- Navigation Menu Items (Non-clickable visual representation) -->
+      <!-- Navigation Menu Items (Order: Home, About Us, Products, Materials, Certificates, Contact) -->
       <nav class="nav-menu-wrapper" aria-label="Main Navigation">
         <ul class="nav-menu-list">
           <li class="nav-menu-item">
-            <span class="nav-item-link is-active">Home</span>
+            <a href="#heroSection" class="nav-item-link is-active" aria-current="page">Home</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#whyUsSection" class="nav-item-link" style="text-decoration: none; cursor: pointer;">About Us</a>
+            <span class="nav-item-link is-disabled" aria-disabled="true">About Us</span>
           </li>
           <li class="nav-menu-item">
-            <a href="#productsSection" class="nav-item-link" style="text-decoration: none; cursor: pointer;">Products</a>
+            <span class="nav-item-link is-disabled" aria-disabled="true">Products</span>
           </li>
           <li class="nav-menu-item">
-            <a href="#whyUsSection" class="nav-item-link" style="text-decoration: none; cursor: pointer;">Materials</a>
+            <span class="nav-item-link is-disabled" aria-disabled="true">Materials</span>
           </li>
           <li class="nav-menu-item">
-            <span class="nav-item-link">Certificates</span>
+            <span class="nav-item-link is-disabled" aria-disabled="true">Certificates</span>
           </li>
           <li class="nav-menu-item">
-            <span class="nav-item-link">Contact</span>
+            <span class="nav-item-link is-disabled" aria-disabled="true">Contact</span>
           </li>
         </ul>
       </nav>
 
-      <!-- Far Right: GET QUOTE Button with bottom-to-top wave fill -->
+      <!-- Far Right: Get Quote Button (Item 7) & Mobile Hamburger -->
       <div class="header-action-area">
-        <button type="button" class="btn-apollo-quote" id="getQuoteBtn" aria-label="Get Quote">
-          <span class="quote-wave"></span>
-          <span class="quote-text">GET QUOTE</span>
-          <svg class="quote-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <button type="button" class="btn-apollo-quote is-non-clickable" id="getQuoteBtn" aria-label="Get Quote" aria-disabled="true">
+          <span class="quote-text">Get Quote</span>
+          <svg class="quote-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </button>
 
-        <!-- Mobile Menu Indicator (Visual only) -->
-        <button class="mobile-hamburger" aria-label="Toggle navigation" type="button">
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-hamburger" id="mobileMenuBtn" aria-label="Toggle navigation menu" type="button" aria-expanded="false">
           <span class="line line-1"></span>
           <span class="line line-2"></span>
           <span class="line line-3"></span>
         </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <ul class="mobile-menu-list">
+        <li><a href="#heroSection" class="mobile-menu-link is-active">Home</a></li>
+        <li><span class="mobile-menu-link is-disabled">About Us</span></li>
+        <li><span class="mobile-menu-link is-disabled">Products</span></li>
+        <li><span class="mobile-menu-link is-disabled">Materials</span></li>
+        <li><span class="mobile-menu-link is-disabled">Certificates</span></li>
+        <li><span class="mobile-menu-link is-disabled">Contact</span></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <span class="btn-mobile-quote is-non-clickable">
+          Get Quote
+          <svg class="quote-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:6px;" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
       </div>
     </div>
   </header>
@@ -424,6 +444,389 @@
   </main>
 
   <!-- ==============================================
+       INDUSTRIAL PRODUCT SHOWCASE MARQUEE
+       Continuously moving horizontal product & grade ticker
+       Positioned directly between Hero and Our Products
+       Revealed dynamically as visitor scrolls past Hero section
+       ============================================== -->
+  <section class="apollo-marquee-section" id="productMarqueeSection" aria-label="Industrial Product Showcase Marquee">
+    <div class="marquee-header-wrap">
+      <div class="marquee-badge">
+        <span class="marquee-badge-dot" aria-hidden="true"></span>
+        <span>CERTIFIED INDUSTRIAL GRADES</span>
+      </div>
+      <h2 class="marquee-title">PRECISION STEEL. TRUSTED GRADES.</h2>
+      <p class="marquee-subtitle">Explore our range of industrial flanges, forged fittings, butt weld fittings, and specialty steel grades.</p>
+    </div>
+
+    <!-- Continuous Horizontal Scroller Viewport with Left/Right Ambient Fades -->
+    <div class="marquee-scroller-viewport" aria-label="Continuous product showcase ticker">
+      <div class="marquee-ambient-fade marquee-fade-left" aria-hidden="true"></div>
+      <div class="marquee-ambient-fade marquee-fade-right" aria-hidden="true"></div>
+
+      <div class="marquee-track">
+        <!-- Sequence Group 1 (16 Unique Items) -->
+        <div class="marquee-group">
+          <!-- Item 01: Stainless Steel Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-flanges.jpg" alt="Stainless Steel Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FLANGES</span>
+              <h3 class="marquee-card-name">Stainless Steel Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 02: Carbon Steel Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/carbon-steel-flanges.jpg" alt="Carbon Steel Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FLANGES</span>
+              <h3 class="marquee-card-name">Carbon Steel Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 03: Alloy Steel Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/alloy-steel-flanges.jpg" alt="Alloy Steel Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FLANGES</span>
+              <h3 class="marquee-card-name">Alloy Steel Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 04: Stainless Steel Butt Weld Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/SS buttweld/ss buttweld fitting.jpeg" alt="Stainless Steel Butt Weld Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">BUTT WELD</span>
+              <h3 class="marquee-card-name">Stainless Steel Butt Weld Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 05: Carbon Steel Butt Weld Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/carbon buttweld/carbon steel buttweld fitting.jpeg" alt="Carbon Steel Butt Weld Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">BUTT WELD</span>
+              <h3 class="marquee-card-name">Carbon Steel Butt Weld Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 06: Stainless Steel Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Forged Fittings/stainles steel.jpg" alt="Stainless Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FORGED FITTINGS</span>
+              <h3 class="marquee-card-name">Stainless Steel Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 07: Carbon Steel Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Forged Fittings/carbon.avif" alt="Carbon Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FORGED FITTINGS</span>
+              <h3 class="marquee-card-name">Carbon Steel Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 08: Alloy Steel Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Forged Fittings/alloy steel.jpg" alt="Alloy Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FORGED FITTINGS</span>
+              <h3 class="marquee-card-name">Alloy Steel Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 09: Stainless Steel 304/304L Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-304-304l-flanges.jpg" alt="Stainless Steel 304/304L Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">GRADE 304 / 304L</span>
+              <h3 class="marquee-card-name">Stainless Steel 304/304L Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 10: Stainless Steel 316/316L Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-316-316l-316h-flanges.jpg" alt="Stainless Steel 316/316L Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">GRADE 316 / 316L</span>
+              <h3 class="marquee-card-name">Stainless Steel 316/316L Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 11: Stainless Steel 310S Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-310-310s-flanges.jpg" alt="Stainless Steel 310S Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">GRADE 310S</span>
+              <h3 class="marquee-card-name">Stainless Steel 310S Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 12: ASTM A105 Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/carbon buttweld/astm a105 forged fitting.jpeg" alt="ASTM A105 Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">ASTM A105</span>
+              <h3 class="marquee-card-name">ASTM A105 Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 13: ASTM A182 F304/F316 Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/SS buttweld/ss forge fitting.jpeg" alt="ASTM A182 F304/F316 Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">ASTM A182</span>
+              <h3 class="marquee-card-name">ASTM A182 F304/F316 Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 14: ASTM A234 WPB Butt Weld Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/carbon buttweld/astm a234 gr wpb.jpeg" alt="ASTM A234 WPB Butt Weld Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">ASTM A234</span>
+              <h3 class="marquee-card-name">ASTM A234 WPB Butt Weld Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 15: Alloy Steel F11/F22 Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/alloy steel/ASTM A234 GR WP11 ALLOY STEEL BUTTWELD FITTINGS.jpeg" alt="Alloy Steel F11/F22 Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">CHROME MOLY</span>
+              <h3 class="marquee-card-name">Alloy Steel F11/F22 Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 16: Duplex and Super Duplex Steel Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Butt weld fit/duplex.jpeg" alt="Duplex and Super Duplex Steel Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">DUPLEX / S-DUPLEX</span>
+              <h3 class="marquee-card-name">Duplex &amp; Super Duplex Fittings</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sequence Group 2 (Exact Duplicate for Seamless Infinite 360-degree Loop) -->
+        <div class="marquee-group" aria-hidden="true">
+          <!-- Item 01: Stainless Steel Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-flanges.jpg" alt="Stainless Steel Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FLANGES</span>
+              <h3 class="marquee-card-name">Stainless Steel Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 02: Carbon Steel Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/carbon-steel-flanges.jpg" alt="Carbon Steel Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FLANGES</span>
+              <h3 class="marquee-card-name">Carbon Steel Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 03: Alloy Steel Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/alloy-steel-flanges.jpg" alt="Alloy Steel Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FLANGES</span>
+              <h3 class="marquee-card-name">Alloy Steel Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 04: Stainless Steel Butt Weld Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/SS buttweld/ss buttweld fitting.jpeg" alt="Stainless Steel Butt Weld Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">BUTT WELD</span>
+              <h3 class="marquee-card-name">Stainless Steel Butt Weld Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 05: Carbon Steel Butt Weld Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/carbon buttweld/carbon steel buttweld fitting.jpeg" alt="Carbon Steel Butt Weld Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">BUTT WELD</span>
+              <h3 class="marquee-card-name">Carbon Steel Butt Weld Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 06: Stainless Steel Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Forged Fittings/stainles steel.jpg" alt="Stainless Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FORGED FITTINGS</span>
+              <h3 class="marquee-card-name">Stainless Steel Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 07: Carbon Steel Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Forged Fittings/carbon.avif" alt="Carbon Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FORGED FITTINGS</span>
+              <h3 class="marquee-card-name">Carbon Steel Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 08: Alloy Steel Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Forged Fittings/alloy steel.jpg" alt="Alloy Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">FORGED FITTINGS</span>
+              <h3 class="marquee-card-name">Alloy Steel Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 09: Stainless Steel 304/304L Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-304-304l-flanges.jpg" alt="Stainless Steel 304/304L Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">GRADE 304 / 304L</span>
+              <h3 class="marquee-card-name">Stainless Steel 304/304L Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 10: Stainless Steel 316/316L Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-316-316l-316h-flanges.jpg" alt="Stainless Steel 316/316L Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">GRADE 316 / 316L</span>
+              <h3 class="marquee-card-name">Stainless Steel 316/316L Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 11: Stainless Steel 310S Flanges -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/flanges/grades/ss-310-310s-flanges.jpg" alt="Stainless Steel 310S Flanges" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">GRADE 310S</span>
+              <h3 class="marquee-card-name">Stainless Steel 310S Flanges</h3>
+            </div>
+          </div>
+
+          <!-- Item 12: ASTM A105 Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/carbon buttweld/astm a105 forged fitting.jpeg" alt="ASTM A105 Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">ASTM A105</span>
+              <h3 class="marquee-card-name">ASTM A105 Forged Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 13: ASTM A182 F304/F316 Forged Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/SS buttweld/ss forge fitting.jpeg" alt="ASTM A182 F304/F316 Forged Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">ASTM A182</span>
+              <h3 class="marquee-card-name">ASTM A182 F304/F316 Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 14: ASTM A234 WPB Butt Weld Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/carbon buttweld/astm a234 gr wpb.jpeg" alt="ASTM A234 WPB Butt Weld Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">ASTM A234</span>
+              <h3 class="marquee-card-name">ASTM A234 WPB Butt Weld Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 15: Alloy Steel F11/F22 Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/grades images/buttweld fitting/alloy steel/ASTM A234 GR WP11 ALLOY STEEL BUTTWELD FITTINGS.jpeg" alt="Alloy Steel F11/F22 Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">CHROME MOLY</span>
+              <h3 class="marquee-card-name">Alloy Steel F11/F22 Fittings</h3>
+            </div>
+          </div>
+
+          <!-- Item 16: Duplex and Super Duplex Steel Fittings -->
+          <div class="marquee-card">
+            <div class="marquee-card-img-wrap">
+              <img src="assets/Product Images/Butt weld fit/duplex.jpeg" alt="Duplex and Super Duplex Steel Fittings" class="marquee-card-img" loading="lazy" width="220" height="130" />
+            </div>
+            <div class="marquee-card-meta">
+              <span class="marquee-card-tag">DUPLEX / S-DUPLEX</span>
+              <h3 class="marquee-card-name">Duplex &amp; Super Duplex Fittings</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
        OUR PRODUCTS SECTION
        3-column x 2-row premium industrial product grid
        ============================================== -->
@@ -465,8 +868,8 @@
                 alt="Apollo Precision Forged Flanges" 
                 class="product-img"
                 loading="lazy"
-                width="1268"
-                height="1240"
+                width="1250"
+                height="1150"
               />
             </div>
             <div class="product-details">
@@ -506,8 +909,8 @@
                 alt="Apollo Butt Weld Fittings" 
                 class="product-img"
                 loading="lazy"
-                width="1254"
-                height="1254"
+                width="1234"
+                height="900"
               />
             </div>
             <div class="product-details">
@@ -548,7 +951,7 @@
                 class="product-img"
                 loading="lazy"
                 width="1701"
-                height="925"
+                height="805"
               />
             </div>
             <div class="product-details">
@@ -588,8 +991,8 @@
                 alt="Apollo Sheets and Plates" 
                 class="product-img"
                 loading="lazy"
-                width="1254"
-                height="1254"
+                width="1240"
+                height="945"
               />
             </div>
             <div class="product-details">
@@ -629,8 +1032,8 @@
                 alt="Apollo Industrial Fasteners" 
                 class="product-img"
                 loading="lazy"
-                width="1536"
-                height="1024"
+                width="1379"
+                height="942"
               />
             </div>
             <div class="product-details">
@@ -671,7 +1074,7 @@
                 class="product-img"
                 loading="lazy"
                 width="1254"
-                height="1254"
+                height="1140"
               />
             </div>
             <div class="product-details">
@@ -884,6 +1287,1280 @@
     </div>
 
   </section>
+
+  <!-- ==============================================
+       VALUE ADDED SERVICES SECTION
+       Composition: Layered Off-White & Orange Industrial Composition
+       Inspired by Reference 1 layout with Reference 2 Brand Palette & Identity
+       ============================================== -->
+  <section class="apollo-vas-section" id="servicesSection" aria-label="Value Added Services">
+    
+    <!-- Background Technical Grid Mesh -->
+    <div class="vas-grid-mesh" aria-hidden="true"></div>
+
+    <!-- Restrained Industrial Geometric Registration Markings -->
+    <div class="vas-deco-crosshair vas-deco-crosshair-tl" aria-hidden="true">
+      <span>+</span>
+      <span>SEC // 04 - VAS SPEC</span>
+    </div>
+    <div class="vas-deco-crosshair vas-deco-crosshair-br" aria-hidden="true">
+      <span>[ ISO 9001:2015 CERTIFIED FACILITY ]</span>
+      <span>&#x2197;</span>
+    </div>
+    <div class="vas-deco-corner-mark" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8D7C7" stroke-width="1.8">
+        <path d="M4 10V4h6M14 4h6v6M20 14v6h-6M10 20H4v-6"/>
+      </svg>
+    </div>
+    <div class="vas-deco-ring" aria-hidden="true"></div>
+
+    <div class="vas-container">
+      
+      <!-- 1. Refined Centered Section Header -->
+      <div class="vas-header">
+        <div class="vas-badge">
+          <span class="vas-badge-dot"></span>
+          <span>VALUE-ADDED SOLUTIONS</span>
+        </div>
+        <h2 class="vas-title">VALUE ADDED SERVICES</h2>
+        <div class="vas-title-bar"></div>
+        <p class="vas-subtitle">
+          Beyond Steel Supply. Solutions Built Around Your Needs.
+        </p>
+      </div>
+
+      <!-- 2. Grid Frame with Layered Orange Backdrop Shape -->
+      <div class="vas-grid-wrapper">
+        
+        <!-- Central Orange Geometric Shape (Cross/Plus Layer peeking between cards) -->
+        <div class="vas-backdrop-cross" aria-hidden="true">
+          <div class="vas-cross-vertical"></div>
+          <div class="vas-cross-horizontal"></div>
+          <div class="vas-cross-center"></div>
+        </div>
+
+        <!-- 4 Premium Service Cards in 2x2 Grid -->
+        <div class="vas-cards-grid">
+          
+          <!-- CARD 01 — CUSTOM CUTTING -->
+          <article class="vas-card-flipper" id="vasCardCutting" tabindex="0" role="region" aria-label="CUSTOM CUTTING - Hover or tap to flip">
+            <div class="vas-card-inner">
+              
+              <!-- Front Face -->
+              <div class="vas-card-face vas-card-front">
+                <div class="vas-card-content">
+                  <h3 class="vas-card-title">CUSTOM CUTTING</h3>
+                  <p class="vas-card-desc">
+                    Steel materials cut to your required dimensions to support accurate fabrication and help minimise material waste.
+                  </p>
+                </div>
+                <div class="vas-card-footer">
+                  <span class="vas-card-number">01</span>
+                  <span class="vas-flip-cue" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                    </svg>
+                    Hover to view
+                  </span>
+                </div>
+                <!-- Distinctive Curved White Area entering from Lower-Right Corner -->
+                <div class="vas-corner-scoop" aria-hidden="true">
+                  <div class="vas-card-icon-box">
+                    <svg class="vas-card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 18h20v3H2z" stroke="#111217" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M2 18l3.5-5h13l3.5 5" stroke="#111217" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 4h10" stroke="#111217" stroke-width="1.8" stroke-linecap="round"/>
+                      <path d="M9 7h6" stroke="#111217" stroke-width="1.8" stroke-linecap="round"/>
+                      <path d="M12 4v8" stroke="#F45108" stroke-width="2.2" stroke-linecap="round"/>
+                      <circle cx="12" cy="14" r="1.6" fill="#F45108"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Face -->
+              <div class="vas-card-face vas-card-back">
+                <div class="vas-card-back-header">
+                  <span class="vas-back-badge">
+                    <span class="vas-badge-dot"></span>
+                    <span>SERVICE 01</span>
+                  </span>
+                  <h4 class="vas-card-back-title">CUSTOM CUTTING</h4>
+                </div>
+
+                <div class="vas-card-back-media">
+                  <img 
+                    src="assets/services/custom-cutting.png" 
+                    alt="Apollo Steel Custom Cutting and Precision Flange Machining" 
+                    class="vas-card-back-img"
+                    loading="lazy"
+                  />
+                  <span class="vas-media-tag">CNC Plate Sizing</span>
+                </div>
+
+                <div class="vas-card-back-footer">
+                  <p class="vas-card-back-desc">
+                    Precision plate cutting, saw sizing &amp; beveling tailored to client fabrication drawings.
+                  </p>
+                  <span class="vas-flip-back-hint" aria-hidden="true">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    Flip back
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- CARD 02 — MATERIAL SOURCING -->
+          <article class="vas-card-flipper" id="vasCardSourcing" tabindex="0" role="region" aria-label="MATERIAL SOURCING - Hover or tap to flip">
+            <div class="vas-card-inner">
+              
+              <!-- Front Face -->
+              <div class="vas-card-face vas-card-front">
+                <div class="vas-card-content">
+                  <h3 class="vas-card-title">MATERIAL SOURCING</h3>
+                  <p class="vas-card-desc">
+                    Access a wide range of steel grades, sizes, and specifications suited to your project and procurement requirements.
+                  </p>
+                </div>
+                <div class="vas-card-footer">
+                  <span class="vas-card-number">02</span>
+                  <span class="vas-flip-cue" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                    </svg>
+                    Hover to view
+                  </span>
+                </div>
+                <!-- Distinctive Curved White Area entering from Lower-Right Corner -->
+                <div class="vas-corner-scoop" aria-hidden="true">
+                  <div class="vas-card-icon-box">
+                    <svg class="vas-card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 3v18M21 3v18" stroke="#111217" stroke-width="1.8" stroke-linecap="round"/>
+                      <path d="M3 7h18M3 13h18M3 19h18" stroke="#111217" stroke-width="1.8" stroke-linecap="round"/>
+                      <rect x="6" y="4.5" width="12" height="2" rx="1" stroke="#111217" stroke-width="1.4"/>
+                      <rect x="6" y="10.5" width="12" height="2" rx="1" stroke="#111217" stroke-width="1.4"/>
+                      <rect x="6" y="16.5" width="7" height="2" rx="1" stroke="#F45108" stroke-width="1.6"/>
+                      <circle cx="17.5" cy="17.5" r="2.5" stroke="#F45108" stroke-width="1.8"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Face -->
+              <div class="vas-card-face vas-card-back">
+                <div class="vas-card-back-header">
+                  <span class="vas-back-badge">
+                    <span class="vas-badge-dot"></span>
+                    <span>SERVICE 02</span>
+                  </span>
+                  <h4 class="vas-card-back-title">MATERIAL SOURCING</h4>
+                </div>
+
+                <div class="vas-card-back-media">
+                  <img 
+                    src="assets/services/material-sourcing.png" 
+                    alt="Apollo Steel Alloy Spectrometer Positive Material Identification PMI Analysis" 
+                    class="vas-card-back-img"
+                    loading="lazy"
+                  />
+                  <span class="vas-media-tag">PMI Chemistry Verified</span>
+                </div>
+
+                <div class="vas-card-back-footer">
+                  <p class="vas-card-back-desc">
+                    Extensive inventory of carbon, stainless &amp; duplex alloys verified via on-site PMI spectrometer analysis.
+                  </p>
+                  <span class="vas-flip-back-hint" aria-hidden="true">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    Flip back
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- CARD 03 — QUALITY & INSPECTION -->
+          <article class="vas-card-flipper" id="vasCardQuality" tabindex="0" role="region" aria-label="QUALITY &amp; INSPECTION - Hover or tap to flip">
+            <div class="vas-card-inner">
+              
+              <!-- Front Face -->
+              <div class="vas-card-face vas-card-front">
+                <div class="vas-card-content">
+                  <h3 class="vas-card-title">QUALITY &amp; INSPECTION</h3>
+                  <p class="vas-card-desc">
+                    Material verification and inspection support to help meet specified grades, dimensional requirements, and quality expectations.
+                  </p>
+                </div>
+                <div class="vas-card-footer">
+                  <span class="vas-card-number">03</span>
+                  <span class="vas-flip-cue" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                    </svg>
+                    Hover to view
+                  </span>
+                </div>
+                <!-- Distinctive Curved White Area entering from Lower-Right Corner -->
+                <div class="vas-corner-scoop" aria-hidden="true">
+                  <div class="vas-card-icon-box">
+                    <svg class="vas-card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 5h16v3H9v11H4V5z" stroke="#111217" stroke-width="1.8" stroke-linejoin="round"/>
+                      <path d="M12 5v3M15 5v2M18 5v3" stroke="#111217" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M12 8v8h-3" stroke="#111217" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="17" cy="16" r="4.5" stroke="#F45108" stroke-width="1.8"/>
+                      <path d="M15 16l1.5 1.5 3-3" stroke="#F45108" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Face -->
+              <div class="vas-card-face vas-card-back">
+                <div class="vas-card-back-header">
+                  <span class="vas-back-badge">
+                    <span class="vas-badge-dot"></span>
+                    <span>SERVICE 03</span>
+                  </span>
+                  <h4 class="vas-card-back-title">QUALITY &amp; INSPECTION</h4>
+                </div>
+
+                <div class="vas-card-back-media">
+                  <img 
+                    src="assets/services/quality-inspection.jpg" 
+                    alt="Apollo Steel Precision Dimensional Vernier Caliper Inspection" 
+                    class="vas-card-back-img"
+                    loading="lazy"
+                  />
+                  <span class="vas-media-tag">Tolerance Inspection</span>
+                </div>
+
+                <div class="vas-card-back-footer">
+                  <p class="vas-card-back-desc">
+                    Meticulous vernier dimensional verification, hydro-testing and full 3.1 mill test certification traceability.
+                  </p>
+                  <span class="vas-flip-back-hint" aria-hidden="true">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    Flip back
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- CARD 04 — ORDER & DELIVERY SUPPORT -->
+          <article class="vas-card-flipper" id="vasCardDelivery" tabindex="0" role="region" aria-label="ORDER &amp; DELIVERY SUPPORT - Hover or tap to flip">
+            <div class="vas-card-inner">
+              
+              <!-- Front Face -->
+              <div class="vas-card-face vas-card-front">
+                <div class="vas-card-content">
+                  <h3 class="vas-card-title">ORDER &amp; DELIVERY SUPPORT</h3>
+                  <p class="vas-card-desc">
+                    Reliable order coordination and dispatch support to help simplify your steel procurement process.
+                  </p>
+                </div>
+                <div class="vas-card-footer">
+                  <span class="vas-card-number">04</span>
+                  <span class="vas-flip-cue" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                    </svg>
+                    Hover to view
+                  </span>
+                </div>
+                <!-- Distinctive Curved White Area entering from Lower-Right Corner -->
+                <div class="vas-corner-scoop" aria-hidden="true">
+                  <div class="vas-card-icon-box">
+                    <svg class="vas-card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5h12v11H1z" stroke="#111217" stroke-width="1.8" stroke-linejoin="round"/>
+                      <path d="M13 9h5l3 3v4h-8V9z" stroke="#111217" stroke-width="1.8" stroke-linejoin="round"/>
+                      <circle cx="5" cy="18" r="2" stroke="#111217" stroke-width="1.8"/>
+                      <circle cx="17" cy="18" r="2" stroke="#111217" stroke-width="1.8"/>
+                      <path d="M4 9h6M3 12h5" stroke="#F45108" stroke-width="1.8" stroke-linecap="round"/>
+                      <circle cx="19.5" cy="6.5" r="2" fill="#F45108"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Face -->
+              <div class="vas-card-face vas-card-back">
+                <div class="vas-card-back-header">
+                  <span class="vas-back-badge">
+                    <span class="vas-badge-dot"></span>
+                    <span>SERVICE 04</span>
+                  </span>
+                  <h4 class="vas-card-back-title">ORDER &amp; DELIVERY SUPPORT</h4>
+                </div>
+
+                <div class="vas-card-back-media">
+                  <img 
+                    src="assets/services/order-delivery.jpg" 
+                    alt="Apollo Steel Export Wooden Packing Crate with Protective Capped Flanges" 
+                    class="vas-card-back-img"
+                    loading="lazy"
+                  />
+                  <span class="vas-media-tag">Export Packing &amp; Dispatch</span>
+                </div>
+
+                <div class="vas-card-back-footer">
+                  <p class="vas-card-back-desc">
+                    Custom wooden export crating, protective thread/bevel end-capping and reliable global dispatch tracking.
+                  </p>
+                  <span class="vas-flip-back-hint" aria-hidden="true">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    Flip back
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==============================================
+       CLIENTS & PARTNERS SECTION
+       Refined Industrial Canvas with Staggered Circular White Logo Containers
+       ============================================== -->
+  <section class="apollo-partners-section" id="partnersSection" aria-label="Our Clients and Partners">
+    
+    <!-- Background Technical Grid Overlay -->
+    <div class="partner-grid-mesh" aria-hidden="true"></div>
+
+    <!-- Industrial Registration Coordinates -->
+    <div class="partner-deco-coord partner-deco-coord-tl" aria-hidden="true">
+      <span>+</span>
+      <span>SEC // 05 - CLIENT &amp; PARTNER NETWORK</span>
+    </div>
+    <div class="partner-deco-coord partner-deco-coord-tr" aria-hidden="true">
+      <span>[ TIER-1 INDUSTRIAL ALLIANCES ]</span>
+      <span>&#x2197;</span>
+    </div>
+
+    <div class="partner-container">
+      <div class="partner-layout-grid">
+        
+        <!-- LEFT: Staggered Circular Partner Logo Cluster -->
+        <div class="partner-cluster-wrapper" aria-label="Partner Company Logos">
+          <div class="partner-cluster-bg-ring" aria-hidden="true"></div>
+
+          <!-- Row 1: 4 Circles -->
+          <div class="partner-row partner-row-1">
+            <div class="partner-circle" title="Tata Steel" style="--float-delay: 0s;">
+              <img src="assets/partners/tata_steel.svg" alt="Tata Steel" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="Reliance Industries" style="--float-delay: 0.9s;">
+              <img src="assets/partners/reliance.svg" alt="Reliance Industries" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="JSW Steel" style="--float-delay: 1.8s;">
+              <img src="assets/partners/jsw_steel.svg" alt="JSW Steel" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="Adani Group" style="--float-delay: 2.7s;">
+              <img src="assets/partners/adani.svg" alt="Adani Group" class="partner-logo-img" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Row 2: 3 Circles (Staggered offset) -->
+          <div class="partner-row partner-row-2">
+            <div class="partner-circle" title="Aditya Birla Group" style="--float-delay: 0.5s;">
+              <img src="assets/partners/aditya_birla.svg" alt="Aditya Birla Group" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="Indian Oil Corporation" style="--float-delay: 1.4s;">
+              <img src="assets/partners/indian_oil.svg" alt="Indian Oil Corporation" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="Jindal Steel &amp; Power" style="--float-delay: 2.3s;">
+              <img src="assets/partners/jindal_steel.svg" alt="Jindal Steel and Power" class="partner-logo-img" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Row 3: 4 Circles -->
+          <div class="partner-row partner-row-3">
+            <div class="partner-circle" title="Hindustan Petroleum (HPCL)" style="--float-delay: 0.7s;">
+              <img src="assets/partners/hindustan_petroleum.svg" alt="Hindustan Petroleum HPCL" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="Bhushan Power &amp; Steel" style="--float-delay: 1.6s;">
+              <img src="assets/partners/bhushan_power.svg" alt="Bhushan Power and Steel" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="Haldia Petrochemicals" style="--float-delay: 2.5s;">
+              <img src="assets/partners/haldia_petrochemicals.svg" alt="Haldia Petrochemicals" class="partner-logo-img" loading="lazy" />
+            </div>
+            <div class="partner-circle" title="Godrej" style="--float-delay: 1.1s;">
+              <img src="assets/partners/godrej.svg" alt="Godrej" class="partner-logo-img" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Editorial Content Panel -->
+        <div class="partner-content-panel">
+          <div class="partner-eyebrow">
+            <span class="eyebrow-pulse-dot" aria-hidden="true"></span>
+            <span>BUILT ON TRUST</span>
+          </div>
+
+          <h2 class="partner-title">
+            Trusted by Industry.<br>
+            <span class="partner-title-highlight">Connected by Quality.</span>
+          </h2>
+
+          <div class="partner-title-divider" aria-hidden="true"></div>
+
+          <p class="partner-description">
+            Strong business relationships are built on trust, consistent quality, and dependable steel supply. We value the partnerships that help us support diverse industrial requirements and build long-term relationships.
+          </p>
+
+          <div class="partner-statement-card">
+            <div class="statement-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F45108" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="statement-text">
+              <span class="statement-title">OUR CLIENTS &amp; PARTNERS</span>
+              <span class="statement-sub">Supporting Tier-1 Energy, Petrochemical &amp; Infrastructure Projects</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Brand Strip -->
+    <div class="partner-bottom-strip">
+      <div class="partner-strip-content">
+        <span>QUALITY MATERIALS</span>
+        <span class="strip-separator" aria-hidden="true">&bull;</span>
+        <span>DEPENDABLE SUPPLY</span>
+        <span class="strip-separator" aria-hidden="true">&bull;</span>
+        <span>LONG-TERM PARTNERSHIPS</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==============================================
+       INDUSTRIES WE SERVE SECTION
+       Signature Apollo Orange Canvas with Floating White Showcase Cards
+       Assets: Serving Global Mission-Critical Sectors
+       ============================================== -->
+  <section class="apollo-industries-section" id="industriesSection" aria-label="Industries We Serve">
+    
+    <!-- Subtle Precision Grid Mesh Overlay -->
+    <div class="industries-grid-mesh" aria-hidden="true"></div>
+
+    <div class="industries-container">
+      
+      <!-- Section Header -->
+      <div class="industries-header">
+        <div class="industries-badge">
+          <span class="badge-dot"></span>
+          <span>INDUSTRIES &amp; APPLICATIONS</span>
+        </div>
+        <h2 class="industries-title">Industries We Serve</h2>
+        <div class="industries-title-bar"></div>
+        <p class="industries-subtitle">
+          Reliable steel solutions for the industries that keep the world moving. We supply certified high-performance materials engineered to meet the stringent demands of mission-critical industrial applications.
+        </p>
+      </div>
+
+      <!-- 3-Column x 2-Row Industries Card Grid -->
+      <div class="industries-grid">
+        
+        <!-- Industry 01: Petrochemical & Refining -->
+        <article class="industry-card" data-industry="petrochemical">
+          <div class="industry-card-media">
+            <img 
+              src="assets/Serving Global Mission-Critical Sectors/petrochemical.webp" 
+              alt="Oil, Gas and Petrochemical Refining Infrastructure" 
+              class="industry-img"
+              loading="lazy"
+              width="1424"
+              height="745"
+            />
+            <div class="industry-media-overlay" aria-hidden="true"></div>
+            <div class="industry-card-badges">
+              <span class="industry-index-tag">01</span>
+              <span class="industry-sector-pill">Energy &amp; Refining</span>
+            </div>
+          </div>
+          <div class="industry-card-body">
+            <h3 class="industry-name">Oil, Gas &amp; Petrochemical</h3>
+            <p class="industry-desc">
+              Supplying corrosion-resistant nickel alloys, heavy-wall pipes, and forged flanges for high-pressure cracking units, distillation columns, and aggressive refinery environments.
+            </p>
+            <div class="industry-card-footer">
+              <a href="#industriesSection" class="industry-link" aria-label="Explore Oil, Gas and Petrochemical Applications">
+                <span>Explore Industry</span>
+                <svg class="industry-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Industry 02: Marine & Offshore Engineering -->
+        <article class="industry-card" data-industry="marine">
+          <div class="industry-card-media">
+            <img 
+              src="assets/Serving Global Mission-Critical Sectors/marine.webp" 
+              alt="Marine and Offshore Drilling and Production Platforms" 
+              class="industry-img"
+              loading="lazy"
+              width="1347"
+              height="784"
+            />
+            <div class="industry-media-overlay" aria-hidden="true"></div>
+            <div class="industry-card-badges">
+              <span class="industry-index-tag">02</span>
+              <span class="industry-sector-pill">Maritime &amp; Offshore</span>
+            </div>
+          </div>
+          <div class="industry-card-body">
+            <h3 class="industry-name">Marine &amp; Offshore Engineering</h3>
+            <p class="industry-desc">
+              Delivering high-integrity duplex, super duplex, and cupro-nickel materials certified to resist harsh saltwater pitting, marine bio-fouling, and subsea mechanical fatigue.
+            </p>
+            <div class="industry-card-footer">
+              <a href="#industriesSection" class="industry-link" aria-label="Explore Marine and Offshore Applications">
+                <span>Explore Industry</span>
+                <svg class="industry-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Industry 03: Power Generation & Nuclear Energy -->
+        <article class="industry-card" data-industry="power">
+          <div class="industry-card-media">
+            <img 
+              src="assets/Serving Global Mission-Critical Sectors/nuclear and thermal power.webp" 
+              alt="Nuclear and Thermal Power Generation Plant" 
+              class="industry-img"
+              loading="lazy"
+              width="1406"
+              height="768"
+            />
+            <div class="industry-media-overlay" aria-hidden="true"></div>
+            <div class="industry-card-badges">
+              <span class="industry-index-tag">03</span>
+              <span class="industry-sector-pill">Thermal &amp; Nuclear</span>
+            </div>
+          </div>
+          <div class="industry-card-body">
+            <h3 class="industry-name">Power Generation &amp; Nuclear</h3>
+            <p class="industry-desc">
+              Providing high-temperature alloy steel tubes, boiler plates, and precision fittings built for ultra-supercritical steam cycles, nuclear cooling, and thermal plants.
+            </p>
+            <div class="industry-card-footer">
+              <a href="#industriesSection" class="industry-link" aria-label="Explore Power Generation and Nuclear Applications">
+                <span>Explore Industry</span>
+                <svg class="industry-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Industry 04: Aerospace & Defense -->
+        <article class="industry-card" data-industry="aerospace">
+          <div class="industry-card-media">
+            <img 
+              src="assets/Serving Global Mission-Critical Sectors/aerospace and defence.webp" 
+              alt="Aerospace and Defense Aircraft Assembly Facility" 
+              class="industry-img"
+              loading="lazy"
+              width="1379"
+              height="768"
+            />
+            <div class="industry-media-overlay" aria-hidden="true"></div>
+            <div class="industry-card-badges">
+              <span class="industry-index-tag">04</span>
+              <span class="industry-sector-pill">Aviation &amp; Defense</span>
+            </div>
+          </div>
+          <div class="industry-card-body">
+            <h3 class="industry-name">Aerospace &amp; Defense</h3>
+            <p class="industry-desc">
+              Supplying premium stainless grades, titanium, and specialized alloys with strict concentricity, tight tolerances, and full heat traceability for mission-critical aircraft assembly.
+            </p>
+            <div class="industry-card-footer">
+              <a href="#industriesSection" class="industry-link" aria-label="Explore Aerospace and Defense Applications">
+                <span>Explore Industry</span>
+                <svg class="industry-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Industry 05: Heavy Engineering & Infrastructure -->
+        <article class="industry-card" data-industry="engineering">
+          <div class="industry-card-media">
+            <img 
+              src="assets/Serving Global Mission-Critical Sectors/heavt engineering.webp" 
+              alt="Heavy Engineering and Infrastructure Construction Site" 
+              class="industry-img"
+              loading="lazy"
+              width="1104"
+              height="974"
+            />
+            <div class="industry-media-overlay" aria-hidden="true"></div>
+            <div class="industry-card-badges">
+              <span class="industry-index-tag">05</span>
+              <span class="industry-sector-pill">Infrastructure &amp; Civil</span>
+            </div>
+          </div>
+          <div class="industry-card-body">
+            <h3 class="industry-name">Heavy Engineering &amp; Infrastructure</h3>
+            <p class="industry-desc">
+              Engineered structural sections, precision ground bars, and high-tensile industrial fasteners powering civil megaprojects, heavy machinery, and industrial crane frameworks.
+            </p>
+            <div class="industry-card-footer">
+              <a href="#industriesSection" class="industry-link" aria-label="Explore Heavy Engineering and Infrastructure Applications">
+                <span>Explore Industry</span>
+                <svg class="industry-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Industry 06: Process Piping & Industrial Plants -->
+        <article class="industry-card" data-industry="piping">
+          <div class="industry-card-media">
+            <img 
+              src="assets/Serving Global Mission-Critical Sectors/precision industrial piping.webp" 
+              alt="Precision Industrial Process Piping Systems and Flange Assemblies" 
+              class="industry-img"
+              loading="lazy"
+              width="1518"
+              height="688"
+            />
+            <div class="industry-media-overlay" aria-hidden="true"></div>
+            <div class="industry-card-badges">
+              <span class="industry-index-tag">06</span>
+              <span class="industry-sector-pill">Process Piping</span>
+            </div>
+          </div>
+          <div class="industry-card-body">
+            <h3 class="industry-name">Process Piping &amp; Industrial Plants</h3>
+            <p class="industry-desc">
+              Engineered seamless pipes, butt weld elbows, and precision flanges ensuring zero-leakage fluid, chemical, and steam conveyance in critical process networks.
+            </p>
+            <div class="industry-card-footer">
+              <a href="#industriesSection" class="industry-link" aria-label="Explore Process Piping and Industrial Plants Applications">
+                <span>Explore Industry</span>
+                <svg class="industry-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Section Footer / Closing Value Statement -->
+      <div class="industries-bottom-bar">
+        <div class="industries-bottom-box">
+          <div class="bottom-icon-indicator" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F45108" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <p class="bottom-statement-text">
+            <strong>One Reliable Source for Diverse Industrial Requirements.</strong> Certified material traceability, precision cutting, and specialized inventory tailored to project procurement schedules worldwide.
+          </p>
+          <a href="#productsSection" class="industries-cta-btn">
+            <span>View All Materials</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       GLOBAL EXPORT DESTINATIONS SECTION
+       Directly follows Industries We Serve Section
+       Background: Cargo Ship & Airplane Logistics Panorama
+       ============================================== -->
+  <section class="apollo-export-section" id="exportDestinationsSection" aria-label="Global Export Destinations">
+    
+    <!-- Ambient Technical Grid Overlay -->
+    <div class="export-grid-mesh" aria-hidden="true"></div>
+
+    <div class="export-container">
+      
+      <!-- Section Header -->
+      <div class="export-header">
+        <div class="export-badge">
+          <span class="export-badge-dot" aria-hidden="true"></span>
+          <span>OUR GLOBAL REACH</span>
+        </div>
+        <h2 class="export-title">Global Export Destinations</h2>
+        <div class="export-title-bar" aria-hidden="true"></div>
+        <p class="export-subtitle">
+          Connecting Indian Steel Excellence with Global Markets.
+        </p>
+      </div>
+
+      <!-- Functional Real-Time Search Bar -->
+      <div class="export-search-wrap">
+        <div class="export-search-box">
+          <span class="export-search-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input 
+            type="text" 
+            id="homeCountrySearch" 
+            class="export-search-input" 
+            placeholder="Search countries by name..." 
+            aria-label="Search export countries"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button type="button" id="homeClearSearchBtn" class="export-clear-btn" aria-label="Clear Search Input">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 24 Perfectly Aligned Country Cards in a Responsive Grid -->
+      <div class="export-country-grid" id="homeCountryGrid">
+        
+        <article class="export-country-card" data-country="United States">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/us.svg" alt="Flag of United States" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">United States</h3>
+        </article>
+
+        <article class="export-country-card" data-country="United Kingdom">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/gb.svg" alt="Flag of United Kingdom" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">United Kingdom</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Germany">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/de.svg" alt="Flag of Germany" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Germany</h3>
+        </article>
+
+        <article class="export-country-card" data-country="United Arab Emirates">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/ae.svg" alt="Flag of United Arab Emirates" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">United Arab Emirates</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Saudi Arabia">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/sa.svg" alt="Flag of Saudi Arabia" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Saudi Arabia</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Qatar">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/qa.svg" alt="Flag of Qatar" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Qatar</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Oman">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/om.svg" alt="Flag of Oman" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Oman</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Kuwait">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/kw.svg" alt="Flag of Kuwait" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Kuwait</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Japan">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/jp.svg" alt="Flag of Japan" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Japan</h3>
+        </article>
+
+        <article class="export-country-card" data-country="South Korea">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/kr.svg" alt="Flag of South Korea" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">South Korea</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Singapore">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/sg.svg" alt="Flag of Singapore" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Singapore</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Malaysia">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/my.svg" alt="Flag of Malaysia" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Malaysia</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Indonesia">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/id.svg" alt="Flag of Indonesia" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Indonesia</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Thailand">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/th.svg" alt="Flag of Thailand" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Thailand</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Italy">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/it.svg" alt="Flag of Italy" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Italy</h3>
+        </article>
+
+        <article class="export-country-card" data-country="France">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/fr.svg" alt="Flag of France" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">France</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Spain">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/es.svg" alt="Flag of Spain" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Spain</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Netherlands">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/nl.svg" alt="Flag of Netherlands" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Netherlands</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Australia">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/au.svg" alt="Flag of Australia" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Australia</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Canada">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/ca.svg" alt="Flag of Canada" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Canada</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Brazil">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/br.svg" alt="Flag of Brazil" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Brazil</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Mexico">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/mx.svg" alt="Flag of Mexico" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Mexico</h3>
+        </article>
+
+        <article class="export-country-card" data-country="South Africa">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/za.svg" alt="Flag of South Africa" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">South Africa</h3>
+        </article>
+
+        <article class="export-country-card" data-country="Turkey">
+          <div class="export-flag-wrap">
+            <img src="assets/flags/tr.svg" alt="Flag of Turkey" class="export-flag-img" loading="lazy" width="76" height="51" />
+          </div>
+          <h3 class="export-country-name">Turkey</h3>
+        </article>
+
+      </div>
+
+      <!-- No Match Message -->
+      <div class="export-no-match" id="exportNoMatch" style="display: none;">
+        <p>No matching export countries found. <button type="button" class="export-reset-link" id="exportResetSearchBtn">Show all 24 countries</button></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       GET A QUOTE CTA SECTION
+       Signature Apollo Orange Accent Canvas
+       ============================================== -->
+  <section class="apollo-cta-section" id="ctaQuoteSection" aria-label="Get a Quote">
+    <div class="cta-mesh-overlay" aria-hidden="true"></div>
+    <div class="cta-container">
+      <div class="cta-content-wrapper">
+        <div class="cta-text-area">
+          <div class="cta-badge">
+            <span class="cta-badge-dot" aria-hidden="true"></span>
+            <span>FAST RESPONSE &amp; WORLDWIDE DISPATCH</span>
+          </div>
+          <h2 class="cta-heading">Looking for Reliable Steel Solutions?</h2>
+          <p class="cta-description">
+            Connect with our team for product availability, technical specifications, and competitive quotations.
+          </p>
+        </div>
+        <div class="cta-actions-area">
+          <a href="mailto:apollo_forge@yahoo.com?subject=Inquiry%20%2F%20Request%20for%20Quote%20-%20Apollo%20Forge%20%26%20Fitting&amp;body=Dear%20Apollo%20Forge%20Team%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%3A%0A-%20Product%20%2F%20Material%3A%0A-%20Size%20%2F%20Schedule%20%2F%20Rating%3A%0A-%20Quantity%3A%0A-%20Destination%20Port%20%2F%20City%3A%0A%0ACompany%20Name%3A%0AContact%20Person%3A%0APhone%20Number%3A%0A" class="btn-cta-primary-quote" id="ctaQuoteActionBtn">
+            <span>GET A QUOTE</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contactSection" class="btn-cta-secondary-contact">
+            <span>CONTACT OUR TEAM</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       COMPLETE PROFESSIONAL FOOTER
+       Industrial Dark Charcoal with Orange Accents
+       ============================================== -->
+  <footer class="apollo-footer" id="contactSection" aria-label="Apollo Forge &amp; Fitting Footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Company Information -->
+        <div class="footer-col footer-col-company">
+          <div class="footer-logo-card">
+            <img 
+              src="logo/Apollo Forge &amp; Fitting Logo.png" 
+              alt="Apollo Forge and Fitting - Steel Makes World Around Us" 
+              class="footer-brand-logo" 
+              width="1023" 
+              height="233" 
+              loading="lazy" 
+            />
+          </div>
+
+          <div class="footer-iso-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F45108" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>AN ISO 9001:2015 CERTIFIED COMPANY</span>
+          </div>
+
+          <p class="footer-company-desc">
+            Manufacturer, Stockist, Supplier and Specialist in Carbon Steel, Stainless Steel, Ferrous and Non-Ferrous Materials, LR Piggable Bonds from 3D to 22D, as per customer requirements.
+          </p>
+
+          <div class="footer-materials-tags">
+            <span class="f-mat-tag">Carbon Steel</span>
+            <span class="f-mat-tag">Stainless Steel</span>
+            <span class="f-mat-tag">Alloy Steel</span>
+            <span class="f-mat-tag">Forged Flanges</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <div class="footer-col-title-bar" aria-hidden="true"></div>
+          <ul class="footer-links-list">
+            <li><a href="#heroSection" class="footer-link"><span>Home</span></a></li>
+            <li><a href="#whyUsSection" class="footer-link"><span>About Us</span></a></li>
+            <li><a href="#productsSection" class="footer-link"><span>Products</span></a></li>
+            <li><a href="#productsSection" class="footer-link"><span>Materials</span></a></li>
+            <li><a href="#industriesSection" class="footer-link"><span>Industries We Serve</span></a></li>
+            <li><a href="#exportDestinationsSection" class="footer-link"><span>Global Export Destinations</span></a></li>
+            <li><a href="#contactSection" class="footer-link"><span>Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Details (with Interactive Copy Buttons) -->
+        <div class="footer-col footer-col-contact">
+          <h3 class="footer-col-title">Contact Details</h3>
+          <div class="footer-col-title-bar" aria-hidden="true"></div>
+          
+          <ul class="footer-contact-list">
+            <!-- Office Address -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Office Address</span>
+                <p class="f-contact-text" id="textOfficeAddress">Ground Floor, Shop No. 3, 14 Badsha Building, Falkland Road, 6th X Lane, Khetwadi, Mumbai - 400 004, India.</p>
+              </div>
+              <button type="button" class="f-copy-btn" data-copy-target="textOfficeAddress" aria-label="Copy Office Address" title="Copy Address">
+                <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="copy-tooltip">Copy</span>
+              </button>
+            </li>
+
+            <!-- Telephone Numbers -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Telephone</span>
+                <div class="f-phone-row">
+                  <a href="tel:+912267521183" class="f-contact-link" id="textTel1">+91 22 6752 1183</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textTel1" aria-label="Copy Telephone Number 1" title="Copy Number">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+                <div class="f-phone-row">
+                  <a href="tel:+912266541028" class="f-contact-link" id="textTel2">+91 22 6654 1028</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textTel2" aria-label="Copy Telephone Number 2" title="Copy Number">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Direct Contact / WhatsApp -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon f-icon-whatsapp" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Direct Contact / WhatsApp</span>
+                <div class="f-phone-row">
+                  <a href="https://wa.me/919987586677" target="_blank" rel="noopener noreferrer" class="f-contact-link" id="textWhatsApp">+91 99875 86677</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textWhatsApp" aria-label="Copy WhatsApp Number" title="Copy Number">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Email Address -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Email Address</span>
+                <div class="f-phone-row">
+                  <a href="mailto:apollo_forge@yahoo.com" class="f-contact-link" id="textEmail">apollo_forge@yahoo.com</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textEmail" aria-label="Copy Email Address" title="Copy Email">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Official Website -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Official Website</span>
+                <div class="f-phone-row">
+                  <a href="http://www.apolloforge.in/" target="_blank" rel="noopener noreferrer" class="f-contact-link" id="textWebsite">www.apolloforge.in</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textWebsite" aria-label="Copy Website Address" title="Copy Website">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Column 4: Visit Our Office (Google Map + Directions) -->
+        <div class="footer-col footer-col-office">
+          <h3 class="footer-col-title">Visit Our Office</h3>
+          <div class="footer-col-title-bar" aria-hidden="true"></div>
+          
+          <div class="footer-office-badge">
+            <span class="office-city-tag">MUMBAI, INDIA</span>
+            <span class="office-status-dot" aria-hidden="true"></span>
+            <span class="office-status-text">HQ &amp; Stockyard</span>
+          </div>
+
+          <p class="footer-office-location">
+            Ground Floor, Shop No. 3, 14 Badsha Building, Falkland Road, 6th X Lane, Khetwadi, Mumbai - 400 004, India.
+          </p>
+
+          <a 
+            href="https://maps.google.com/?q=Badsha+Building,+Falkland+Road,+6th+X+Lane,+Khetwadi,+Mumbai+-+400004" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-footer-directions"
+            aria-label="Get Directions to Apollo Forge and Fitting on Google Maps"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            <span>GET DIRECTIONS</span>
+          </a>
+
+          <!-- Interactive Embedded Location Map -->
+          <div class="footer-map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.578619623637!2d72.8214154!3d18.9610636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6c039987f1%3A0x6b107e3a241477ea!2sFalkland%20Rd%2C%20Khetwadi%2C%20Mumbai%2C%20Maharashtra%20400004!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              title="Apollo Forge and Fitting Office Location Map"
+              class="footer-map-frame"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright & Developer Credit Row -->
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-left">
+          <p>© <span id="currentYear">2026</span> Apollo Forge and Fitting. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+          <p>
+            <span>Design &amp; SEO by</span> 
+            <a href="https://sunmargindia.com/" target="_blank" rel="noopener noreferrer" class="sunmarg-link">Sunmarg India</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       FLOATING WHATSAPP & PHONE CALL BUTTONS
+       Globally visible on right side of viewport
+       ============================================== -->
+  <aside class="floating-contact-dock" aria-label="Quick Contact Actions">
+    <!-- WhatsApp Floating Action Button (Top) -->
+    <a 
+      href="https://wa.me/919987586677?text=Hello%20Apollo%20Forge%20%26%20Fitting%2C%20I%20would%20like%20to%20inquire%20about%20your%20products." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="float-btn float-btn-whatsapp" 
+      aria-label="Chat with Apollo Forge on WhatsApp"
+    >
+      <svg class="float-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Phone Call Floating Action Button (Bottom) -->
+    <a 
+      href="tel:+912267521183" 
+      class="float-btn float-btn-phone" 
+      aria-label="Call Apollo Forge at +91 22 6752 1183"
+    >
+      <svg class="float-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span class="float-tooltip">Call +91 22 6752 1183</span>
+    </a>
+  </aside>
 
   <script type="module" src="main.js"></script>
 </body>

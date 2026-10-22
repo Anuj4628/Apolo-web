@@ -249,10 +249,273 @@
     });
   }
 
-  // Initialize 3D Card Tilt
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initWhyCardsTilt);
-  } else {
+  /**
+   * Value Added Services - Interactive 3D Flip Cards Controller
+   * Provides:
+   * - Mobile / touch tap-to-flip interaction
+   * - Tap again to return to front
+   * - Keyboard accessibility (Enter and Space key support)
+   * - Desktop hover reset on pointerleave
+   */
+  function initVasFlipCards() {
+    const flippers = document.querySelectorAll('.vas-card-flipper');
+    if (!flippers.length) return;
+
+    flippers.forEach(function (card) {
+      // Click / Tap event (handles mobile touch and mouse click)
+      card.addEventListener('click', function (e) {
+        card.classList.toggle('is-flipped');
+      });
+
+      // Keyboard accessible flip
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.classList.toggle('is-flipped');
+        }
+      });
+
+      // On desktop mouse leave, remove flipped state so hover resets naturally
+      card.addEventListener('pointerleave', function () {
+        if (window.matchMedia('(hover: hover)').matches) {
+          card.classList.remove('is-flipped');
+        }
+      });
+    });
+  }
+
+  /**
+   * Global Export Destinations - Real-Time Country Filter
+   */
+  function initHomeCountrySearch() {
+    const searchInput = document.getElementById('homeCountrySearch');
+    const clearBtn = document.getElementById('homeClearSearchBtn');
+    const grid = document.getElementById('homeCountryGrid');
+    const noMatch = document.getElementById('exportNoMatch');
+    const resetBtn = document.getElementById('exportResetSearchBtn');
+
+    if (!searchInput || !grid) return;
+
+    const cards = grid.querySelectorAll('.export-country-card');
+
+    function filterCountries() {
+      const q = searchInput.value.trim().toLowerCase();
+      let matchCount = 0;
+
+      cards.forEach(function (card) {
+        const country = (card.getAttribute('data-country') || '').toLowerCase();
+        const isMatch = !q || country.includes(q);
+        card.style.display = isMatch ? 'flex' : 'none';
+        if (isMatch) matchCount++;
+      });
+
+      if (clearBtn) {
+        clearBtn.style.display = q ? 'inline-flex' : 'none';
+      }
+
+      if (noMatch) {
+        noMatch.style.display = matchCount === 0 ? 'block' : 'none';
+      }
+    }
+
+    searchInput.addEventListener('input', filterCountries);
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        searchInput.focus();
+        filterCountries();
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        searchInput.focus();
+        filterCountries();
+      });
+    }
+  }
+
+  /**
+   * Sticky Navbar Scroll Elevation & Mobile Menu Controller
+   */
+  function initStickyNavbar() {
+    const header = document.getElementById('apolloHeader');
+    const getQuoteBtn = document.getElementById('getQuoteBtn');
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const drawer = document.getElementById('mobileNavDrawer');
+
+    if (header) {
+      const handleScroll = function () {
+        if (window.scrollY > 15) {
+          header.classList.add('is-scrolled');
+        } else {
+          header.classList.remove('is-scrolled');
+        }
+      };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+    }
+
+    // Note: Per requirements, About Us, Products, Materials, Certificates, Contact,
+    // and Get Quote remain visible but non-clickable for now. Only Home is functional.
+
+    if (mobileBtn && drawer) {
+      mobileBtn.addEventListener('click', function () {
+        const isOpen = drawer.classList.toggle('is-open');
+        mobileBtn.classList.toggle('is-active', isOpen);
+        mobileBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        drawer.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      });
+
+      // Close drawer on link click
+      drawer.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          drawer.classList.remove('is-open');
+          mobileBtn.classList.remove('is-active');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+          drawer.setAttribute('aria-hidden', 'true');
+        });
+      });
+    }
+  }
+
+  /**
+   * Footer Contact Copy to Clipboard Controller
+   */
+  function initFooterCopyButtons() {
+    const copyBtns = document.querySelectorAll('.f-copy-btn');
+    if (!copyBtns.length) return;
+
+    copyBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = btn.getAttribute('data-copy-target');
+        const targetEl = document.getElementById(targetId);
+        if (!targetEl) return;
+
+        const textToCopy = targetEl.innerText.trim();
+        const tooltip = btn.querySelector('.copy-tooltip');
+
+        function showCopiedFeedback() {
+          btn.classList.add('is-copied');
+          if (tooltip) tooltip.textContent = 'Copied!';
+          setTimeout(function () {
+            btn.classList.remove('is-copied');
+            if (tooltip) tooltip.textContent = 'Copy';
+          }, 2000);
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(textToCopy).then(showCopiedFeedback).catch(function () {
+            fallbackCopy(textToCopy, showCopiedFeedback);
+          });
+        } else {
+          fallbackCopy(textToCopy, showCopiedFeedback);
+        }
+      });
+    });
+
+    function fallbackCopy(text, callback) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        callback();
+      } catch (err) {
+        console.error('Fallback copy failed', err);
+      }
+      document.body.removeChild(textArea);
+    }
+  }
+
+  /**
+   * Dynamic Current Year in Footer
+   */
+  function initCurrentYear() {
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  }
+
+  /**
+   * Industrial Product Showcase Marquee Controller
+   * - Hidden when visitor is at the top of the page viewing the Hero Section
+   * - Revealed smoothly when visitor scrolls down past the Hero Section
+   * - Hidden again when visitor scrolls back to the top
+   * - Seamless 60FPS scroll performance with requestAnimationFrame throttling
+   */
+  function initProductMarquee() {
+    const marquee = document.getElementById('productMarqueeSection');
+    const hero = document.getElementById('heroSection');
+    if (!marquee) return;
+
+    let ticking = false;
+
+    function updateMarqueeVisibility() {
+      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+      // When at top of page (scrollY < 90), marquee remains hidden
+      if (scrollY < 90) {
+        marquee.classList.remove('is-visible');
+        ticking = false;
+        return;
+      }
+
+      if (hero) {
+        const heroRect = hero.getBoundingClientRect();
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        // Calculate the height of the hero currently visible inside the viewport
+        const visibleHeroHeight = Math.max(0, Math.min(heroRect.bottom, viewportHeight) - Math.max(heroRect.top, 0));
+
+        // If Hero Section is occupying more than 65% of viewport and is at the top, consider visitor viewing hero
+        if (visibleHeroHeight / viewportHeight > 0.65 && heroRect.top >= -60) {
+          marquee.classList.remove('is-visible');
+          ticking = false;
+          return;
+        }
+      }
+
+      // Visitor has scrolled down and Hero is no longer the main visible area
+      marquee.classList.add('is-visible');
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(updateMarqueeVisibility);
+        ticking = true;
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+
+    // Initial check
+    updateMarqueeVisibility();
+  }
+
+  // Initialize Interactive Features
+  function initApp() {
+    initStickyNavbar();
+    initProductMarquee();
     initWhyCardsTilt();
+    initVasFlipCards();
+    initHomeCountrySearch();
+    initFooterCopyButtons();
+    initCurrentYear();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApp);
+  } else {
+    initApp();
   }
 })();
