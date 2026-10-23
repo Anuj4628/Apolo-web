@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Apollo Forge &amp; Fitting - Precision Forged Components &amp; Industrial Piping</title>
+  <meta name="description" content="Apollo Forge &amp; Fitting is an ISO 9001:2015 certified manufacturer, stockist, and exporter of high-precision forged fittings, flanges, butt weld fittings, and industrial piping products." />
+  
+  <!-- Modern Industrial Typography: Barlow (Heading & Nav) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-industrial-theme">
+
+  <!-- ==============================================
+       NAVBAR (Clean, White, Premium)
+       Structure: [APOLLO LOGO] Home About Us Products Materials Certificates Contact [GET QUOTE]
+       ============================================== -->
+  <header class="apollo-header" id="apolloHeader">
+    <div class="nav-container">
+      <!-- Apollo Official Brand Logo -->
+      <div class="brand-area" id="brandLogoArea">
+        <a href="index.html" class="brand-link" aria-label="Apollo Forge &amp; Fitting Homepage">
+          <img 
+            src="logo/Apollo Forge & Fitting Logo.png" 
+            alt="Apollo Forge and Fitting - Steel Makes World Around Us" 
+            class="apollo-brand-img"
+            width="1023"
+            height="233"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </a>
+      </div>
+
+      <!-- Navigation Menu Items (Order: Home, About Us, Products, Materials, Certificates, Contact) -->
+      <nav class="nav-menu-wrapper" aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item">
+            <a href="index.html" class="nav-item-link">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="about.html" class="nav-item-link is-active" aria-current="page">About Us</a>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link is-disabled" aria-disabled="true">Products</span>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link is-disabled" aria-disabled="true">Materials</span>
+          </li>
+          <li class="nav-menu-item">
+            <span class="nav-item-link is-disabled" aria-disabled="true">Certificates</span>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#contactSection" class="nav-item-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Far Right: Get Quote Button & Mobile Hamburger -->
+      <div class="header-action-area">
+        <a href="mailto:apollo_forge@yahoo.com?subject=Request%20for%20Quote%20-%20Apollo%20Forge%20%26%20Fitting" class="btn-apollo-quote" id="getQuoteBtn" aria-label="Get Quote">
+          <span class="quote-text">Get Quote</span>
+          <svg class="quote-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button (Only Logo + Hamburger on Mobile) -->
+        <button class="mobile-hamburger" id="mobileMenuBtn" aria-label="Toggle navigation menu" type="button" aria-expanded="false">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li><a href="about.html" class="mobile-menu-link is-active">About Us</a></li>
+        <li><span class="mobile-menu-link is-disabled">Products</span></li>
+        <li><span class="mobile-menu-link is-disabled">Materials</span></li>
+        <li><span class="mobile-menu-link is-disabled">Certificates</span></li>
+        <li><a href="#contactSection" class="mobile-menu-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="mailto:apollo_forge@yahoo.com?subject=Request%20for%20Quote%20-%20Apollo%20Forge%20%26%20Fitting" class="btn-mobile-quote">
+          Get Quote
+          <svg class="quote-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:6px;" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ==============================================
+         SECTION 1: ABOUT HERO (Image-Led, Clean, Strong)
+         ============================================== -->
+    <section class="about-hero" id="aboutHero" aria-label="About Apollo Forge and Fitting Hero">
+      <img 
+        src="assets/images/about/about-hero.jpg" 
+        alt="Industrial manufacturing environment with precision forged fittings and flanges" 
+        class="about-hero-bg" 
+        fetchpriority="high"
+        loading="eager"
+      />
+      <div class="about-hero-overlay" aria-hidden="true"></div>
+
+      <div class="about-hero-inner">
+        <!-- Small Orange Label -->
+        <div class="about-hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          <span>ABOUT APOLLO FORGE &amp; FITTING</span>
+        </div>
+
+        <!-- Large Main Heading -->
+        <h1 class="about-hero-heading">
+          ENGINEERED FOR <span class="hero-text-accent">PRECISION.</span><br />
+          BUILT FOR <span class="hero-text-accent">INDUSTRY.</span>
+        </h1>
+
+        <!-- Subtle Orange Accent Line -->
+        <div class="about-hero-divider" aria-hidden="true"></div>
+
+        <!-- Supporting Paragraph -->
+        <p class="about-hero-desc">
+          Apollo Forge &amp; Fitting is a trusted manufacturer, supplier, and exporter of high-precision forged fittings, industrial flanges, butt weld fittings, and specialized piping products engineered for critical industrial applications across global markets.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 2: WHO WE ARE / OUR STORY (Warm Cream Background)
+         Editorial Layout: 50–55% Left Image + Right Content Block
+         ============================================== -->
+    <section class="about-story-section" id="whoWeAreSection" aria-label="Who We Are and Our Story">
+      <div class="about-container">
+        <div class="about-story-grid">
+          
+          <!-- Left: Large Industrial Image (50-55% visual presence) -->
+          <div class="about-story-media">
+            <img 
+              src="assets/images/about/about-who-we-are.jpg" 
+              alt="Precision-machined steel weld neck flange on workshop bench" 
+              loading="lazy" 
+              width="800" 
+              height="600" 
+            />
+            <div class="about-story-media-tag">
+              <span>01</span> FORGED &amp; MACHINED COMPONENTS
+            </div>
+          </div>
+
+          <!-- Right: Content Block -->
+          <div class="about-story-content">
+            <div class="about-story-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span>WHO WE ARE</span>
+            </div>
+
+            <h2 class="about-story-heading">
+              ENGINEERING STRENGTH.<br />
+              INDUSTRIAL CONFIDENCE.
+            </h2>
+
+            <div class="about-story-line" aria-hidden="true"></div>
+
+            <p class="about-story-text">
+              Apollo Forge &amp; Fitting operates as a dedicated industrial manufacturer and global exporter, delivering heavy-duty forged fittings, butt weld components, and specialized piping products built to withstand severe operating environments.
+            </p>
+
+            <p class="about-story-text">
+              With a steadfast commitment to precision machining, dimensional repeatability, and metallurgical integrity, our products serve demanding installations across oil &amp; gas refineries, petrochemical complexes, thermal power stations, and offshore infrastructure.
+            </p>
+
+            <p class="about-story-text">
+              Backed by comprehensive raw material sourcing, tight quality control, and extensive stockholding, we partner with EPC contractors, industrial fabricators, and engineering enterprises worldwide to fulfill standard and bespoke industrial piping requirements.
+            </p>
+
+            <!-- Technical Capability Highlights (Truthful, No Invented Numbers) -->
+            <div class="about-spec-strip">
+              <div class="about-spec-item">
+                <span class="about-spec-label">ISO 9001:2015</span>
+                <span class="about-spec-desc">Certified quality management and 100% material traceability.</span>
+              </div>
+              <div class="about-spec-item">
+                <span class="about-spec-label">BROAD SPECTRUM</span>
+                <span class="about-spec-desc">Carbon Steel, Stainless Steel, Duplex, &amp; Alloy grades.</span>
+              </div>
+              <div class="about-spec-item">
+                <span class="about-spec-label">GLOBAL SUPPLY</span>
+                <span class="about-spec-desc">Seaworthy export packaging and dependable delivery schedules.</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         QUALITY, ENGINEERING & GLOBAL COMMITMENT (Soft Light Orange)
+         Balanced Layout: Realistic Quality Control Image + 4 Compact Capability Cards
+         ============================================== -->
+    <section class="about-quality-section" id="qualitySection" aria-label="Quality, Engineering and Global Commitment">
+      <div class="about-container">
+        
+        <!-- Centered Header -->
+        <div class="about-section-header">
+          <div class="about-eyebrow-pill">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>STANDARDS &amp; RELIABILITY</span>
+          </div>
+          <h2 class="about-section-title">QUALITY THAT PERFORMS.<br />ENGINEERING YOU CAN TRUST.</h2>
+          <div class="about-title-bar" aria-hidden="true"></div>
+          <p class="about-section-subtitle">
+            Every fitting, flange, and piping component undergoes stringent dimensional checks and material verification to ensure dependable performance in critical environments.
+          </p>
+        </div>
+
+        <div class="about-quality-grid">
+          
+          <!-- Large Realistic Quality Control Image -->
+          <div class="about-quality-media">
+            <img 
+              src="assets/images/about/about-quality.jpg" 
+              alt="Quality dimensional inspection of forged steel flange with precision caliper and micrometer" 
+              loading="lazy" 
+              width="800" 
+              height="600" 
+            />
+            <div class="about-quality-media-tag">
+              <span>QC</span> METROLOGY &amp; DIMENSIONAL INSPECTION
+            </div>
+          </div>
+
+          <!-- 4 Compact Credibility Cards -->
+          <div class="about-quality-cards">
+            
+            <!-- Card 1: Precision Engineering -->
+            <div class="quality-card">
+              <div class="quality-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="quality-card-title">PRECISION ENGINEERING</h3>
+              <p class="quality-card-desc">
+                Strict dimensional tolerances, micro-inch surface finishes, and precise CNC machining tailored to exact project drawing specifications.
+              </p>
+            </div>
+
+            <!-- Card 2: Quality Focus -->
+            <div class="quality-card">
+              <div class="quality-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <h3 class="quality-card-title">QUALITY FOCUS</h3>
+              <p class="quality-card-desc">
+                ISO 9001:2015 certified quality framework featuring positive material identification (PMI), hydrostatic verification, and full heat traceability.
+              </p>
+            </div>
+
+            <!-- Card 3: Reliable Supply -->
+            <div class="quality-card">
+              <div class="quality-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+              </div>
+              <h3 class="quality-card-title">RELIABLE SUPPLY</h3>
+              <p class="quality-card-desc">
+                Extensive inventory stockholding, export-compliant timber packaging, and dedicated dispatch logistics for mission-critical project timelines.
+              </p>
+            </div>
+
+            <!-- Card 4: Global Industrial Standards -->
+            <div class="quality-card">
+              <div class="quality-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="quality-card-title">GLOBAL INDUSTRIAL STANDARDS</h3>
+              <p class="quality-card-desc">
+                Manufactured in strict conformity with international specifications including ASME, ASTM, DIN, EN, and BS engineering standards.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 5: FINAL CTA (Apollo Orange Signature Canvas)
+         ============================================== -->
+    <section class="apollo-cta-section" id="ctaQuoteSection" aria-label="Ready to Build with Precision">
+      <div class="cta-mesh-overlay" aria-hidden="true"></div>
+      <div class="cta-container">
+        <div class="cta-content-wrapper">
+          <div class="cta-text-area">
+            <div class="cta-badge">
+              <span class="cta-badge-dot" aria-hidden="true"></span>
+              <span>FAST RESPONSE &amp; WORLDWIDE DISPATCH</span>
+            </div>
+            <h2 class="cta-heading">READY TO BUILD WITH PRECISION?</h2>
+            <p class="cta-description">
+              Discuss your project specifications, material grades, or bulk procurement requirements with our technical sales engineers.
+            </p>
+          </div>
+          <div class="cta-actions-area">
+            <a href="mailto:apollo_forge@yahoo.com?subject=Inquiry%20%2F%20Request%20for%20Quote%20-%20Apollo%20Forge%20%26%20Fitting&amp;body=Dear%20Apollo%20Forge%20Team%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%3A%0A-%20Product%20%2F%20Material%3A%0A-%20Size%20%2F%20Schedule%20%2F%20Rating%3A%0A-%20Quantity%3A%0A-%20Destination%20Port%20%2F%20City%3A%0A%0ACompany%20Name%3A%0AContact%20Person%3A%0APhone%20Number%3A%0A" class="btn-cta-primary-quote" id="ctaQuoteActionBtn">
+              <span>GET QUOTE</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contactSection" class="btn-cta-secondary-contact">
+              <span>CONTACT US</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       SECTION 6: EXISTING COMPLETE PROFESSIONAL FOOTER
+       Industrial Dark Charcoal with Orange Accents
+       ============================================== -->
+  <footer class="apollo-footer" id="contactSection" aria-label="Apollo Forge &amp; Fitting Footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Company Information -->
+        <div class="footer-col footer-col-company">
+          <div class="footer-logo-card">
+            <img 
+              src="logo/Apollo Forge &amp; Fitting Logo.png" 
+              alt="Apollo Forge and Fitting - Steel Makes World Around Us" 
+              class="footer-brand-logo" 
+              width="1023" 
+              height="233" 
+              loading="lazy" 
+            />
+          </div>
+
+          <div class="footer-iso-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F45108" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>AN ISO 9001:2015 CERTIFIED COMPANY</span>
+          </div>
+
+          <p class="footer-company-desc">
+            Manufacturer, Stockist, Supplier and Specialist in Carbon Steel, Stainless Steel, Ferrous and Non-Ferrous Materials, LR Piggable Bonds from 3D to 22D, as per customer requirements.
+          </p>
+
+          <div class="footer-materials-tags">
+            <span class="f-mat-tag">Carbon Steel</span>
+            <span class="f-mat-tag">Stainless Steel</span>
+            <span class="f-mat-tag">Alloy Steel</span>
+            <span class="f-mat-tag">Forged Flanges</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <div class="footer-col-title-bar" aria-hidden="true"></div>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link"><span>Home</span></a></li>
+            <li><a href="about.html" class="footer-link"><span>About Us</span></a></li>
+            <li><a href="index.html#productsSection" class="footer-link"><span>Products</span></a></li>
+            <li><a href="index.html#productsSection" class="footer-link"><span>Materials</span></a></li>
+            <li><a href="index.html#industriesSection" class="footer-link"><span>Industries We Serve</span></a></li>
+            <li><a href="index.html#exportDestinationsSection" class="footer-link"><span>Global Export Destinations</span></a></li>
+            <li><a href="#contactSection" class="footer-link"><span>Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Details (with Interactive Copy Buttons) -->
+        <div class="footer-col footer-col-contact">
+          <h3 class="footer-col-title">Contact Details</h3>
+          <div class="footer-col-title-bar" aria-hidden="true"></div>
+          
+          <ul class="footer-contact-list">
+            <!-- Office Address -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Office Address</span>
+                <p class="f-contact-text" id="textOfficeAddress">Ground Floor, Shop No. 3, 14 Badsha Building, Falkland Road, 6th X Lane, Khetwadi, Mumbai - 400 004, India.</p>
+              </div>
+              <button type="button" class="f-copy-btn" data-copy-target="textOfficeAddress" aria-label="Copy Office Address" title="Copy Address">
+                <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="copy-tooltip">Copy</span>
+              </button>
+            </li>
+
+            <!-- Telephone Numbers -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Telephone</span>
+                <div class="f-phone-row">
+                  <a href="tel:+912267521183" class="f-contact-link" id="textTel1">+91 22 6752 1183</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textTel1" aria-label="Copy Telephone Number 1" title="Copy Number">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+                <div class="f-phone-row">
+                  <a href="tel:+912266595861" class="f-contact-link" id="textTel2">+91 22 6659 5861</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textTel2" aria-label="Copy Telephone Number 2" title="Copy Number">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Direct Contact / WhatsApp -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon f-icon-whatsapp" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Direct Contact / WhatsApp</span>
+                <div class="f-phone-row">
+                  <a href="https://wa.me/919987586677" target="_blank" rel="noopener noreferrer" class="f-contact-link" id="textWhatsApp">+91 99875 86677</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textWhatsApp" aria-label="Copy WhatsApp Number" title="Copy Number">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Email Address -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Email Address</span>
+                <div class="f-phone-row">
+                  <a href="mailto:apollo_forge@yahoo.com" class="f-contact-link" id="textEmail">apollo_forge@yahoo.com</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textEmail" aria-label="Copy Email Address" title="Copy Email">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Official Website -->
+            <li class="footer-contact-item">
+              <div class="f-contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="f-contact-body">
+                <span class="f-contact-label">Official Website</span>
+                <div class="f-phone-row">
+                  <a href="http://www.apolloforge.in/" target="_blank" rel="noopener noreferrer" class="f-contact-link" id="textWebsite">www.apolloforge.in</a>
+                  <button type="button" class="f-copy-btn" data-copy-target="textWebsite" aria-label="Copy Website Address" title="Copy Website">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Column 4: Visit Our Office (Google Map + Directions) -->
+        <div class="footer-col footer-col-office">
+          <h3 class="footer-col-title">Visit Our Office</h3>
+          <div class="footer-col-title-bar" aria-hidden="true"></div>
+          
+          <div class="footer-office-badge">
+            <span class="office-city-tag">MUMBAI, INDIA</span>
+            <span class="office-status-dot" aria-hidden="true"></span>
+            <span class="office-status-text">HQ &amp; Stockyard</span>
+          </div>
+
+          <p class="footer-office-location">
+            Ground Floor, Shop No. 3, 14 Badsha Building, Falkland Road, 6th X Lane, Khetwadi, Mumbai - 400 004, India.
+          </p>
+
+          <a 
+            href="https://maps.google.com/?q=Badsha+Building,+Falkland+Road,+6th+X+Lane,+Khetwadi,+Mumbai+-+400004" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-footer-directions"
+            aria-label="Get Directions to Apollo Forge and Fitting on Google Maps"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            <span>GET DIRECTIONS</span>
+          </a>
+
+          <!-- Interactive Embedded Location Map -->
+          <div class="footer-map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.578619623637!2d72.8214154!3d18.9610636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6c039987f1%3A0x6b107e3a241477ea!2sFalkland%20Rd%2C%20Khetwadi%2C%20Mumbai%2C%20Maharashtra%20400004!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              title="Apollo Forge and Fitting Office Location Map"
+              class="footer-map-frame"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright & Developer Credit Row -->
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-left">
+          <p>© <span id="currentYear">2026</span> Apollo Forge and Fitting. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+          <p>
+            <span>Design &amp; SEO by</span> 
+            <a href="https://sunmargindia.com/" target="_blank" rel="noopener noreferrer" class="sunmarg-link">Sunmarg India</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       FLOATING WHATSAPP & PHONE CALL BUTTONS
+       Globally visible on right side of viewport
+       ============================================== -->
+  <aside class="floating-contact-dock" aria-label="Quick Contact Actions">
+    <!-- WhatsApp Floating Action Button (Top) -->
+    <a 
+      href="https://wa.me/919987586677?text=Hello%20Apollo%20Forge%20%26%20Fitting%2C%20I%20would%20like%20to%20inquire%20about%20your%20products." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="float-btn float-btn-whatsapp" 
+      aria-label="Chat with Apollo Forge on WhatsApp"
+    >
+      <svg class="float-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Phone Call Floating Action Button (Bottom) -->
+    <a 
+      href="tel:+912267521183" 
+      class="float-btn float-btn-phone" 
+      aria-label="Call Apollo Forge at +91 22 6752 1183"
+    >
+      <svg class="float-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span class="float-tooltip">Call +91 22 6752 1183</span>
+    </a>
+  </aside>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

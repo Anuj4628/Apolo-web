@@ -10,148 +10,119 @@
 (function () {
   'use strict';
 
-  // Constants
-  const SLIDE_DURATION = 5500; // 5.5 seconds per slide
-  const TOTAL_SLIDES = 4;
+  function initHeroSlider() {
+    const slides = document.querySelectorAll('.hero-slide');
+    if (!slides.length) return;
 
-  // DOM Elements
-  const slides = document.querySelectorAll('.hero-slide');
-  const currentNumEl = document.getElementById('slideCurrentNum');
-  const progressFillEl = document.getElementById('slideProgressFill');
-  const pills = document.querySelectorAll('.slide-pill');
-  const prevBtn = document.getElementById('prevSlideBtn');
-  const nextBtn = document.getElementById('nextSlideBtn');
+    const SLIDE_DURATION = 5500; // 5.5 seconds per slide
+    const TOTAL_SLIDES = slides.length;
+    const currentNumEl = document.getElementById('slideCurrentNum');
+    const progressFillEl = document.getElementById('slideProgressFill');
+    const pills = document.querySelectorAll('.slide-pill');
+    const prevBtn = document.getElementById('prevSlideBtn');
+    const nextBtn = document.getElementById('nextSlideBtn');
 
-  let currentSlideIndex = 0;
-  let slideStartTime = Date.now();
-  let animationFrameId = null;
+    let currentSlideIndex = 0;
+    let slideStartTime = Date.now();
+    let animationFrameId = null;
 
-  /**
-   * Format single digit to 2 digits (e.g. 1 -> "01")
-   */
-  function formatIndex(idx) {
-    return String(idx + 1).padStart(2, '0');
-  }
-
-  /**
-   * Switch to a specific slide index
-   */
-  function goToSlide(targetIndex) {
-    // Wrap index safely within 0 .. TOTAL_SLIDES - 1
-    const newIndex = (targetIndex + TOTAL_SLIDES) % TOTAL_SLIDES;
-    if (newIndex === currentSlideIndex && slides[currentSlideIndex].classList.contains('active')) {
-      return;
+    function formatIndex(idx) {
+      return String(idx + 1).padStart(2, '0');
     }
 
-    // Deactivate all slides
-    slides.forEach((slide) => {
-      slide.classList.remove('active');
+    function goToSlide(targetIndex) {
+      const newIndex = (targetIndex + TOTAL_SLIDES) % TOTAL_SLIDES;
+      if (newIndex === currentSlideIndex && slides[currentSlideIndex].classList.contains('active')) {
+        return;
+      }
+
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+      });
+
+      currentSlideIndex = newIndex;
+      const activeSlide = slides[currentSlideIndex];
+      if (activeSlide) {
+        activeSlide.classList.add('active');
+      }
+
+      if (currentNumEl) {
+        currentNumEl.textContent = formatIndex(currentSlideIndex);
+      }
+
+      pills.forEach((pill, idx) => {
+        const isActive = idx === currentSlideIndex;
+        pill.classList.toggle('active', isActive);
+        pill.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      slideStartTime = Date.now();
+      if (progressFillEl) {
+        progressFillEl.style.width = '0%';
+      }
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlideIndex + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlideIndex - 1);
+    }
+
+    function tickSlider() {
+      const elapsed = Date.now() - slideStartTime;
+      const progress = Math.min((elapsed / SLIDE_DURATION) * 100, 100);
+
+      if (progressFillEl) {
+        progressFillEl.style.width = progress + '%';
+      }
+
+      if (elapsed >= SLIDE_DURATION) {
+        nextSlide();
+      }
+
+      animationFrameId = requestAnimationFrame(tickSlider);
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        nextSlide();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        prevSlide();
+      });
+    }
+
+    pills.forEach((pill) => {
+      pill.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = parseInt(this.getAttribute('data-target-slide'), 10);
+        if (!isNaN(target)) {
+          goToSlide(target);
+        }
+      });
     });
 
-    // Update active slide
-    currentSlideIndex = newIndex;
-    const activeSlide = slides[currentSlideIndex];
-    if (activeSlide) {
-      activeSlide.classList.add('active');
-    }
-
-    // Update Counter Display (01 / 04)
-    if (currentNumEl) {
-      currentNumEl.textContent = formatIndex(currentSlideIndex);
-    }
-
-    // Update Pill Indicators
-    pills.forEach((pill, idx) => {
-      const isActive = idx === currentSlideIndex;
-      pill.classList.toggle('active', isActive);
-      pill.setAttribute('aria-selected', isActive ? 'true' : 'false');
-    });
-
-    // Reset slide timer and progress fill
-    slideStartTime = Date.now();
-    if (progressFillEl) {
-      progressFillEl.style.width = '0%';
-    }
-  }
-
-  /**
-   * Move to next slide
-   */
-  function nextSlide() {
-    goToSlide(currentSlideIndex + 1);
-  }
-
-  /**
-   * Move to previous slide
-   */
-  function prevSlide() {
-    goToSlide(currentSlideIndex - 1);
-  }
-
-  /**
-   * Continuous animation loop via requestAnimationFrame:
-   * - Computes real-time elapsed percentage for the progress bar
-   * - Automatically triggers next slide when duration elapses
-   * - Does NOT pause on hover or any cursor interaction
-   */
-  function tickSlider() {
-    const elapsed = Date.now() - slideStartTime;
-    const progress = Math.min((elapsed / SLIDE_DURATION) * 100, 100);
-
-    if (progressFillEl) {
-      progressFillEl.style.width = progress + '%';
-    }
-
-    if (elapsed >= SLIDE_DURATION) {
-      nextSlide();
-    }
-
-    animationFrameId = requestAnimationFrame(tickSlider);
-  }
-
-  // =========================================================================
-  // Event Listeners for Controls
-  // =========================================================================
-
-  if (nextBtn) {
-    nextBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      nextSlide();
-    });
-  }
-
-  if (prevBtn) {
-    prevBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      prevSlide();
-    });
-  }
-
-  pills.forEach((pill) => {
-    pill.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = parseInt(this.getAttribute('data-target-slide'), 10);
-      if (!isNaN(target)) {
-        goToSlide(target);
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
       }
     });
-  });
 
-  // Keyboard navigation for accessibility (Left / Right Arrow)
-  window.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowRight') {
-      nextSlide();
-    } else if (e.key === 'ArrowLeft') {
-      prevSlide();
-    }
-  });
+    slideStartTime = Date.now();
+    animationFrameId = requestAnimationFrame(tickSlider);
+    goToSlide(0);
+  }
 
-  // Start Autoplay Loop immediately
-  slideStartTime = Date.now();
-  animationFrameId = requestAnimationFrame(tickSlider);
-
-  // Initialize first slide view
-  goToSlide(0);
+  initHeroSlider();
 
   // Note: Hover pause is intentionally OMITTED per strict requirement:
   // "The slider MUST continue changing even when the mouse cursor is over the hero section. Do NOT pause autoplay on hover."
@@ -285,6 +256,62 @@
   }
 
   /**
+   * Industries We Serve - Interactive 3D Flip Cards Controller
+   * Provides:
+   * - Touch / click tap-to-flip interaction with support for link navigation
+   * - Keyboard accessibility (Enter and Space key support to flip)
+   * - Synchronized ARIA attributes for screen readers
+   * - Desktop hover reset on pointerleave
+   */
+  function initIndustryFlipCards() {
+    const cards = document.querySelectorAll('.industry-flip-card');
+    if (!cards.length) return;
+
+    cards.forEach(function (card) {
+      const backFace = card.querySelector('.industry-card-back');
+
+      function toggleFlip() {
+        const isFlipped = card.classList.toggle('is-flipped');
+        card.setAttribute('aria-expanded', isFlipped ? 'true' : 'false');
+        if (backFace) {
+          backFace.setAttribute('aria-hidden', isFlipped ? 'false' : 'true');
+        }
+      }
+
+      // Tap / Click handling (for touch devices and clicks)
+      card.addEventListener('click', function (e) {
+        // If clicking on an anchor tag or button inside the card, allow natural navigation
+        if (e.target.closest('a') || e.target.closest('button')) {
+          return;
+        }
+        toggleFlip();
+      });
+
+      // Keyboard support: Enter or Space flips the card
+      card.addEventListener('keydown', function (e) {
+        if (e.target.closest('a') || e.target.closest('button')) {
+          return;
+        }
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleFlip();
+        }
+      });
+
+      // Desktop mouse leave resets flip state so hover flows naturally
+      card.addEventListener('pointerleave', function () {
+        if (window.matchMedia('(hover: hover)').matches) {
+          card.classList.remove('is-flipped');
+          card.setAttribute('aria-expanded', 'false');
+          if (backFace) {
+            backFace.setAttribute('aria-hidden', 'true');
+          }
+        }
+      });
+    });
+  }
+
+  /**
    * Global Export Destinations - Real-Time Country Filter
    */
   function initHomeCountrySearch() {
@@ -362,7 +389,15 @@
     // and Get Quote remain visible but non-clickable for now. Only Home is functional.
 
     if (mobileBtn && drawer) {
-      mobileBtn.addEventListener('click', function () {
+      function closeDrawer() {
+        drawer.classList.remove('is-open');
+        mobileBtn.classList.remove('is-active');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+        drawer.setAttribute('aria-hidden', 'true');
+      }
+
+      mobileBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
         const isOpen = drawer.classList.toggle('is-open');
         mobileBtn.classList.toggle('is-active', isOpen);
         mobileBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
@@ -372,11 +407,30 @@
       // Close drawer on link click
       drawer.querySelectorAll('a').forEach(function (link) {
         link.addEventListener('click', function () {
-          drawer.classList.remove('is-open');
-          mobileBtn.classList.remove('is-active');
-          mobileBtn.setAttribute('aria-expanded', 'false');
-          drawer.setAttribute('aria-hidden', 'true');
+          closeDrawer();
         });
+      });
+
+      // Close drawer on outside click
+      document.addEventListener('click', function (e) {
+        if (drawer.classList.contains('is-open') && !drawer.contains(e.target) && !mobileBtn.contains(e.target)) {
+          closeDrawer();
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+          closeDrawer();
+          mobileBtn.focus();
+        }
+      });
+
+      // Close automatically on desktop resize (> 1024px)
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 1024 && drawer.classList.contains('is-open')) {
+          closeDrawer();
+        }
       });
     }
   }
@@ -508,6 +562,7 @@
     initProductMarquee();
     initWhyCardsTilt();
     initVasFlipCards();
+    initIndustryFlipCards();
     initHomeCountrySearch();
     initFooterCopyButtons();
     initCurrentYear();
