@@ -1,8 +1,28 @@
 import { resolve } from 'path';
+import fs from 'fs';
 import { defineConfig } from 'vite';
+
+function copyAssetsPlugin() {
+  return {
+    name: 'copy-root-assets',
+    closeBundle() {
+      const srcDir = resolve(__dirname, 'assets');
+      const destDir = resolve(__dirname, 'dist', 'assets');
+      if (fs.existsSync(srcDir)) {
+        try {
+          fs.cpSync(srcDir, destDir, { recursive: true });
+          console.log('✓ Successfully copied all assets to dist/assets');
+        } catch (err) {
+          console.error('Failed to copy assets:', err);
+        }
+      }
+    }
+  };
+}
 
 export default defineConfig({
   plugins: [
+    copyAssetsPlugin(),
     {
       name: 'products-rewrite',
       configureServer(server) {

@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "rewrites": [
+    { "source": "/products/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/product/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/materials/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/material/assets/:path*", "destination": "/assets/:path*" },
     { "source": "/products", "destination": "/product-materials" },
     { "source": "/products/:path*", "destination": "/product-materials" },
     { "source": "/product", "destination": "/product-materials" },

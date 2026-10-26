@@ -10,6 +10,14 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
 (function () {
   'use strict';
 
+  function normalizeAssetUrl(url) {
+    if (!url) return '';
+    if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('//') || url.startsWith('data:')) {
+      return url;
+    }
+    return url.startsWith('/') ? url : '/' + url;
+  }
+
   // =========================================================================
   // SEO URL CONFIGURATION & LOCATION KEYWORDS
   // Alternating manufactured-in-mumbai / stockist-in-mumbai across product families
@@ -804,12 +812,12 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
               <span>09</span>
             </div>
             <img 
-              src="${m.image}" 
+              src="${normalizeAssetUrl(m.image)}" 
               alt="Apollo ${escapeHtml(matName)} ${escapeHtml(product.suffix)}" 
               class="material-card-img" 
               style="${imgStyle}"
               loading="lazy"
-              onerror="this.onerror=null; this.src='${product.heroImage}';"
+              onerror="this.onerror=null; this.src='${normalizeAssetUrl(product.heroImage)}';"
             />
           </div>
           <div class="material-card-content">
@@ -860,7 +868,7 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <div class="pm-showcase-glow" aria-hidden="true"></div>
                 <div class="pm-showcase-media">
                   <img 
-                    src="${product.heroImage}" 
+                    src="${normalizeAssetUrl(product.heroImage)}" 
                     alt="Apollo ${escapeHtml(product.name)} Industrial Engineering Showcase" 
                     class="pm-showcase-img"
                     loading="eager"
@@ -1035,12 +1043,12 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
           <a href="${typeUrl}" class="pm-type-card" aria-label="Explore ${escapeHtml(t.name)}">
             <div class="pm-type-card-media">
               <img 
-                src="${t.image}" 
+                src="${normalizeAssetUrl(t.image)}" 
                 alt="Apollo ${escapeHtml(t.name)} in ${escapeHtml(material.name)}" 
                 class="pm-type-card-img" 
                 style="${typeImgStyle}"
                 loading="lazy"
-                onerror="this.onerror=null; this.src='${material.image}';"
+                onerror="this.onerror=null; this.src='${normalizeAssetUrl(material.image)}';"
               />
             </div>
             <div class="pm-type-card-footer">
@@ -1187,11 +1195,11 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <div class="pm-showcase-glow" aria-hidden="true"></div>
                 <div class="pm-showcase-media">
                   <img 
-                    src="${material.image}" 
+                    src="${normalizeAssetUrl(material.image)}" 
                     alt="Apollo ${escapeHtml(material.name)} ${escapeHtml(product.suffix)} Showcase" 
                     class="pm-showcase-img"
                     loading="eager"
-                    onerror="this.onerror=null; this.src='${product.heroImage}';"
+                    onerror="this.onerror=null; this.src='${normalizeAssetUrl(product.heroImage)}';"
                   />
                 </div>
                 <div class="pm-showcase-tag">
@@ -1373,11 +1381,11 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <div class="pm-showcase-glow" aria-hidden="true"></div>
                 <div class="pm-showcase-media">
                   <img 
-                    src="${grade.image || material.image}" 
+                    src="${normalizeAssetUrl(grade.image || material.image)}" 
                     alt="Apollo Grade ${escapeHtml(grade.name)} ${escapeHtml(product.suffix)} Showcase" 
                     class="pm-showcase-img"
                     loading="eager"
-                    onerror="this.onerror=null; this.src='${material.image}';"
+                    onerror="this.onerror=null; this.src='${normalizeAssetUrl(material.image)}';"
                   />
                 </div>
                 <div class="pm-showcase-tag">
@@ -1581,12 +1589,12 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
       <a href="${buildTypeUrl(product.slug, material.slug, ot.slug, grade ? grade.slug : null)}" class="pm-type-card">
         <div class="pm-type-card-media" style="height: 140px;">
           <img 
-            src="${ot.image}" 
+            src="${normalizeAssetUrl(ot.image)}" 
             alt="Apollo ${escapeHtml(ot.name)}" 
             class="pm-type-card-img" 
             style="${otImgStyle}"
             loading="lazy"
-            onerror="this.onerror=null; this.src='${material.image}';"
+            onerror="this.onerror=null; this.src='${normalizeAssetUrl(material.image)}';"
           />
         </div>
         <div class="pm-type-card-footer" style="padding: 10px 14px;">
@@ -1630,11 +1638,11 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <div class="pm-showcase-glow" aria-hidden="true"></div>
                 <div class="pm-showcase-media">
                   <img 
-                    src="${type.image}" 
+                    src="${normalizeAssetUrl(type.image)}" 
                     alt="Apollo ${escapeHtml(type.name)} Showcase" 
                     class="pm-showcase-img"
                     loading="eager"
-                    onerror="this.onerror=null; this.src='${material.image}';"
+                    onerror="this.onerror=null; this.src='${normalizeAssetUrl(material.image)}';"
                   />
                 </div>
                 <div class="pm-showcase-tag">
@@ -1830,11 +1838,11 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
               <span>09</span>
             </div>
             <img 
-              src="${m.cardImage}" 
+              src="${normalizeAssetUrl(m.cardImage)}" 
               alt="Apollo ${escapeHtml(m.name)} Industrial Metallurgy" 
               class="material-card-img" 
               loading="lazy"
-              onerror="this.onerror=null; this.src='assets/hero-products/flanges-hero.png';"
+              onerror="this.onerror=null; this.src='/assets/hero-products/flanges-hero.png';"
             />
           </div>
           <div class="material-card-content">
@@ -1935,11 +1943,11 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <div class="pm-showcase-glow" aria-hidden="true"></div>
                 <div class="pm-showcase-media">
                   <img 
-                    src="assets/hero-products/materials-alloys-hero.jpg" 
+                    src="/assets/hero-products/materials-alloys-hero.jpg" 
                     alt="Apollo Certified Industrial Metallurgy &amp; Raw Alloys Showcase" 
                     class="pm-showcase-img"
                     loading="eager"
-                    onerror="this.onerror=null; this.src='assets/hero-products/flanges-hero.png';"
+                    onerror="this.onerror=null; this.src='/assets/hero-products/flanges-hero.png';"
                   />
                 </div>
                 <div class="pm-showcase-tag">
@@ -2092,11 +2100,11 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <span>${escapeHtml(material.name.toUpperCase())}</span>
               </div>
               <img 
-                src="${cardImg}" 
+                src="${normalizeAssetUrl(cardImg)}" 
                 alt="Apollo ${escapeHtml(material.name)} ${escapeHtml(p.name)}" 
                 class="material-card-img" 
                 loading="lazy"
-                onerror="this.onerror=null; this.src='${p.heroImage}';"
+                onerror="this.onerror=null; this.src='${normalizeAssetUrl(p.heroImage)}';"
               />
             </div>
             <div class="material-card-content">
@@ -2123,7 +2131,7 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
     const otherMaterialsHtml = otherMaterials.map(m => `
       <a href="/materials/${m.slug}" class="mat-explore-other-card">
         <div class="mat-explore-thumb">
-          <img src="${m.cardImage}" alt="${escapeHtml(m.name)}" loading="lazy" onerror="this.onerror=null; this.src='assets/hero-products/flanges-hero.png';" />
+          <img src="${normalizeAssetUrl(m.cardImage)}" alt="${escapeHtml(m.name)}" loading="lazy" onerror="this.onerror=null; this.src='/assets/hero-products/flanges-hero.png';" />
         </div>
         <div class="mat-explore-info">
           <h4 class="mat-explore-name">${escapeHtml(m.name)}</h4>
@@ -2167,11 +2175,11 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <div class="pm-showcase-glow" aria-hidden="true"></div>
                 <div class="pm-showcase-media">
                   <img 
-                    src="${material.heroImage}" 
+                    src="${normalizeAssetUrl(material.heroImage)}" 
                     alt="Apollo ${escapeHtml(material.name)} Engineering Showcase" 
                     class="pm-showcase-img"
                     loading="eager"
-                    onerror="this.onerror=null; this.src='assets/hero-products/flanges-hero.png';"
+                    onerror="this.onerror=null; this.src='/assets/hero-products/flanges-hero.png';"
                   />
                 </div>
                 <div class="pm-showcase-tag">

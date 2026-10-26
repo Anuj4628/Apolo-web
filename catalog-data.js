@@ -11,7 +11,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "FLANGES",
     "suffix": "Flanges",
     "eyebrow": "ASME B16.5 & B16.47 CERTIFIED",
-    "heroImage": "assets/hero-products/flanges-hero.png",
+    "heroImage": "/assets/hero-products/flanges-hero.png",
     "heroTag": "ASME B16.5 / B16.47 CERTIFIED FLANGES",
     "description": "Apollo Forge & Fittings manufactures and stocks high-integrity industrial pipe flanges across a comprehensive metallurgical spectrum. Designed for extreme pressure, elevated temperature, and aggressive chemical environments, our flanges provide certified leak-tight sealing across global oil & gas, petrochemical, and power generation systems.",
     "overview": {
@@ -41,7 +41,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "slip-on",
         "name": "Slip-On Flange",
         "shortName": "Slip-On",
-        "image": "assets/types of product/flanges/alloy steel types/slip-on-flanges.jpg",
+        "image": "/assets/types of product/flanges/alloy steel types/slip-on-flanges.jpg",
         "description": "A low-hub flange designed to slip over the outer diameter of the pipe before being fillet-welded at both the flange hub and pipe interior for reliable alignment.",
         "design": "The inner diameter of a slip-on flange is slightly larger than the outer diameter of the mating pipe. The pipe is positioned inside the flange hub recessed roughly 1/16\" from the face, allowing double fillet welds (inside and outside) to establish seal integrity.",
         "function": "Ideal for low-to-medium pressure non-critical applications where alignment is simpler and initial fabrication costs must be controlled.",
@@ -65,7 +65,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "weld-neck",
         "name": "Weld Neck Flange",
         "shortName": "Weld Neck",
-        "image": "assets/types of product/flanges/alloy steel types/Weld Neck Flange.jpeg",
+        "image": "/assets/types of product/flanges/alloy steel types/Weld Neck Flange.jpeg",
         "description": "Engineered with a long tapered hub that transitions wall thickness smoothly to the pipe, minimizing stress concentration under severe line pressure, thermal cycles, and bending moments.",
         "design": "Features a reinforced tapered neck beveled at the end to match the schedule thickness of the pipe. Joined with a single full-penetration butt weld that can be 100% radiographed.",
         "function": "The premium standard for severe-service, high-pressure, cryogenic, and cyclic thermal operating conditions where stress distribution is paramount.",
@@ -89,7 +89,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "blind",
         "name": "Blind Flange",
         "shortName": "Blind",
-        "image": "assets/types of product/flanges/alloy steel types/blind.jpeg",
+        "image": "/assets/types of product/flanges/alloy steel types/blind.jpeg",
         "description": "A solid circular forged disk with standard bolt holes used to seal the termination end of a piping system, pressure vessel nozzle, or valve station.",
         "design": "Solid center disk manufactured without a central bore. Subject to substantial mechanical bending stress concentrated at the center under high internal system pressure.",
         "function": "Provides absolute termination closure while allowing quick bolt removal for future piping expansion, maintenance washouts, and system hydrostatic testing.",
@@ -113,7 +113,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "socket-weld",
         "name": "Socket Weld Flange",
         "shortName": "Socket Weld",
-        "image": "assets/types of product/flanges/alloy steel types/socket weld.jpeg",
+        "image": "/assets/types of product/flanges/alloy steel types/socket weld.jpeg",
         "description": "Features an internal recessed socket bore to seat the pipe end before external fillet welding, preventing weld spatter intrusion into small-bore piping.",
         "design": "Machined with a shoulder counterbore that holds the pipe end with an expansion clearance gap of approximately 1/16\" (1.6 mm) prior to welding to avoid thermal contraction cracking.",
         "function": "Widely specified in compact, small-diameter (1/2\" to 2\" NB) high-pressure instrumentation loops, steam lines, and hydraulic manifolds.",
@@ -135,7 +135,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "threaded",
         "name": "Threaded Flange",
         "shortName": "Threaded",
-        "image": "assets/types of product/flanges/alloy steel types/Threaded Flange.jpeg",
+        "image": "/assets/types of product/flanges/alloy steel types/Threaded Flange.jpeg",
         "description": "Taper-threaded internally with NPT or BSPT threads, allowing quick assembly onto threaded pipe without requiring hot-work welding on site.",
         "design": "Internal bore machined with precision ASME B1.20.1 NPT taper threads that engage with externally threaded piping to achieve a pressure-tight seal.",
         "function": "Essential in flammable oilfield environments, explosive fuel depots, and hazardous gas zones where open-flame welding is prohibited.",
@@ -156,7 +156,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "lap-joint",
         "name": "Lap Joint Flange",
         "shortName": "Lap Joint",
-        "image": "assets/types of product/flanges/alloy steel types/lap joint flanges.jpeg",
+        "image": "/assets/types of product/flanges/alloy steel types/lap joint flanges.jpeg",
         "description": "Paired with a matching stub end fitting, the lap joint flange slips freely over the pipe while the stub end is butt-welded, allowing 360° rotational bolt alignment.",
         "design": "Machined with a curved radius at the bore corner to fit snugly against the radiused flare of the lap joint stub end.",
         "function": "Frequently utilized in stainless steel and exotic alloy piping systems requiring frequent disassembly for cleaning or maintenance.",
@@ -178,7 +178,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "orifice",
         "name": "Orifice Flange",
         "shortName": "Orifice",
-        "image": "assets/types of product/flanges/alloy steel types/orifice flanges.jpeg",
+        "image": "/assets/types of product/flanges/alloy steel types/orifice flanges.jpeg",
         "description": "Specialized flow-metering flanges fitted in pairs with radial tapped pressure ports to measure differential pressure across an orifice plate.",
         "design": "Manufactured with drilled and tapped differential pressure sensing holes in the flange ring, complete with jack screws to ease plate replacement.",
         "function": "Standard flow-measurement station in natural gas transmission, refinery pipelines, and chemical feed loops.",
@@ -198,7 +198,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "ring-type-joint",
         "name": "Ring Type Joint Flange",
         "shortName": "RTJ",
-        "image": "assets/flanges/types/ring-type-joint-flanges.jpg",
+        "image": "/assets/flanges/types/ring-type-joint-flanges.jpg",
         "description": "Precision machined with an annular metallic ring groove in the face designed to accommodate an octagonal or oval solid metal ring gasket.",
         "design": "High-precision trapezoidal groove machined into the flange face. Bolt torque compresses the metal ring into the groove walls, generating high contact stress.",
         "function": "The industry benchmark for extreme high-pressure (Class 600# to 2500#) and high-temperature oilfield and subsea Christmas tree installations.",
@@ -265,7 +265,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           },
           {
             "slug": "304l",
@@ -306,7 +306,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           },
           {
             "slug": "316",
@@ -347,7 +347,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           },
           {
             "slug": "316l",
@@ -388,7 +388,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           },
           {
             "slug": "321",
@@ -428,7 +428,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           },
           {
             "slug": "347",
@@ -468,7 +468,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           },
           {
             "slug": "310s",
@@ -508,7 +508,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           },
           {
             "slug": "904l",
@@ -548,11 +548,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/flanges/grades/ss-flanges.jpg"
+            "image": "/assets/flanges/grades/ss-flanges.jpg"
           }
         ],
-        "image": "assets/hero-products/flanges-hero.png",
-        "fallback": "assets/flanges/grades/ss-304-304l-flanges.jpg"
+        "image": "/assets/hero-products/flanges-hero.png",
+        "fallback": "/assets/flanges/grades/ss-304-304l-flanges.jpg"
       },
       {
         "slug": "carbon-steel",
@@ -602,7 +602,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/flanges/types/carbon-steel-flanges.jpg"
+            "image": "/assets/flanges/types/carbon-steel-flanges.jpg"
           },
           {
             "slug": "a350-lf2",
@@ -642,7 +642,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/flanges/types/carbon-steel-flanges.jpg"
+            "image": "/assets/flanges/types/carbon-steel-flanges.jpg"
           },
           {
             "slug": "a234-wpb",
@@ -682,7 +682,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/flanges/types/carbon-steel-flanges.jpg"
+            "image": "/assets/flanges/types/carbon-steel-flanges.jpg"
           },
           {
             "slug": "a516-gr70",
@@ -720,11 +720,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/flanges/types/carbon-steel-flanges.jpg"
+            "image": "/assets/flanges/types/carbon-steel-flanges.jpg"
           }
         ],
-        "image": "assets/flanges/types/carbon-steel-flanges.jpg",
-        "fallback": "assets/flanges/types/cs-weld-neck-flanges.jpg"
+        "image": "/assets/flanges/types/carbon-steel-flanges.jpg",
+        "fallback": "/assets/flanges/types/cs-weld-neck-flanges.jpg"
       },
       {
         "slug": "alloy-steel",
@@ -772,7 +772,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Images/Flanges/alloy steel.jpg"
+            "image": "/assets/Product Images/Flanges/alloy steel.jpg"
           },
           {
             "slug": "f22",
@@ -811,7 +811,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Images/Flanges/alloy steel.jpg"
+            "image": "/assets/Product Images/Flanges/alloy steel.jpg"
           },
           {
             "slug": "f91",
@@ -850,11 +850,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Images/Flanges/alloy steel.jpg"
+            "image": "/assets/Product Images/Flanges/alloy steel.jpg"
           }
         ],
-        "image": "assets/Product Images/Flanges/alloy steel.jpg",
-        "fallback": "assets/Product Section/Manufacturer division/Flanges/alloy steel.jpg"
+        "image": "/assets/Product Images/Flanges/alloy steel.jpg",
+        "fallback": "/assets/Product Section/Manufacturer division/Flanges/alloy steel.jpg"
       },
       {
         "slug": "duplex",
@@ -903,7 +903,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Flanges/super duplex.jpg"
+            "image": "/assets/Product Images/Flanges/super duplex.jpg"
           },
           {
             "slug": "2507",
@@ -943,11 +943,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Images/Flanges/super duplex.jpg"
+            "image": "/assets/Product Images/Flanges/super duplex.jpg"
           }
         ],
-        "image": "assets/Product Images/Flanges/super duplex.jpg",
-        "fallback": "assets/Product Images/Flanges/duplex.jpg"
+        "image": "/assets/Product Images/Flanges/super duplex.jpg",
+        "fallback": "/assets/Product Images/Flanges/duplex.jpg"
       },
       {
         "slug": "high-alloy",
@@ -996,7 +996,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Images/Flanges/hastelloy.png"
+            "image": "/assets/Product Images/Flanges/hastelloy.png"
           },
           {
             "slug": "hastelloy-c276",
@@ -1035,7 +1035,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Flanges/hastelloy.png"
+            "image": "/assets/Product Images/Flanges/hastelloy.png"
           },
           {
             "slug": "monel-400",
@@ -1075,11 +1075,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Images/Flanges/hastelloy.png"
+            "image": "/assets/Product Images/Flanges/hastelloy.png"
           }
         ],
-        "image": "assets/Product Images/Flanges/hastelloy.png",
-        "fallback": "assets/Product Images/Flanges/high alloy.jpeg"
+        "image": "/assets/Product Images/Flanges/hastelloy.png",
+        "fallback": "/assets/Product Images/Flanges/high alloy.jpeg"
       },
       {
         "slug": "nickel",
@@ -1126,7 +1126,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Flanges/iconel.jpeg"
+            "image": "/assets/Product Images/Flanges/iconel.jpeg"
           },
           {
             "slug": "nickel-201",
@@ -1164,11 +1164,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Images/Flanges/iconel.jpeg"
+            "image": "/assets/Product Images/Flanges/iconel.jpeg"
           }
         ],
-        "image": "assets/Product Images/Flanges/iconel.jpeg",
-        "fallback": "assets/Product Images/Flanges/monel.jpeg"
+        "image": "/assets/Product Images/Flanges/iconel.jpeg",
+        "fallback": "/assets/Product Images/Flanges/monel.jpeg"
       },
       {
         "slug": "titanium",
@@ -1215,7 +1215,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Flanges/titanium.jpg"
+            "image": "/assets/Product Images/Flanges/titanium.jpg"
           },
           {
             "slug": "grade-5",
@@ -1254,11 +1254,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Images/Flanges/titanium.jpg"
+            "image": "/assets/Product Images/Flanges/titanium.jpg"
           }
         ],
-        "image": "assets/Product Images/Flanges/titanium.jpg",
-        "fallback": "assets/Product Images/Flanges/titanium.jpg"
+        "image": "/assets/Product Images/Flanges/titanium.jpg",
+        "fallback": "/assets/Product Images/Flanges/titanium.jpg"
       },
       {
         "slug": "copper",
@@ -1306,7 +1306,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/Product Images/Flanges/copper-nickel.jpg"
+            "image": "/assets/Product Images/Flanges/copper-nickel.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -1345,11 +1345,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/Product Images/Flanges/copper-nickel.jpg"
+            "image": "/assets/Product Images/Flanges/copper-nickel.jpg"
           }
         ],
-        "image": "assets/Product Images/Flanges/copper-nickel.jpg",
-        "fallback": "assets/flanges/types/cuni-slip-on-flanges.jpg"
+        "image": "/assets/Product Images/Flanges/copper-nickel.jpg",
+        "fallback": "/assets/flanges/types/cuni-slip-on-flanges.jpg"
       },
       {
         "slug": "aluminium",
@@ -1397,7 +1397,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/flanges/types/steel-flanges-types.jpg"
+            "image": "/assets/flanges/types/steel-flanges-types.jpg"
           },
           {
             "slug": "5083-h116",
@@ -1436,11 +1436,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/flanges/types/steel-flanges-types.jpg"
+            "image": "/assets/flanges/types/steel-flanges-types.jpg"
           }
         ],
-        "image": "assets/flanges/types/steel-flanges-types.jpg",
-        "fallback": "assets/images/products/flanges.png"
+        "image": "/assets/flanges/types/steel-flanges-types.jpg",
+        "fallback": "/assets/images/products/flanges.png"
       }
     ]
   },
@@ -1450,7 +1450,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "FORGE FITTINGS",
     "suffix": "Forge Fittings",
     "eyebrow": "ASME B16.11 / BS 3799 CLASS 2000# TO 9000#",
-    "heroImage": "assets/hero-products/forge-fittings-hero.png",
+    "heroImage": "/assets/hero-products/forge-fittings-hero.png",
     "heroTag": "ASME B16.11 HIGH-PRESSURE FORGED FITTINGS",
     "description": "Apollo Forge & Fittings manufactures certified high-pressure forged steel pipe fittings engineered for severe mechanical containment. Produced from hot-forged billets with grain flow aligned to fitting contours, these components withstand extreme pressure shocks, thermal cycling, and harsh industrial environments.",
     "overview": {
@@ -1480,7 +1480,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "90-deg-elbow",
         "name": "90° Forged Elbow",
         "shortName": "90° Elbow",
-        "image": "assets/types of product/flanges/SS/elbow.jpeg",
+        "image": "/assets/types of product/flanges/SS/elbow.jpeg",
         "description": "High-pressure directional fitting engineered to alter fluid flow by 90 degrees with reinforced forged crotch thickness.",
         "design": "Socket weld or NPT threaded connection with heavy wall crotch reinforcement to withstand fluid impingement erosion.",
         "function": "Directional routing in high-pressure oilfield manifolds and refinery steam loops.",
@@ -1500,7 +1500,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "forged-tee",
         "name": "Forged Equal & Reducing Tee",
         "shortName": "Forged Tee",
-        "image": "assets/New Product img/pipe fittings/fittings-showcase.jpg",
+        "image": "/assets/New Product img/pipe fittings/fittings-showcase.jpg",
         "description": "Three-way forged intersection fitting providing 90-degree branch fluid distribution from the main run pipe.",
         "design": "Closed-die forged with reinforced branch junction to absorb torsional stress and thermal expansion.",
         "function": "Branching flow in hydraulic piping, chemical feed lines, and pump stations.",
@@ -1520,7 +1520,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "forged-union",
         "name": "Forged Pipe Union",
         "shortName": "Union",
-        "image": "assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg",
+        "image": "/assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg",
         "description": "Three-piece threaded or socket weld fitting featuring male, female, and nut components with precision ground metal-to-metal seating.",
         "design": "Ground ball-and-cone or flat gasket seating face that allows piping disconnection without cutting or unthreading pipe runs.",
         "function": "Quick disconnection points for pumps, flow meters, valves, and regulator assemblies.",
@@ -1539,7 +1539,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "full-coupling",
         "name": "Full & Half Coupling",
         "shortName": "Coupling",
-        "image": "assets/New Product img/pipe fittings/fittings-showcase.jpg",
+        "image": "/assets/New Product img/pipe fittings/fittings-showcase.jpg",
         "description": "Forged cylindrical sleeve used to join two pipe lengths end-to-end (full coupling) or to create a branch welded nozzle (half coupling).",
         "design": "Continuous female socket bore or internal female taper threads with heavy outer wall thickness.",
         "function": "Straight pipe connections and pressure vessel instrument tap connections.",
@@ -1606,7 +1606,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           },
           {
             "slug": "304l",
@@ -1647,7 +1647,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           },
           {
             "slug": "316",
@@ -1688,7 +1688,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           },
           {
             "slug": "316l",
@@ -1729,7 +1729,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           },
           {
             "slug": "321",
@@ -1769,7 +1769,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           },
           {
             "slug": "347",
@@ -1809,7 +1809,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           },
           {
             "slug": "310s",
@@ -1849,7 +1849,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           },
           {
             "slug": "904l",
@@ -1889,11 +1889,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/stainles steel.jpg"
           }
         ],
-        "image": "assets/hero-products/forge-fittings-hero.png",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/hero-products/forge-fittings-hero.png",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "carbon-steel",
@@ -1943,7 +1943,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
           },
           {
             "slug": "a350-lf2",
@@ -1983,7 +1983,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
           },
           {
             "slug": "a234-wpb",
@@ -2023,7 +2023,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
           },
           {
             "slug": "a516-gr70",
@@ -2061,11 +2061,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Forged Fittings/carbon.avif",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "alloy-steel",
@@ -2113,7 +2113,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg"
           },
           {
             "slug": "f22",
@@ -2152,7 +2152,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg"
           },
           {
             "slug": "f91",
@@ -2191,11 +2191,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Forged Fittings/alloy steel.jpg",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "duplex",
@@ -2244,7 +2244,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/duplex.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/duplex.jpg"
           },
           {
             "slug": "2507",
@@ -2284,11 +2284,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/duplex.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/duplex.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Forged Fittings/duplex.jpg",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Forged Fittings/duplex.jpg",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "high-alloy",
@@ -2337,7 +2337,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg"
           },
           {
             "slug": "hastelloy-c276",
@@ -2376,7 +2376,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg"
           },
           {
             "slug": "monel-400",
@@ -2416,11 +2416,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Forged Fittings/high alloys.jpeg",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "nickel",
@@ -2467,7 +2467,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/nikle.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/nikle.jpeg"
           },
           {
             "slug": "nickel-201",
@@ -2505,11 +2505,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/nikle.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/nikle.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Forged Fittings/nikle.jpeg",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Forged Fittings/nikle.jpeg",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "titanium",
@@ -2556,7 +2556,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/titainium.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/titainium.jpg"
           },
           {
             "slug": "grade-5",
@@ -2595,11 +2595,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/titainium.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/titainium.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Forged Fittings/titainium.jpg",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Forged Fittings/titainium.jpg",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "copper",
@@ -2647,7 +2647,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
+            "image": "/assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -2686,11 +2686,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
+            "image": "/assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
           }
         ],
-        "image": "assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       },
       {
         "slug": "aluminium",
@@ -2738,7 +2738,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/super duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/super duplex.jpeg"
           },
           {
             "slug": "5083-h116",
@@ -2777,11 +2777,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/Product Section/Manufacturer division/Forged Fittings/super duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Forged Fittings/super duplex.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Forged Fittings/super duplex.jpeg",
-        "fallback": "assets/New Product img/pipe fittings/fittings-showcase.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Forged Fittings/super duplex.jpeg",
+        "fallback": "/assets/New Product img/pipe fittings/fittings-showcase.jpg"
       }
     ]
   },
@@ -2791,7 +2791,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "BUTT WELD FITTINGS",
     "suffix": "Butt Weld Fittings",
     "eyebrow": "ASME B16.9 / MSS-SP-43 SEAMLESS & WELDED",
-    "heroImage": "assets/hero-products/buttweld-fittings-hero.png",
+    "heroImage": "/assets/hero-products/buttweld-fittings-hero.png",
     "heroTag": "ASME B16.9 SEAMLESS BUTT WELD FITTINGS",
     "description": "Manufactured from seamless and welded pipe stock using hot-mandrel forming, cold-pressing, and hydraulic sizing, Apollo butt weld fittings ensure smooth internal flow transitions with zero turbulent recirculation.",
     "overview": {
@@ -2821,7 +2821,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "90-deg-lr-elbow",
         "name": "90° Long Radius Elbow",
         "shortName": "90° LR Elbow",
-        "image": "assets/grades images/buttweld fitting/SS buttweld/SS 304 - 304L BUTTWELD FITTINGS.jpeg",
+        "image": "/assets/grades images/buttweld fitting/SS buttweld/SS 304 - 304L BUTTWELD FITTINGS.jpeg",
         "description": "Center-to-face dimension equals 1.5 times the nominal pipe diameter (1.5D), delivering optimal hydraulic flow with low pressure drop.",
         "design": "Hot-mandrel expanded seamless elbow with beveled weld ends.",
         "function": "Primary directional change fitting in high-velocity process piping.",
@@ -2845,7 +2845,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "equal-tee",
         "name": "Equal Tee & Reducing Tee",
         "shortName": "Tee",
-        "image": "assets/our product new images/buttweld fittings.png",
+        "image": "/assets/our product new images/buttweld fittings.png",
         "description": "Provides a 90-degree branch intersection from the main run pipe with uniform or reduced branch diameter.",
         "design": "Hydraulically bulged or hot-forged tee with smooth crotch radius.",
         "function": "Splitting or combining fluid streams in process loops.",
@@ -2865,7 +2865,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "concentric-reducer",
         "name": "Concentric & Eccentric Reducer",
         "shortName": "Reducer",
-        "image": "assets/our product new images/buttweld fittings.png",
+        "image": "/assets/our product new images/buttweld fittings.png",
         "description": "Transitions line diameter inline along the center axis (concentric) or maintains a flat bottom line to prevent cavitation (eccentric).",
         "design": "Tapered conical transition formed with continuous wall thickness.",
         "function": "Inline pipe size transitions at pump suction/discharge and control valve stations.",
@@ -2885,7 +2885,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "pipe-cap",
         "name": "Ellipsoidal Pipe Cap",
         "shortName": "End Cap",
-        "image": "assets/grades images/buttweld fitting/carbon buttweld/astm a234 gr wpb.jpeg",
+        "image": "/assets/grades images/buttweld fitting/carbon buttweld/astm a234 gr wpb.jpeg",
         "description": "Semi-ellipsoidal domed fitting designed to cap and permanently seal the open end of a butt-welded piping circuit.",
         "design": "Deep-drawn ellipsoidal head with straight cylindrical flange skirt.",
         "function": "Permanent line closure on dead-end headers and manifold headers.",
@@ -2952,7 +2952,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           },
           {
             "slug": "304l",
@@ -2993,7 +2993,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           },
           {
             "slug": "316",
@@ -3034,7 +3034,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           },
           {
             "slug": "316l",
@@ -3075,7 +3075,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           },
           {
             "slug": "321",
@@ -3115,7 +3115,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           },
           {
             "slug": "347",
@@ -3155,7 +3155,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           },
           {
             "slug": "310s",
@@ -3195,7 +3195,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           },
           {
             "slug": "904l",
@@ -3235,11 +3235,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/stainless steel.jpg"
           }
         ],
-        "image": "assets/hero-products/buttweld-fittings-hero.png",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/hero-products/buttweld-fittings-hero.png",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "carbon-steel",
@@ -3289,7 +3289,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
           },
           {
             "slug": "a350-lf2",
@@ -3329,7 +3329,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
           },
           {
             "slug": "a234-wpb",
@@ -3369,7 +3369,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
           },
           {
             "slug": "a516-gr70",
@@ -3407,11 +3407,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/Product Section/Manufacturer division/Butt weld fit/carbon.jpg",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "alloy-steel",
@@ -3459,7 +3459,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg"
           },
           {
             "slug": "f22",
@@ -3498,7 +3498,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg"
           },
           {
             "slug": "f91",
@@ -3537,11 +3537,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/Product Section/Manufacturer division/Butt weld fit/alloy steel.jpg",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "duplex",
@@ -3590,7 +3590,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/duplex.jpeg"
           },
           {
             "slug": "2507",
@@ -3630,11 +3630,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/duplex.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Butt weld fit/duplex.jpeg",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/Product Section/Manufacturer division/Butt weld fit/duplex.jpeg",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "high-alloy",
@@ -3683,7 +3683,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg"
           },
           {
             "slug": "hastelloy-c276",
@@ -3722,7 +3722,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg"
           },
           {
             "slug": "monel-400",
@@ -3762,11 +3762,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/Product Section/Manufacturer division/Butt weld fit/high alloy.jpg",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "nickel",
@@ -3813,7 +3813,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/nikle.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/nikle.jpg"
           },
           {
             "slug": "nickel-201",
@@ -3851,11 +3851,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/nikle.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/nikle.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Butt weld fit/nikle.jpg",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/Product Section/Manufacturer division/Butt weld fit/nikle.jpg",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "titanium",
@@ -3902,7 +3902,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/titainium.webp"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/titainium.webp"
           },
           {
             "slug": "grade-5",
@@ -3941,11 +3941,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/titainium.webp"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/titainium.webp"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Butt weld fit/titainium.webp",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/Product Section/Manufacturer division/Butt weld fit/titainium.webp",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "copper",
@@ -3993,7 +3993,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/grades images/buttweld fitting/copper/cu 90-10.jpeg"
+            "image": "/assets/grades images/buttweld fitting/copper/cu 90-10.jpeg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -4032,11 +4032,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/grades images/buttweld fitting/copper/cu 90-10.jpeg"
+            "image": "/assets/grades images/buttweld fitting/copper/cu 90-10.jpeg"
           }
         ],
-        "image": "assets/grades images/buttweld fitting/copper/cu 90-10.jpeg",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/grades images/buttweld fitting/copper/cu 90-10.jpeg",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       },
       {
         "slug": "aluminium",
@@ -4084,7 +4084,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/super duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/super duplex.jpeg"
           },
           {
             "slug": "5083-h116",
@@ -4123,11 +4123,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/Product Section/Manufacturer division/Butt weld fit/super duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Butt weld fit/super duplex.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Butt weld fit/super duplex.jpeg",
-        "fallback": "assets/our product new images/buttweld fittings.png"
+        "image": "/assets/Product Section/Manufacturer division/Butt weld fit/super duplex.jpeg",
+        "fallback": "/assets/our product new images/buttweld fittings.png"
       }
     ]
   },
@@ -4137,7 +4137,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "FASTENERS",
     "suffix": "Fasteners",
     "eyebrow": "ASTM A193 / A194 / A320 HEAVY INDUSTRIAL BOLTING",
-    "heroImage": "assets/our product new images/fasteners.png",
+    "heroImage": "/assets/our product new images/fasteners.png",
     "heroTag": "HEAVY HEX BOLTS, STUDS & INDUSTRIAL NUTS",
     "description": "Engineered for critical flanged joints, pressure vessels, and structural connections, Apollo fasteners are manufactured with precision cold/hot forging and roll-threaded geometry to guarantee proof-load integrity.",
     "overview": {
@@ -4167,7 +4167,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "stud-bolts",
         "name": "Stud Bolts with Heavy Hex Nuts",
         "shortName": "Stud Bolts",
-        "image": "assets/fasteners/types/stud-bolts.jpg",
+        "image": "/assets/fasteners/types/stud-bolts.jpg",
         "description": "Continuous all-thread studs paired with two ASME B18.2.2 heavy hex nuts, providing uniform torque tension across flanged joints.",
         "design": "Full-thread rod with chamfered point ends, roll-threaded to Class 2A tolerance.",
         "function": "Standard bolting for ASME B16.5 and B16.47 pressure flanges.",
@@ -4191,7 +4191,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "hex-head-bolts",
         "name": "Heavy Hex Head Bolts",
         "shortName": "Hex Bolts",
-        "image": "assets/fasteners/types/hex-head-bolts.jpg",
+        "image": "/assets/fasteners/types/hex-head-bolts.jpg",
         "description": "Forged hexagonal head bolts with integral washer face, designed for structural steel frameworks and equipment flange mounting.",
         "design": "One-piece hot-forged hex head with machined under-head radius.",
         "function": "Structural bolting, machinery foundation, and compact equipment flange joints.",
@@ -4211,7 +4211,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "hex-nuts",
         "name": "Heavy Hex Nuts",
         "shortName": "Hex Nuts",
-        "image": "assets/fasteners/types/hex-nuts.jpg",
+        "image": "/assets/fasteners/types/hex-nuts.jpg",
         "description": "Thick-walled heavy hex pattern nuts providing enhanced thread engagement length to prevent thread stripping under severe proof loads.",
         "design": "ASME B18.2.2 heavy pattern with precision Class 2B tapped threads.",
         "function": "Mating nut component for stud bolts and heavy hex bolts in pressure boundary service.",
@@ -4231,7 +4231,7 @@ export const CATALOG_PRODUCTS_DATA = [
         "slug": "washers",
         "name": "Plain & Spring Structural Washers",
         "shortName": "Washers",
-        "image": "assets/fasteners/types/washers.jpg",
+        "image": "/assets/fasteners/types/washers.jpg",
         "description": "Hardened circular washers engineered to distribute bolt clamping load evenly, protect flange surfaces, and prevent embedment.",
         "design": "Quenched and tempered hardened carbon or stainless steel stamping.",
         "function": "Load distribution and galvanic isolation beneath bolt heads and nuts.",
@@ -4298,7 +4298,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           },
           {
             "slug": "304l",
@@ -4339,7 +4339,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           },
           {
             "slug": "316",
@@ -4380,7 +4380,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           },
           {
             "slug": "316l",
@@ -4421,7 +4421,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           },
           {
             "slug": "321",
@@ -4461,7 +4461,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           },
           {
             "slug": "347",
@@ -4501,7 +4501,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           },
           {
             "slug": "310s",
@@ -4541,7 +4541,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           },
           {
             "slug": "904l",
@@ -4581,11 +4581,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/Product Section/Manufacturer division/Fasteners/stainless-steel.webp",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "carbon-steel",
@@ -4635,7 +4635,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
           },
           {
             "slug": "a350-lf2",
@@ -4675,7 +4675,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
           },
           {
             "slug": "a234-wpb",
@@ -4715,7 +4715,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
           },
           {
             "slug": "a516-gr70",
@@ -4753,11 +4753,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/Product Section/Manufacturer division/Fasteners/carbon.jpeg",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "alloy-steel",
@@ -4805,7 +4805,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif"
           },
           {
             "slug": "f22",
@@ -4844,7 +4844,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif"
           },
           {
             "slug": "f91",
@@ -4883,11 +4883,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/Product Section/Manufacturer division/Fasteners/alloy steel.avif",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "duplex",
@@ -4936,7 +4936,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/duplex.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/duplex.jpg"
           },
           {
             "slug": "2507",
@@ -4976,11 +4976,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/duplex.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/duplex.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Fasteners/duplex.jpg",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/Product Section/Manufacturer division/Fasteners/duplex.jpg",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "high-alloy",
@@ -5029,7 +5029,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/high alloy.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/high alloy.webp"
           },
           {
             "slug": "hastelloy-c276",
@@ -5068,7 +5068,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/high alloy.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/high alloy.webp"
           },
           {
             "slug": "monel-400",
@@ -5108,11 +5108,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/high alloy.webp"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/high alloy.webp"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Fasteners/high alloy.webp",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/Product Section/Manufacturer division/Fasteners/high alloy.webp",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "nickel",
@@ -5159,7 +5159,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/nikle.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/nikle.jpeg"
           },
           {
             "slug": "nickel-201",
@@ -5197,11 +5197,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/nikle.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/nikle.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Fasteners/nikle.jpeg",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/Product Section/Manufacturer division/Fasteners/nikle.jpeg",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "titanium",
@@ -5248,7 +5248,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/titainium.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/titainium.jpeg"
           },
           {
             "slug": "grade-5",
@@ -5287,11 +5287,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Fasteners/titainium.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Fasteners/titainium.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Fasteners/titainium.jpeg",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/Product Section/Manufacturer division/Fasteners/titainium.jpeg",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "copper",
@@ -5339,7 +5339,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/fasteners/copper-nickel-fasteners.jpg"
+            "image": "/assets/New Product img/fasteners/copper-nickel-fasteners.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -5378,11 +5378,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/fasteners/copper-nickel-fasteners.jpg"
+            "image": "/assets/New Product img/fasteners/copper-nickel-fasteners.jpg"
           }
         ],
-        "image": "assets/New Product img/fasteners/copper-nickel-fasteners.jpg",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/New Product img/fasteners/copper-nickel-fasteners.jpg",
+        "fallback": "/assets/our product new images/fasteners.png"
       },
       {
         "slug": "aluminium",
@@ -5430,7 +5430,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/fasteners/types/aluminum-fasteners.jpg"
+            "image": "/assets/fasteners/types/aluminum-fasteners.jpg"
           },
           {
             "slug": "5083-h116",
@@ -5469,11 +5469,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/fasteners/types/aluminum-fasteners.jpg"
+            "image": "/assets/fasteners/types/aluminum-fasteners.jpg"
           }
         ],
-        "image": "assets/fasteners/types/aluminum-fasteners.jpg",
-        "fallback": "assets/our product new images/fasteners.png"
+        "image": "/assets/fasteners/types/aluminum-fasteners.jpg",
+        "fallback": "/assets/our product new images/fasteners.png"
       }
     ]
   },
@@ -5483,7 +5483,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "PIPES & TUBES",
     "suffix": "Pipes & Tubes",
     "eyebrow": "ASTM A312 / A335 / A790 HEAVY INDUSTRIAL TUBING",
-    "heroImage": "assets/our product new images/pipe.png",
+    "heroImage": "/assets/our product new images/pipe.png",
     "heroTag": "SEAMLESS & WELDED INDUSTRIAL PIPING",
     "description": "Apollo Forge & Fittings supplies seamless and welded industrial pipes and precision instrumentation tubing for refinery, petrochemical, offshore, and cryogenic fluid transfer.",
     "overview": {
@@ -5559,7 +5559,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           },
           {
             "slug": "304l",
@@ -5600,7 +5600,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           },
           {
             "slug": "316",
@@ -5641,7 +5641,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           },
           {
             "slug": "316l",
@@ -5682,7 +5682,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           },
           {
             "slug": "321",
@@ -5722,7 +5722,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           },
           {
             "slug": "347",
@@ -5762,7 +5762,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           },
           {
             "slug": "310s",
@@ -5802,7 +5802,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           },
           {
             "slug": "904l",
@@ -5842,11 +5842,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/stainless steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png"
           }
         ],
-        "image": "assets/Product Images/Pipes and Tubes/stainless steel.png",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/Product Images/Pipes and Tubes/stainless steel.png",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "carbon-steel",
@@ -5896,7 +5896,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/carbon.png"
+            "image": "/assets/Product Images/Pipes and Tubes/carbon.png"
           },
           {
             "slug": "a350-lf2",
@@ -5936,7 +5936,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/carbon.png"
+            "image": "/assets/Product Images/Pipes and Tubes/carbon.png"
           },
           {
             "slug": "a234-wpb",
@@ -5976,7 +5976,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/carbon.png"
+            "image": "/assets/Product Images/Pipes and Tubes/carbon.png"
           },
           {
             "slug": "a516-gr70",
@@ -6014,11 +6014,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/carbon.png"
+            "image": "/assets/Product Images/Pipes and Tubes/carbon.png"
           }
         ],
-        "image": "assets/Product Images/Pipes and Tubes/carbon.png",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/Product Images/Pipes and Tubes/carbon.png",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "alloy-steel",
@@ -6066,7 +6066,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/alloy steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/alloy steel.png"
           },
           {
             "slug": "f22",
@@ -6105,7 +6105,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/alloy steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/alloy steel.png"
           },
           {
             "slug": "f91",
@@ -6144,11 +6144,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/alloy steel.png"
+            "image": "/assets/Product Images/Pipes and Tubes/alloy steel.png"
           }
         ],
-        "image": "assets/Product Images/Pipes and Tubes/alloy steel.png",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/Product Images/Pipes and Tubes/alloy steel.png",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "duplex",
@@ -6197,7 +6197,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/duplex.png"
+            "image": "/assets/Product Images/Pipes and Tubes/duplex.png"
           },
           {
             "slug": "2507",
@@ -6237,11 +6237,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/duplex.png"
+            "image": "/assets/Product Images/Pipes and Tubes/duplex.png"
           }
         ],
-        "image": "assets/Product Images/Pipes and Tubes/duplex.png",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/Product Images/Pipes and Tubes/duplex.png",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "high-alloy",
@@ -6290,7 +6290,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/high alloy.png"
+            "image": "/assets/Product Images/Pipes and Tubes/high alloy.png"
           },
           {
             "slug": "hastelloy-c276",
@@ -6329,7 +6329,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/high alloy.png"
+            "image": "/assets/Product Images/Pipes and Tubes/high alloy.png"
           },
           {
             "slug": "monel-400",
@@ -6369,11 +6369,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/high alloy.png"
+            "image": "/assets/Product Images/Pipes and Tubes/high alloy.png"
           }
         ],
-        "image": "assets/Product Images/Pipes and Tubes/high alloy.png",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/Product Images/Pipes and Tubes/high alloy.png",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "nickel",
@@ -6420,7 +6420,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/nikle.png"
+            "image": "/assets/Product Images/Pipes and Tubes/nikle.png"
           },
           {
             "slug": "nickel-201",
@@ -6458,11 +6458,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/nikle.png"
+            "image": "/assets/Product Images/Pipes and Tubes/nikle.png"
           }
         ],
-        "image": "assets/Product Images/Pipes and Tubes/nikle.png",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/Product Images/Pipes and Tubes/nikle.png",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "titanium",
@@ -6509,7 +6509,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/titanium.png"
+            "image": "/assets/Product Images/Pipes and Tubes/titanium.png"
           },
           {
             "slug": "grade-5",
@@ -6548,11 +6548,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Images/Pipes and Tubes/titanium.png"
+            "image": "/assets/Product Images/Pipes and Tubes/titanium.png"
           }
         ],
-        "image": "assets/Product Images/Pipes and Tubes/titanium.png",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/Product Images/Pipes and Tubes/titanium.png",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "copper",
@@ -6600,7 +6600,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/Pipes/copper-nickel-pipes.jpg"
+            "image": "/assets/New Product img/Pipes/copper-nickel-pipes.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -6639,11 +6639,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/Pipes/copper-nickel-pipes.jpg"
+            "image": "/assets/New Product img/Pipes/copper-nickel-pipes.jpg"
           }
         ],
-        "image": "assets/New Product img/Pipes/copper-nickel-pipes.jpg",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/New Product img/Pipes/copper-nickel-pipes.jpg",
+        "fallback": "/assets/our product new images/pipe.png"
       },
       {
         "slug": "aluminium",
@@ -6691,7 +6691,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/New Product img/Pipes/aluminium-pipes.jpg"
+            "image": "/assets/New Product img/Pipes/aluminium-pipes.jpg"
           },
           {
             "slug": "5083-h116",
@@ -6730,11 +6730,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/New Product img/Pipes/aluminium-pipes.jpg"
+            "image": "/assets/New Product img/Pipes/aluminium-pipes.jpg"
           }
         ],
-        "image": "assets/New Product img/Pipes/aluminium-pipes.jpg",
-        "fallback": "assets/our product new images/pipe.png"
+        "image": "/assets/New Product img/Pipes/aluminium-pipes.jpg",
+        "fallback": "/assets/our product new images/pipe.png"
       }
     ]
   },
@@ -6744,7 +6744,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "SHEETS & PLATES",
     "suffix": "Sheets & Plates",
     "eyebrow": "ASTM A240 / ASME SA240 CERTIFIED PLATES",
-    "heroImage": "assets/our product new images/sheet and plates.png",
+    "heroImage": "/assets/our product new images/sheet and plates.png",
     "heroTag": "HOT ROLLED & COLD ROLLED METALLURGICAL PLATES",
     "description": "Hot-rolled and cold-rolled industrial metal sheets, heavy plates, and slit coils leveled, sheared, and ultrasonic-inspected for pressure vessel shells, storage tanks, and architectural engineering.",
     "overview": {
@@ -6820,7 +6820,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           },
           {
             "slug": "304l",
@@ -6861,7 +6861,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           },
           {
             "slug": "316",
@@ -6902,7 +6902,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           },
           {
             "slug": "316l",
@@ -6943,7 +6943,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           },
           {
             "slug": "321",
@@ -6983,7 +6983,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           },
           {
             "slug": "347",
@@ -7023,7 +7023,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           },
           {
             "slug": "310s",
@@ -7063,7 +7063,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           },
           {
             "slug": "904l",
@@ -7103,11 +7103,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Images/Sheet and plates/stainless steel.png"
+            "image": "/assets/Product Images/Sheet and plates/stainless steel.png"
           }
         ],
-        "image": "assets/Product Images/Sheet and plates/stainless steel.png",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/Product Images/Sheet and plates/stainless steel.png",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "carbon-steel",
@@ -7157,7 +7157,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Images/Sheet and plates/Carbon.png"
+            "image": "/assets/Product Images/Sheet and plates/Carbon.png"
           },
           {
             "slug": "a350-lf2",
@@ -7197,7 +7197,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Sheet and plates/Carbon.png"
+            "image": "/assets/Product Images/Sheet and plates/Carbon.png"
           },
           {
             "slug": "a234-wpb",
@@ -7237,7 +7237,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Images/Sheet and plates/Carbon.png"
+            "image": "/assets/Product Images/Sheet and plates/Carbon.png"
           },
           {
             "slug": "a516-gr70",
@@ -7275,11 +7275,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Images/Sheet and plates/Carbon.png"
+            "image": "/assets/Product Images/Sheet and plates/Carbon.png"
           }
         ],
-        "image": "assets/Product Images/Sheet and plates/Carbon.png",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/Product Images/Sheet and plates/Carbon.png",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "alloy-steel",
@@ -7327,7 +7327,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Images/Sheet and plates/alloy steel.png"
+            "image": "/assets/Product Images/Sheet and plates/alloy steel.png"
           },
           {
             "slug": "f22",
@@ -7366,7 +7366,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Images/Sheet and plates/alloy steel.png"
+            "image": "/assets/Product Images/Sheet and plates/alloy steel.png"
           },
           {
             "slug": "f91",
@@ -7405,11 +7405,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Images/Sheet and plates/alloy steel.png"
+            "image": "/assets/Product Images/Sheet and plates/alloy steel.png"
           }
         ],
-        "image": "assets/Product Images/Sheet and plates/alloy steel.png",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/Product Images/Sheet and plates/alloy steel.png",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "duplex",
@@ -7458,7 +7458,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Sheet and plates/Duplex.png"
+            "image": "/assets/Product Images/Sheet and plates/Duplex.png"
           },
           {
             "slug": "2507",
@@ -7498,11 +7498,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Images/Sheet and plates/Duplex.png"
+            "image": "/assets/Product Images/Sheet and plates/Duplex.png"
           }
         ],
-        "image": "assets/Product Images/Sheet and plates/Duplex.png",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/Product Images/Sheet and plates/Duplex.png",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "high-alloy",
@@ -7551,7 +7551,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/New Product img/sheet plates coil/hastelloy-coils.jpg"
+            "image": "/assets/New Product img/sheet plates coil/hastelloy-coils.jpg"
           },
           {
             "slug": "hastelloy-c276",
@@ -7590,7 +7590,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/New Product img/sheet plates coil/hastelloy-coils.jpg"
+            "image": "/assets/New Product img/sheet plates coil/hastelloy-coils.jpg"
           },
           {
             "slug": "monel-400",
@@ -7630,11 +7630,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/New Product img/sheet plates coil/hastelloy-coils.jpg"
+            "image": "/assets/New Product img/sheet plates coil/hastelloy-coils.jpg"
           }
         ],
-        "image": "assets/New Product img/sheet plates coil/hastelloy-coils.jpg",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/New Product img/sheet plates coil/hastelloy-coils.jpg",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "nickel",
@@ -7681,7 +7681,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Sheet and plates/Nikle.png"
+            "image": "/assets/Product Images/Sheet and plates/Nikle.png"
           },
           {
             "slug": "nickel-201",
@@ -7719,11 +7719,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Images/Sheet and plates/Nikle.png"
+            "image": "/assets/Product Images/Sheet and plates/Nikle.png"
           }
         ],
-        "image": "assets/Product Images/Sheet and plates/Nikle.png",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/Product Images/Sheet and plates/Nikle.png",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "titanium",
@@ -7770,7 +7770,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Sheet and plates/Titainium.png"
+            "image": "/assets/Product Images/Sheet and plates/Titainium.png"
           },
           {
             "slug": "grade-5",
@@ -7809,11 +7809,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Images/Sheet and plates/Titainium.png"
+            "image": "/assets/Product Images/Sheet and plates/Titainium.png"
           }
         ],
-        "image": "assets/Product Images/Sheet and plates/Titainium.png",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/Product Images/Sheet and plates/Titainium.png",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "copper",
@@ -7861,7 +7861,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/sheet plates coil/cs-sheet carbon.jpg"
+            "image": "/assets/New Product img/sheet plates coil/cs-sheet carbon.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -7900,11 +7900,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/sheet plates coil/cs-sheet carbon.jpg"
+            "image": "/assets/New Product img/sheet plates coil/cs-sheet carbon.jpg"
           }
         ],
-        "image": "assets/New Product img/sheet plates coil/cs-sheet carbon.jpg",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/New Product img/sheet plates coil/cs-sheet carbon.jpg",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       },
       {
         "slug": "aluminium",
@@ -7952,7 +7952,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/New Product img/sheet plates coil/alloy-steel-sheet.jpg"
+            "image": "/assets/New Product img/sheet plates coil/alloy-steel-sheet.jpg"
           },
           {
             "slug": "5083-h116",
@@ -7991,11 +7991,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/New Product img/sheet plates coil/alloy-steel-sheet.jpg"
+            "image": "/assets/New Product img/sheet plates coil/alloy-steel-sheet.jpg"
           }
         ],
-        "image": "assets/New Product img/sheet plates coil/alloy-steel-sheet.jpg",
-        "fallback": "assets/our product new images/sheet and plates.png"
+        "image": "/assets/New Product img/sheet plates coil/alloy-steel-sheet.jpg",
+        "fallback": "/assets/our product new images/sheet and plates.png"
       }
     ]
   },
@@ -8005,7 +8005,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "RODS & BARS",
     "suffix": "Rods & Bars",
     "eyebrow": "ASTM A276 / A479 PRECISION GROUND & PEELED",
-    "heroImage": "assets/hero-products/rods-bars-hero.jpg",
+    "heroImage": "/assets/hero-products/rods-bars-hero.jpg",
     "heroTag": "BRIGHT DRAWN, PEELED & GROUND ROUND BARS",
     "description": "Precision centerless ground, peeled, and cold-drawn round bars, hex rods, and square stock engineered to tight diametrical tolerances (h9/h11) for automated CNC machining, pump shafts, and valve spindles.",
     "overview": {
@@ -8081,7 +8081,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           },
           {
             "slug": "304l",
@@ -8122,7 +8122,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           },
           {
             "slug": "316",
@@ -8163,7 +8163,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           },
           {
             "slug": "316l",
@@ -8204,7 +8204,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           },
           {
             "slug": "321",
@@ -8244,7 +8244,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           },
           {
             "slug": "347",
@@ -8284,7 +8284,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           },
           {
             "slug": "310s",
@@ -8324,7 +8324,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           },
           {
             "slug": "904l",
@@ -8364,11 +8364,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Images/Rods and BArs/stainless steel.png"
+            "image": "/assets/Product Images/Rods and BArs/stainless steel.png"
           }
         ],
-        "image": "assets/Product Images/Rods and BArs/stainless steel.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/Product Images/Rods and BArs/stainless steel.png",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "carbon-steel",
@@ -8418,7 +8418,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Images/Rods and BArs/carbon.png"
+            "image": "/assets/Product Images/Rods and BArs/carbon.png"
           },
           {
             "slug": "a350-lf2",
@@ -8458,7 +8458,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Rods and BArs/carbon.png"
+            "image": "/assets/Product Images/Rods and BArs/carbon.png"
           },
           {
             "slug": "a234-wpb",
@@ -8498,7 +8498,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Images/Rods and BArs/carbon.png"
+            "image": "/assets/Product Images/Rods and BArs/carbon.png"
           },
           {
             "slug": "a516-gr70",
@@ -8536,11 +8536,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Images/Rods and BArs/carbon.png"
+            "image": "/assets/Product Images/Rods and BArs/carbon.png"
           }
         ],
-        "image": "assets/Product Images/Rods and BArs/carbon.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/Product Images/Rods and BArs/carbon.png",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "alloy-steel",
@@ -8588,7 +8588,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Images/Rods and BArs/Alloy steel.png"
+            "image": "/assets/Product Images/Rods and BArs/Alloy steel.png"
           },
           {
             "slug": "f22",
@@ -8627,7 +8627,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Images/Rods and BArs/Alloy steel.png"
+            "image": "/assets/Product Images/Rods and BArs/Alloy steel.png"
           },
           {
             "slug": "f91",
@@ -8666,11 +8666,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Images/Rods and BArs/Alloy steel.png"
+            "image": "/assets/Product Images/Rods and BArs/Alloy steel.png"
           }
         ],
-        "image": "assets/Product Images/Rods and BArs/Alloy steel.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/Product Images/Rods and BArs/Alloy steel.png",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "duplex",
@@ -8719,7 +8719,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Rods and BArs/duplex.png"
+            "image": "/assets/Product Images/Rods and BArs/duplex.png"
           },
           {
             "slug": "2507",
@@ -8759,11 +8759,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Images/Rods and BArs/duplex.png"
+            "image": "/assets/Product Images/Rods and BArs/duplex.png"
           }
         ],
-        "image": "assets/Product Images/Rods and BArs/duplex.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/Product Images/Rods and BArs/duplex.png",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "high-alloy",
@@ -8812,7 +8812,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Images/Rods and BArs/high alloys.png"
+            "image": "/assets/Product Images/Rods and BArs/high alloys.png"
           },
           {
             "slug": "hastelloy-c276",
@@ -8851,7 +8851,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Rods and BArs/high alloys.png"
+            "image": "/assets/Product Images/Rods and BArs/high alloys.png"
           },
           {
             "slug": "monel-400",
@@ -8891,11 +8891,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Images/Rods and BArs/high alloys.png"
+            "image": "/assets/Product Images/Rods and BArs/high alloys.png"
           }
         ],
-        "image": "assets/Product Images/Rods and BArs/high alloys.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/Product Images/Rods and BArs/high alloys.png",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "nickel",
@@ -8942,7 +8942,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Images/Rods and BArs/Nikle.png"
+            "image": "/assets/Product Images/Rods and BArs/Nikle.png"
           },
           {
             "slug": "nickel-201",
@@ -8980,11 +8980,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Images/Rods and BArs/Nikle.png"
+            "image": "/assets/Product Images/Rods and BArs/Nikle.png"
           }
         ],
-        "image": "assets/Product Images/Rods and BArs/Nikle.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/Product Images/Rods and BArs/Nikle.png",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "titanium",
@@ -9031,7 +9031,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Images/Rods and BArs/titainium.png"
+            "image": "/assets/Product Images/Rods and BArs/titainium.png"
           },
           {
             "slug": "grade-5",
@@ -9070,11 +9070,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Images/Rods and BArs/titainium.png"
+            "image": "/assets/Product Images/Rods and BArs/titainium.png"
           }
         ],
-        "image": "assets/Product Images/Rods and BArs/titainium.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/Product Images/Rods and BArs/titainium.png",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "copper",
@@ -9122,7 +9122,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/Bars/copper-nickel-bars.jpg"
+            "image": "/assets/New Product img/Bars/copper-nickel-bars.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -9161,11 +9161,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/Bars/copper-nickel-bars.jpg"
+            "image": "/assets/New Product img/Bars/copper-nickel-bars.jpg"
           }
         ],
-        "image": "assets/New Product img/Bars/copper-nickel-bars.jpg",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/New Product img/Bars/copper-nickel-bars.jpg",
+        "fallback": "/assets/our product new images/bars.png"
       },
       {
         "slug": "aluminium",
@@ -9213,7 +9213,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/New Product img/Bars/bars-showcase.png"
+            "image": "/assets/New Product img/Bars/bars-showcase.png"
           },
           {
             "slug": "5083-h116",
@@ -9252,11 +9252,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/New Product img/Bars/bars-showcase.png"
+            "image": "/assets/New Product img/Bars/bars-showcase.png"
           }
         ],
-        "image": "assets/New Product img/Bars/bars-showcase.png",
-        "fallback": "assets/our product new images/bars.png"
+        "image": "/assets/New Product img/Bars/bars-showcase.png",
+        "fallback": "/assets/our product new images/bars.png"
       }
     ]
   },
@@ -9266,7 +9266,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "DAIRY & PHARMA FITTINGS",
     "suffix": "Dairy & Pharma Fittings",
     "eyebrow": "DIN 11851 / SMS / ASME BPE SANITARY PROTOCOLS",
-    "heroImage": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg",
+    "heroImage": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg",
     "heroTag": "SANITARY & PHARMACEUTICAL HYGIENIC FITTINGS",
     "description": "Ultra-hygienic tri-clamp ferrules, sanitary elbows, CIP spray balls, and electro-polished tubing engineered for zero dead-leg sterility across pharmaceutical, biotech, dairy, and beverage processing lines.",
     "overview": {
@@ -9342,7 +9342,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           },
           {
             "slug": "304l",
@@ -9383,7 +9383,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           },
           {
             "slug": "316",
@@ -9424,7 +9424,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           },
           {
             "slug": "316l",
@@ -9465,7 +9465,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           },
           {
             "slug": "321",
@@ -9505,7 +9505,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           },
           {
             "slug": "347",
@@ -9545,7 +9545,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           },
           {
             "slug": "310s",
@@ -9585,7 +9585,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           },
           {
             "slug": "904l",
@@ -9625,11 +9625,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "carbon-steel",
@@ -9679,7 +9679,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
           },
           {
             "slug": "a350-lf2",
@@ -9719,7 +9719,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
           },
           {
             "slug": "a234-wpb",
@@ -9759,7 +9759,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
           },
           {
             "slug": "a516-gr70",
@@ -9797,11 +9797,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/carbon.webp",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "alloy-steel",
@@ -9849,7 +9849,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg"
           },
           {
             "slug": "f22",
@@ -9888,7 +9888,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg"
           },
           {
             "slug": "f91",
@@ -9927,11 +9927,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/alloy steel.jpeg",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "duplex",
@@ -9980,7 +9980,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/duplex.jpeg"
           },
           {
             "slug": "2507",
@@ -10020,11 +10020,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/duplex.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/duplex.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/duplex.jpeg",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/duplex.jpeg",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "high-alloy",
@@ -10073,7 +10073,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg"
           },
           {
             "slug": "hastelloy-c276",
@@ -10112,7 +10112,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg"
           },
           {
             "slug": "monel-400",
@@ -10152,11 +10152,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/high alloy.jpeg",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "nickel",
@@ -10203,7 +10203,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/nikle.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/nikle.webp"
           },
           {
             "slug": "nickel-201",
@@ -10241,11 +10241,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/nikle.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/nikle.webp"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/nikle.webp",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/nikle.webp",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "titanium",
@@ -10292,7 +10292,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/titainium.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/titainium.jpg"
           },
           {
             "slug": "grade-5",
@@ -10331,11 +10331,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/titainium.jpg"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/titainium.jpg"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/titainium.jpg",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/titainium.jpg",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "copper",
@@ -10383,7 +10383,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
+            "image": "/assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -10422,11 +10422,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
+            "image": "/assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg"
           }
         ],
-        "image": "assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/New Product img/pipe fittings/copper-nickel-pipe-fittings.jpg",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       },
       {
         "slug": "aluminium",
@@ -10474,7 +10474,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/super duplex.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/super duplex.webp"
           },
           {
             "slug": "5083-h116",
@@ -10513,11 +10513,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/super duplex.webp"
+            "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/super duplex.webp"
           }
         ],
-        "image": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/super duplex.webp",
-        "fallback": "assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
+        "image": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/super duplex.webp",
+        "fallback": "/assets/Product Section/Manufacturer division/Dairy & Pharma Fittings/stainless steel.jpg"
       }
     ]
   },
@@ -10527,7 +10527,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "FLAT BARS",
     "suffix": "Flat Bars",
     "eyebrow": "ASTM A276 / EN 10058 COLD DRAWN & SLIT",
-    "heroImage": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg",
+    "heroImage": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg",
     "heroTag": "PRECISION SLIT & MACHINED FLAT BARS",
     "description": "Precision cold-drawn and hot-rolled flat bars with true 90-degree square edges, consistent thickness, and superior flatness for structural brackets, machine guide ways, and busbars.",
     "overview": {
@@ -10603,7 +10603,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           },
           {
             "slug": "304l",
@@ -10644,7 +10644,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           },
           {
             "slug": "316",
@@ -10685,7 +10685,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           },
           {
             "slug": "316l",
@@ -10726,7 +10726,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           },
           {
             "slug": "321",
@@ -10766,7 +10766,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           },
           {
             "slug": "347",
@@ -10806,7 +10806,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           },
           {
             "slug": "310s",
@@ -10846,7 +10846,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           },
           {
             "slug": "904l",
@@ -10886,11 +10886,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "carbon-steel",
@@ -10940,7 +10940,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Section/Supplier division/flat/carbon.avif"
+            "image": "/assets/Product Section/Supplier division/flat/carbon.avif"
           },
           {
             "slug": "a350-lf2",
@@ -10980,7 +10980,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/flat/carbon.avif"
+            "image": "/assets/Product Section/Supplier division/flat/carbon.avif"
           },
           {
             "slug": "a234-wpb",
@@ -11020,7 +11020,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Supplier division/flat/carbon.avif"
+            "image": "/assets/Product Section/Supplier division/flat/carbon.avif"
           },
           {
             "slug": "a516-gr70",
@@ -11058,11 +11058,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Section/Supplier division/flat/carbon.avif"
+            "image": "/assets/Product Section/Supplier division/flat/carbon.avif"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/carbon.avif",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/carbon.avif",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "alloy-steel",
@@ -11110,7 +11110,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Section/Supplier division/flat/alloy steel.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/alloy steel.jpg"
           },
           {
             "slug": "f22",
@@ -11149,7 +11149,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Section/Supplier division/flat/alloy steel.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/alloy steel.jpg"
           },
           {
             "slug": "f91",
@@ -11188,11 +11188,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Section/Supplier division/flat/alloy steel.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/alloy steel.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/alloy steel.jpg",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/alloy steel.jpg",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "duplex",
@@ -11241,7 +11241,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/flat/duplex.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/duplex.jpg"
           },
           {
             "slug": "2507",
@@ -11281,11 +11281,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/flat/duplex.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/duplex.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/duplex.jpg",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/duplex.jpg",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "high-alloy",
@@ -11334,7 +11334,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Section/Supplier division/flat/high alloy.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/high alloy.jpg"
           },
           {
             "slug": "hastelloy-c276",
@@ -11373,7 +11373,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/flat/high alloy.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/high alloy.jpg"
           },
           {
             "slug": "monel-400",
@@ -11413,11 +11413,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Supplier division/flat/high alloy.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/high alloy.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/high alloy.jpg",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/high alloy.jpg",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "nickel",
@@ -11464,7 +11464,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Supplier division/flat/nikle.png"
+            "image": "/assets/Product Section/Supplier division/flat/nikle.png"
           },
           {
             "slug": "nickel-201",
@@ -11502,11 +11502,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Section/Supplier division/flat/nikle.png"
+            "image": "/assets/Product Section/Supplier division/flat/nikle.png"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/nikle.png",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/nikle.png",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "titanium",
@@ -11553,7 +11553,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/flat/titanium-flat-bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/titanium-flat-bar.jpg"
           },
           {
             "slug": "grade-5",
@@ -11592,11 +11592,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Supplier division/flat/titanium-flat-bar.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/titanium-flat-bar.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/titanium-flat-bar.jpg",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/titanium-flat-bar.jpg",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "copper",
@@ -11644,7 +11644,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/Bars/copper-nickel-bars.jpg"
+            "image": "/assets/New Product img/Bars/copper-nickel-bars.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -11683,11 +11683,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/New Product img/Bars/copper-nickel-bars.jpg"
+            "image": "/assets/New Product img/Bars/copper-nickel-bars.jpg"
           }
         ],
-        "image": "assets/New Product img/Bars/copper-nickel-bars.jpg",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/New Product img/Bars/copper-nickel-bars.jpg",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       },
       {
         "slug": "aluminium",
@@ -11735,7 +11735,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/Product Section/Supplier division/flat/super duplex.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/super duplex.jpg"
           },
           {
             "slug": "5083-h116",
@@ -11774,11 +11774,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/Product Section/Supplier division/flat/super duplex.jpg"
+            "image": "/assets/Product Section/Supplier division/flat/super duplex.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/flat/super duplex.jpg",
-        "fallback": "assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
+        "image": "/assets/Product Section/Supplier division/flat/super duplex.jpg",
+        "fallback": "/assets/Product Section/Supplier division/flat/Stainless-Steel-Flat-Bar.jpg"
       }
     ]
   },
@@ -11788,7 +11788,7 @@ export const CATALOG_PRODUCTS_DATA = [
     "title": "CIRCLE",
     "suffix": "Circle",
     "eyebrow": "CNC LASER & WATERJET CUT CIRCULAR BLANKS",
-    "heroImage": "assets/hero-products/circle-hero.png",
+    "heroImage": "/assets/hero-products/circle-hero.png",
     "heroTag": "CNC PRECISION LASER-CUT CIRCULAR BLANKS",
     "description": "Precision laser-cut, plasma-cut, and waterjet-machined circular plates, blind blanks, and dished end preforms with clean perpendicular edges and tight diametrical tolerances for vessel head fabrication.",
     "overview": {
@@ -11864,7 +11864,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-43",
               "NACE MR0175 (annealed)"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           },
           {
             "slug": "304l",
@@ -11905,7 +11905,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           },
           {
             "slug": "316",
@@ -11946,7 +11946,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           },
           {
             "slug": "316l",
@@ -11987,7 +11987,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A403",
               "ASME BPE"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           },
           {
             "slug": "321",
@@ -12027,7 +12027,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA182",
               "API 530"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           },
           {
             "slug": "347",
@@ -12067,7 +12067,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASME Section III Class 1"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           },
           {
             "slug": "310s",
@@ -12107,7 +12107,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A312",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           },
           {
             "slug": "904l",
@@ -12147,11 +12147,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B625",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
           }
         ],
-        "image": "assets/hero-products/circle-hero.png",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/hero-products/circle-hero.png",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "carbon-steel",
@@ -12201,7 +12201,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "MSS-SP-79",
               "NACE MR0175 (normalized)"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/carbon.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/carbon.jpg"
           },
           {
             "slug": "a350-lf2",
@@ -12241,7 +12241,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A350",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/carbon.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/carbon.jpg"
           },
           {
             "slug": "a234-wpb",
@@ -12281,7 +12281,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A234",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/carbon.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/carbon.jpg"
           },
           {
             "slug": "a516-gr70",
@@ -12319,11 +12319,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASME SA516",
               "ASME Section VIII Div 1 & 2"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/carbon.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/carbon.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/carbon.jpg",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/carbon.jpg",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "alloy-steel",
@@ -12371,7 +12371,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "API 941"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/alloy steel.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/alloy steel.jpg"
           },
           {
             "slug": "f22",
@@ -12410,7 +12410,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A182",
               "ASTM A335 Grade P22"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/alloy steel.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/alloy steel.jpg"
           },
           {
             "slug": "f91",
@@ -12449,11 +12449,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM A335 Grade P91",
               "EPRI Guidelines"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/alloy steel.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/alloy steel.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/alloy steel.jpg",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/alloy steel.jpg",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "duplex",
@@ -12502,7 +12502,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSK M-630 MDS D44",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/duplex.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/duplex.jpg"
           },
           {
             "slug": "2507",
@@ -12542,11 +12542,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NORSOK M-630 MDS D54",
               "ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/duplex.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/duplex.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/duplex.jpg",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/duplex.jpg",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "high-alloy",
@@ -12595,7 +12595,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "AMS 5666"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/high alloy.webp"
+            "image": "/assets/Product Section/Supplier division/Circle/high alloy.webp"
           },
           {
             "slug": "hastelloy-c276",
@@ -12634,7 +12634,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/high alloy.webp"
+            "image": "/assets/Product Section/Supplier division/Circle/high alloy.webp"
           },
           {
             "slug": "monel-400",
@@ -12674,11 +12674,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "NACE MR0175",
               "MSS-SP-25"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/high alloy.webp"
+            "image": "/assets/Product Section/Supplier division/Circle/high alloy.webp"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/high alloy.webp",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/high alloy.webp",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "nickel",
@@ -12725,7 +12725,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "ASME Section VIII Div 1"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/nikle.webp"
+            "image": "/assets/Product Section/Supplier division/Circle/nikle.webp"
           },
           {
             "slug": "nickel-201",
@@ -12763,11 +12763,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B564",
               "DIN 17750"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/nikle.webp"
+            "image": "/assets/Product Section/Supplier division/Circle/nikle.webp"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/nikle.webp",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/nikle.webp",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "titanium",
@@ -12814,7 +12814,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "ASTM B381",
               "NACE MR0175 / ISO 15156"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Titanium.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Titanium.png"
           },
           {
             "slug": "grade-5",
@@ -12853,11 +12853,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4928",
               "NACE MR0175"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/Titanium.png"
+            "image": "/assets/Product Section/Supplier division/Circle/Titanium.png"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/Titanium.png",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/Titanium.png",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "copper",
@@ -12905,7 +12905,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/exotic.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/exotic.jpg"
           },
           {
             "slug": "cu-ni-70-30",
@@ -12944,11 +12944,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DIN 86019",
               "MIL-C-15726"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/exotic.jpg"
+            "image": "/assets/Product Section/Supplier division/Circle/exotic.jpg"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/exotic.jpg",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/exotic.jpg",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       },
       {
         "slug": "aluminium",
@@ -12996,7 +12996,7 @@ export const CATALOG_PRODUCTS_DATA = [
               "AMS 4027",
               "ASME B16.5"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/super duplex.webp"
+            "image": "/assets/Product Section/Supplier division/Circle/super duplex.webp"
           },
           {
             "slug": "5083-h116",
@@ -13035,11 +13035,11 @@ export const CATALOG_PRODUCTS_DATA = [
               "DNV-GL Marine Rules",
               "ASME Section VIII"
             ],
-            "image": "assets/Product Section/Supplier division/Circle/super duplex.webp"
+            "image": "/assets/Product Section/Supplier division/Circle/super duplex.webp"
           }
         ],
-        "image": "assets/Product Section/Supplier division/Circle/super duplex.webp",
-        "fallback": "assets/Product Section/Supplier division/Circle/Stainless steel.png"
+        "image": "/assets/Product Section/Supplier division/Circle/super duplex.webp",
+        "fallback": "/assets/Product Section/Supplier division/Circle/Stainless steel.png"
       }
     ]
   }
