@@ -4973,7 +4973,8 @@ img, svg, video, iframe, embed, object {
   padding: 0 clamp(20px, 3.5vw, 56px);
 }
 
-.footer-grid {
+.footer-grid,
+.footer-main-grid {
   display: grid;
   grid-template-columns: 1.4fr 0.9fr 1.35fr 1.15fr;
   gap: clamp(28px, 3vw, 48px);
@@ -5000,7 +5001,8 @@ img, svg, video, iframe, embed, object {
 }
 
 /* Column 1: Company */
-.footer-logo-card {
+.footer-logo-card,
+.footer-logo-wrapper {
   background: #FFFFFF;
   border-radius: 8px;
   padding: 10px 16px;
@@ -5008,12 +5010,15 @@ img, svg, video, iframe, embed, object {
   align-items: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   margin-bottom: 18px;
+  max-width: 280px;
 }
 
-.footer-brand-logo {
+.footer-brand-logo,
+.footer-brand-img,
+.footer-logo-img {
   height: clamp(52px, 4vw, 64px);
   width: auto;
-  max-width: 280px;
+  max-width: 100%;
   object-fit: contain;
   display: block;
 }
@@ -5486,7 +5491,8 @@ img, svg, video, iframe, embed, object {
    ========================================================================== */
 
 @media (max-width: 1200px) {
-  .footer-grid {
+  .footer-grid,
+  .footer-main-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 36px;
   }
@@ -5523,14 +5529,18 @@ img, svg, video, iframe, embed, object {
     justify-content: center;
     font-size: 14px;
   }
-  .footer-grid {
+  .footer-grid,
+  .footer-main-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .footer-logo-card {
+  .footer-logo-card,
+  .footer-logo-wrapper {
     padding: 8px 14px;
   }
-  .footer-brand-logo {
+  .footer-brand-logo,
+  .footer-brand-img,
+  .footer-logo-img {
     height: 48px;
   }
   .f-phone-row {

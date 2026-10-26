@@ -16,6 +16,16 @@ function copyAssetsPlugin() {
           console.error('Failed to copy assets:', err);
         }
       }
+      const logoSrc = resolve(__dirname, 'logo');
+      const logoDest = resolve(__dirname, 'dist', 'logo');
+      if (fs.existsSync(logoSrc)) {
+        try {
+          fs.cpSync(logoSrc, logoDest, { recursive: true });
+          console.log('✓ Successfully copied logo to dist/logo');
+        } catch (err) {
+          console.error('Failed to copy logo:', err);
+        }
+      }
     }
   };
 }
