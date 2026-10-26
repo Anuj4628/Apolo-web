@@ -1446,15 +1446,15 @@ export const CATALOG_PRODUCTS_DATA = [
   },
   {
     "slug": "forge-fittings",
-    "name": "Body Fitting",
-    "title": "BODY FITTING / FORGED FITTINGS",
-    "suffix": "Forged Fittings",
+    "name": "Forge Fittings",
+    "title": "FORGE FITTINGS",
+    "suffix": "Forge Fittings",
     "eyebrow": "ASME B16.11 / BS 3799 CLASS 2000# TO 9000#",
     "heroImage": "assets/hero-products/forge-fittings-hero.png",
     "heroTag": "ASME B16.11 HIGH-PRESSURE FORGED FITTINGS",
     "description": "Apollo Forge & Fittings manufactures certified high-pressure forged steel pipe fittings engineered for severe mechanical containment. Produced from hot-forged billets with grain flow aligned to fitting contours, these components withstand extreme pressure shocks, thermal cycling, and harsh industrial environments.",
     "overview": {
-      "lead": "Forged fittings (body fittings) provide directional transitions, branch connections, and pipe size reductions in small-bore piping systems. Manufactured by closed-die forging followed by precision CNC machining.",
+      "lead": "Forged fittings provide directional transitions, branch connections, and pipe size reductions in small-bore piping systems. Manufactured by closed-die forging followed by precision CNC machining.",
       "highlights": [
         {
           "title": "Pressure Ratings",

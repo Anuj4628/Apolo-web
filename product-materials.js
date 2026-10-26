@@ -1935,8 +1935,8 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
                 <div class="pm-showcase-glow" aria-hidden="true"></div>
                 <div class="pm-showcase-media">
                   <img 
-                    src="assets/hero.png" 
-                    alt="Apollo Industrial Metallurgy Showcase" 
+                    src="assets/hero-products/materials-alloys-hero.jpg" 
+                    alt="Apollo Certified Industrial Metallurgy &amp; Raw Alloys Showcase" 
                     class="pm-showcase-img"
                     loading="eager"
                     onerror="this.onerror=null; this.src='assets/hero-products/flanges-hero.png';"
