@@ -256,6 +256,34 @@
   }
 
   /**
+   * Why Choose Us - Interactive 3D Flip Cards Controller
+   */
+  function initWhyFlipCards() {
+    const cards = document.querySelectorAll('.why-flip-card');
+    if (!cards.length) return;
+
+    cards.forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (e.target.closest('a') || e.target.closest('button')) return;
+        card.classList.toggle('is-flipped');
+      });
+
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.classList.toggle('is-flipped');
+        }
+      });
+
+      card.addEventListener('pointerleave', function () {
+        if (window.matchMedia('(hover: hover)').matches) {
+          card.classList.remove('is-flipped');
+        }
+      });
+    });
+  }
+
+  /**
    * Industries We Serve - Interactive 3D Flip Cards Controller
    * Provides:
    * - Touch / click tap-to-flip interaction with support for link navigation
@@ -385,8 +413,11 @@
       handleScroll();
     }
 
-    // Note: Per requirements, About Us, Products, Materials, Certificates, Contact,
-    // and Get Quote remain visible but non-clickable for now. Only Home is functional.
+    // Active state indicator for Get Quote button
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (currentPath.includes('get-quote') || currentPath.includes('rfq')) {
+      if (getQuoteBtn) getQuoteBtn.classList.add('is-active');
+    }
 
     if (mobileBtn && drawer) {
       function closeDrawer() {
@@ -433,6 +464,152 @@
         }
       });
     }
+  }
+
+  /**
+   * Product Mega-Menu Dropdown Controller
+   * - Desktop: Smooth hover & focus transitions with debounce grace period
+   * - Desktop: Smart boundary clamping to prevent laptop viewport overflow
+   * - Desktop: Full keyboard accessibility (Enter/Space, Escape, Arrow navigation)
+   * - Mobile: Accordion tap toggle inside navigation drawer
+   */
+  /**
+   * MEGA DROPDOWN CONTROLLER (Product & Material)
+   * - Desktop: Smooth hover & focus transitions with debounce grace period
+   * - Desktop: Smart boundary clamping to prevent laptop viewport overflow
+   * - Desktop: Full keyboard accessibility (Enter/Space, Escape, Arrow navigation)
+   * - Mobile: Accordion tap toggle inside navigation drawer
+   */
+  function setupMegaDropdown(options) {
+    const navItem = document.getElementById(options.navItemId);
+    const trigger = document.getElementById(options.triggerId);
+    const dropdown = document.getElementById(options.dropdownId);
+    const mobileToggle = document.getElementById(options.mobileToggleId);
+    const mobileMenu = document.getElementById(options.mobileMenuId);
+
+    // Desktop hover & keyboard behavior
+    if (navItem && trigger && dropdown) {
+      let closeTimeout = null;
+
+      function openMenu() {
+        if (closeTimeout) {
+          clearTimeout(closeTimeout);
+          closeTimeout = null;
+        }
+        navItem.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+        clampDropdownPosition();
+      }
+
+      function closeMenu() {
+        if (closeTimeout) clearTimeout(closeTimeout);
+        closeTimeout = setTimeout(function () {
+          navItem.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+          dropdown.style.left = '';
+          dropdown.style.transform = '';
+        }, 120); // 120ms grace window for smooth diagonal mouse movement
+      }
+
+      function clampDropdownPosition() {
+        if (window.innerWidth <= 1024) return;
+        dropdown.style.left = '50%';
+        dropdown.style.transform = 'translateX(-50%)';
+
+        const rect = dropdown.getBoundingClientRect();
+        const padding = 16;
+        const viewportWidth = window.innerWidth;
+
+        if (rect.left < padding) {
+          const shift = padding - rect.left;
+          dropdown.style.transform = `translateX(calc(-50% + ${shift}px))`;
+        } else if (rect.right > viewportWidth - padding) {
+          const shift = rect.right - (viewportWidth - padding);
+          dropdown.style.transform = `translateX(calc(-50% - ${shift}px))`;
+        }
+      }
+
+      navItem.addEventListener('mouseenter', openMenu);
+      navItem.addEventListener('mouseleave', closeMenu);
+
+      // Keyboard support on trigger
+      trigger.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          if (navItem.classList.contains('is-open') && (e.key === 'Enter' || e.key === ' ')) {
+            closeMenu();
+          } else {
+            openMenu();
+            const firstLink = dropdown.querySelector('.product-item-link');
+            if (firstLink) firstLink.focus();
+          }
+        } else if (e.key === 'Escape') {
+          navItem.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+          trigger.focus();
+        }
+      });
+
+      // Escape key to close from inside dropdown
+      dropdown.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          navItem.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+          trigger.focus();
+        }
+      });
+
+      // Close on outside click
+      document.addEventListener('click', function (e) {
+        if (!navItem.contains(e.target)) {
+          navItem.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (navItem.classList.contains('is-open')) {
+          clampDropdownPosition();
+        }
+      });
+    }
+
+    // Mobile drawer accordion toggle
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = mobileMenu.classList.toggle('is-open');
+        mobileToggle.classList.toggle('is-expanded', isOpen);
+        mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+  }
+
+  function initNavDropdowns() {
+    setupMegaDropdown({
+      navItemId: 'navProductItem',
+      triggerId: 'productNavTrigger',
+      dropdownId: 'productMegaDropdown',
+      mobileToggleId: 'mobileProductToggle',
+      mobileMenuId: 'mobileProductMenu'
+    });
+
+    setupMegaDropdown({
+      navItemId: 'navMaterialItem',
+      triggerId: 'materialNavTrigger',
+      dropdownId: 'materialMegaDropdown',
+      mobileToggleId: 'mobileMaterialToggle',
+      mobileMenuId: 'mobileMaterialMenu'
+    });
+
+    setupMegaDropdown({
+      navItemId: 'navCertificateItem',
+      triggerId: 'certificateNavTrigger',
+      dropdownId: 'certificateDropdown',
+      mobileToggleId: 'mobileCertToggle',
+      mobileMenuId: 'mobileCertMenu'
+    });
   }
 
   /**
@@ -556,16 +733,265 @@
     updateMarqueeVisibility();
   }
 
+  // Home Page Product Cards Click Navigation
+  function initProductCardsNavigation() {
+    const cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => {
+      const link = card.querySelector('.explore-btn');
+      if (link) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('a') || e.target.closest('button')) return;
+          const href = link.getAttribute('href');
+          if (href) window.location.href = href;
+        });
+      }
+    });
+  }
+
+  // Certificate Lightbox & Zoom Viewer Controller
+  function initCertificateLightbox() {
+    const modal = document.getElementById('certLightboxModal');
+    if (!modal) return;
+
+    const img = modal.querySelector('#lightboxImg');
+    const titleEl = modal.querySelector('#lightboxTitle');
+    const badgeEl = modal.querySelector('#lightboxBadge');
+    const downloadBtn = modal.querySelector('#lightboxDownload');
+    const closeBtn = modal.querySelector('#lightboxClose');
+    const prevBtn = modal.querySelector('#lightboxPrev');
+    const nextBtn = modal.querySelector('#lightboxNext');
+    const zoomInBtn = modal.querySelector('#lightboxZoomIn');
+    const zoomOutBtn = modal.querySelector('#lightboxZoomOut');
+    const zoomResetBtn = modal.querySelector('#lightboxZoomReset');
+    const imgWrapper = modal.querySelector('#lightboxImgWrapper');
+
+    const certCards = document.querySelectorAll('.cert-card[data-cert-src]');
+    if (!certCards.length) return;
+
+    const certData = Array.from(certCards).map(card => ({
+      src: card.getAttribute('data-cert-src'),
+      title: card.getAttribute('data-cert-title') || 'Certificate',
+      badge: card.getAttribute('data-cert-badge') || 'CERTIFIED',
+      download: card.getAttribute('data-cert-download') || card.getAttribute('data-cert-src')
+    }));
+
+    let currentIndex = 0;
+    let zoomLevel = 1;
+    let isDragging = false;
+    let startX = 0, startY = 0, translateX = 0, translateY = 0;
+
+    function updateTransform() {
+      if (img) {
+        img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${zoomLevel})`;
+      }
+    }
+
+    function resetZoom() {
+      zoomLevel = 1;
+      translateX = 0;
+      translateY = 0;
+      updateTransform();
+    }
+
+    function showCert(index) {
+      if (index < 0) index = certData.length - 1;
+      if (index >= certData.length) index = 0;
+      currentIndex = index;
+
+      const cert = certData[currentIndex];
+      if (img) {
+        img.src = cert.src;
+        img.alt = cert.title;
+      }
+      if (titleEl) titleEl.textContent = cert.title;
+      if (badgeEl) badgeEl.textContent = cert.badge;
+      if (downloadBtn) {
+        downloadBtn.href = cert.download;
+        downloadBtn.setAttribute('download', '');
+      }
+      resetZoom();
+    }
+
+    function openModal(index) {
+      showCert(index);
+      modal.classList.add('is-active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      resetZoom();
+    }
+
+    certCards.forEach((card, idx) => {
+      const viewBtn = card.querySelector('.btn-cert-view');
+      const frame = card.querySelector('.cert-preview-frame');
+
+      if (viewBtn) {
+        viewBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal(idx);
+        });
+      }
+      if (frame) {
+        frame.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal(idx);
+        });
+      }
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showCert(currentIndex - 1);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showCert(currentIndex + 1);
+      });
+    }
+
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        zoomLevel = Math.min(zoomLevel + 0.35, 3.5);
+        updateTransform();
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        zoomLevel = Math.max(zoomLevel - 0.35, 0.7);
+        updateTransform();
+      });
+    }
+
+    if (zoomResetBtn) {
+      zoomResetBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        resetZoom();
+      });
+    }
+
+    // Drag / Pan when zoomed
+    if (imgWrapper) {
+      imgWrapper.addEventListener('mousedown', (e) => {
+        if (zoomLevel <= 1) return;
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateTransform();
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+    }
+
+    // Close on backdrop click
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.classList.contains('lightbox-body')) {
+        closeModal();
+      }
+    });
+
+    // Keyboard navigation: Escape to close, Left/Right arrows to navigate
+    document.addEventListener('keydown', (e) => {
+      if (!modal.classList.contains('is-active')) return;
+      if (e.key === 'Escape') {
+        closeModal();
+      } else if (e.key === 'ArrowLeft') {
+        showCert(currentIndex - 1);
+      } else if (e.key === 'ArrowRight') {
+        showCert(currentIndex + 1);
+      }
+    });
+  }
+
+  /**
+   * Smart Link Navigation
+   * Ensures that /get-quote, /certificate, /contact, /materials, and /products/... work across all static and dev environments
+   */
+  function initSmartLinkNavigation() {
+    const isFileProtocol = window.location.protocol === 'file:';
+
+    document.addEventListener('click', function (e) {
+      const link = e.target.closest('a');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      if (
+        href.startsWith('mailto:') ||
+        href.startsWith('tel:') ||
+        href.startsWith('javascript:') ||
+        href.startsWith('http://') ||
+        href.startsWith('https://') ||
+        href.startsWith('#')
+      ) {
+        return;
+      }
+
+      if (isFileProtocol) {
+        if (href === '/get-quote' || href === '/get-quote/' || href === '/rfq') {
+          e.preventDefault();
+          window.location.href = 'get-quote.html';
+        } else if (href === '/certificate' || href.startsWith('/certificate')) {
+          e.preventDefault();
+          const hash = href.includes('#') ? href.slice(href.indexOf('#')) : '';
+          window.location.href = 'certificate.html' + hash;
+        } else if (href === '/contact' || href.startsWith('/contact')) {
+          e.preventDefault();
+          window.location.href = 'contact.html';
+        } else if (href === '/materials' || href.startsWith('/materials')) {
+          e.preventDefault();
+          const segs = href.split('/').filter(Boolean);
+          if (segs.length > 1) {
+            window.location.href = 'product-materials.html?material=' + encodeURIComponent(segs[1]);
+          } else {
+            window.location.href = 'materials.html';
+          }
+        } else if (href.startsWith('/products/')) {
+          e.preventDefault();
+          const slug = href.replace('/products/', '');
+          window.location.href = 'product-materials.html?product=' + encodeURIComponent(slug);
+        }
+      }
+    });
+  }
+
   // Initialize Interactive Features
   function initApp() {
     initStickyNavbar();
+    initNavDropdowns();
+    initSmartLinkNavigation();
     initProductMarquee();
+    initProductCardsNavigation();
     initWhyCardsTilt();
+    initWhyFlipCards();
     initVasFlipCards();
     initIndustryFlipCards();
     initHomeCountrySearch();
     initFooterCopyButtons();
     initCurrentYear();
+    initCertificateLightbox();
   }
 
   if (document.readyState === 'loading') {

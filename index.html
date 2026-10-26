@@ -46,30 +46,273 @@
           <li class="nav-menu-item">
             <a href="about.html" class="nav-item-link">About Us</a>
           </li>
-          <li class="nav-menu-item">
-            <span class="nav-item-link is-disabled" aria-disabled="true">Products</span>
+          <li class="nav-menu-item has-dropdown" id="navProductItem">
+            <a href="#products" class="nav-item-link nav-dropdown-trigger" id="productNavTrigger" aria-haspopup="true" aria-expanded="false">
+              <span>Product</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+
+            <!-- Product Hover Mega Menu Dropdown -->
+            <div class="product-mega-dropdown" id="productMegaDropdown" role="menu" aria-label="Product Categories">
+              <div class="product-dropdown-inner">
+                <div class="product-dropdown-accent-line" aria-hidden="true"></div>
+
+                <div class="product-dropdown-grid">
+                  <!-- Column 1: Categories 1 to 5 -->
+                  <div class="product-dropdown-col">
+                    <a href="/products/flanges-manufactured-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">FLANGES</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/forged-fittings-stockist-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">FORGE FITTINGS</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/butt-weld-fittings-manufactured-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">BUTT WELD FITTINGS</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/fasteners-manufactured-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">FASTENERS</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/pipes-tubes-stockist-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">PIPES &amp; TUBES</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <!-- Precision Vertical Divider -->
+                  <div class="product-col-divider" aria-hidden="true"></div>
+
+                  <!-- Column 2: Categories 6 to 10 -->
+                  <div class="product-dropdown-col">
+                    <a href="/products/sheets-plates-stockist-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">SHEETS &amp; PLATES</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/rods-bars-manufactured-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">RODS &amp; BARS</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/dairy-pharma-fittings-stockist-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">DAIRY &amp; PHARMA FITTINGS</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/flat-bars-manufactured-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">FLAT BARS</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/products/circle-stockist-in-mumbai" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">CIRCLE</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-menu-item has-dropdown" id="navMaterialItem">
+            <a href="/materials" class="nav-item-link nav-dropdown-trigger" id="materialNavTrigger" aria-haspopup="true" aria-expanded="false">
+              <span>Materials</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+
+            <!-- Material Hover Mega Menu Dropdown -->
+            <div class="product-mega-dropdown material-mega-dropdown" id="materialMegaDropdown" role="menu" aria-label="Material Categories">
+              <div class="product-dropdown-inner">
+                <div class="product-dropdown-accent-line" aria-hidden="true"></div>
+
+                <div class="product-dropdown-grid">
+                  <!-- Column 1: Materials 1 to 5 -->
+                  <div class="product-dropdown-col">
+                    <a href="/materials/stainless-steel" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">STAINLESS STEEL</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/materials/carbon-steel" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">CARBON STEEL</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/materials/alloy-steel" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">ALLOY STEEL</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/materials/high-alloy-steel" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">HIGH ALLOY STEEL</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/materials/nickel-alloys" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">NICKEL ALLOYS</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <!-- Precision Vertical Divider -->
+                  <div class="product-col-divider" aria-hidden="true"></div>
+
+                  <!-- Column 2: Materials 6 to 9 -->
+                  <div class="product-dropdown-col">
+                    <a href="/materials/copper" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">COPPER</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/materials/titanium" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">TITANIUM</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/materials/aluminium" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">ALUMINIUM</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a href="/materials/duplex-super-duplex" class="product-item-link" role="menuitem">
+                      <span class="product-item-name">DUPLEX &amp; SUPER DUPLEX</span>
+                      <svg class="product-item-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-menu-item has-dropdown" id="navCertificateItem">
+            <a href="/certificate" class="nav-item-link nav-dropdown-trigger" id="certificateNavTrigger" aria-haspopup="true" aria-expanded="false">
+              <span>Certificate</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+
+            <!-- Certificate Hover Dropdown -->
+            <div class="product-mega-dropdown certificate-dropdown" id="certificateDropdown" role="menu" aria-label="Certificates Menu">
+              <div class="product-dropdown-inner">
+                <div class="product-dropdown-accent-line" aria-hidden="true"></div>
+
+                <div class="cert-dropdown-list">
+                  <!-- Item 1: ISO 9001:2015 -->
+                  <a href="/certificate#cert-iso-9001" class="cert-dropdown-item" role="menuitem">
+                    <div class="cert-dropdown-icon" aria-hidden="true">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <path d="M9 15l2 2 4-4"></path>
+                      </svg>
+                    </div>
+                    <div class="cert-dropdown-info">
+                      <span class="cert-dropdown-title">ISO 9001:2015</span>
+                      <span class="cert-dropdown-desc">Quality Management System (QMS)</span>
+                    </div>
+                    <svg class="cert-dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </a>
+
+                  <!-- Item 2: ISO 15156-2:2015 -->
+                  <a href="/certificate#cert-iso-15156" class="cert-dropdown-item" role="menuitem">
+                    <div class="cert-dropdown-icon" aria-hidden="true">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <polyline points="9 12 11 14 15 10"></polyline>
+                      </svg>
+                    </div>
+                    <div class="cert-dropdown-info">
+                      <span class="cert-dropdown-title">ISO 15156-2:2015</span>
+                      <span class="cert-dropdown-desc">Petroleum &amp; Sour Gas H2S Service</span>
+                    </div>
+                    <svg class="cert-dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Bottom: View All Certificates Footer Link -->
+                <div class="cert-dropdown-footer">
+                  <a href="/certificate" class="cert-dropdown-all-link" role="menuitem">
+                    <span>VIEW ALL CERTIFICATES</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-menu-item">
-            <span class="nav-item-link is-disabled" aria-disabled="true">Materials</span>
-          </li>
-          <li class="nav-menu-item">
-            <span class="nav-item-link is-disabled" aria-disabled="true">Certificates</span>
-          </li>
-          <li class="nav-menu-item">
-            <span class="nav-item-link is-disabled" aria-disabled="true">Contact</span>
+            <a href="/contact" class="nav-item-link">Contact</a>
           </li>
         </ul>
       </nav>
 
       <!-- Far Right: Get Quote Button (Item 7) & Mobile Hamburger -->
       <div class="header-action-area">
-        <button type="button" class="btn-apollo-quote is-non-clickable" id="getQuoteBtn" aria-label="Get Quote" aria-disabled="true">
+        <a href="/get-quote" class="btn-apollo-quote" id="getQuoteBtn" aria-label="Get Quote">
           <span class="quote-text">Get Quote</span>
           <svg class="quote-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
-        </button>
+        </a>
 
         <!-- Mobile Menu Toggle Button -->
         <button class="mobile-hamburger" id="mobileMenuBtn" aria-label="Toggle navigation menu" type="button" aria-expanded="false">
@@ -84,20 +327,67 @@
     <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
       <ul class="mobile-menu-list">
         <li><a href="#heroSection" class="mobile-menu-link is-active">Home</a></li>
-        <li><a href="about.html" class="mobile-menu-link">About Us</a></li>
-        <li><span class="mobile-menu-link is-disabled">Products</span></li>
-        <li><span class="mobile-menu-link is-disabled">Materials</span></li>
-        <li><span class="mobile-menu-link is-disabled">Certificates</span></li>
-        <li><span class="mobile-menu-link is-disabled">Contact</span></li>
+        <li class="mobile-dropdown-item">
+          <button type="button" class="mobile-menu-link mobile-dropdown-toggle" id="mobileProductToggle" aria-expanded="false" aria-controls="mobileProductMenu">
+            <span>Product</span>
+            <svg class="mobile-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-menu" id="mobileProductMenu" role="region" aria-label="Product categories">
+            <a href="/products/flanges-manufactured-in-mumbai" class="mobile-subproduct-link">FLANGES</a>
+            <a href="/products/forged-fittings-stockist-in-mumbai" class="mobile-subproduct-link">FORGE FITTINGS</a>
+            <a href="/products/butt-weld-fittings-manufactured-in-mumbai" class="mobile-subproduct-link">BUTT WELD FITTINGS</a>
+            <a href="/products/fasteners-manufactured-in-mumbai" class="mobile-subproduct-link">FASTENERS</a>
+            <a href="/products/pipes-tubes-stockist-in-mumbai" class="mobile-subproduct-link">PIPES &amp; TUBES</a>
+            <a href="/products/sheets-plates-stockist-in-mumbai" class="mobile-subproduct-link">SHEETS &amp; PLATES</a>
+            <a href="/products/rods-bars-manufactured-in-mumbai" class="mobile-subproduct-link">RODS &amp; BARS</a>
+            <a href="/products/dairy-pharma-fittings-stockist-in-mumbai" class="mobile-subproduct-link">DAIRY &amp; PHARMA FITTINGS</a>
+            <a href="/products/flat-bars-manufactured-in-mumbai" class="mobile-subproduct-link">FLAT BARS</a>
+            <a href="/products/circle-stockist-in-mumbai" class="mobile-subproduct-link">CIRCLE</a>
+          </div>
+        </li>
+        <li class="mobile-dropdown-item">
+          <button type="button" class="mobile-menu-link mobile-dropdown-toggle" id="mobileMaterialToggle" aria-expanded="false" aria-controls="mobileMaterialMenu">
+            <span>Materials</span>
+            <svg class="mobile-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-menu" id="mobileMaterialMenu" role="region" aria-label="Material categories">
+            <a href="/materials" class="mobile-subproduct-link" style="font-weight: 700; color: var(--apollo-orange);">ALL MATERIALS OVERVIEW</a>
+            <a href="/materials/stainless-steel" class="mobile-subproduct-link">STAINLESS STEEL</a>
+            <a href="/materials/carbon-steel" class="mobile-subproduct-link">CARBON STEEL</a>
+            <a href="/materials/alloy-steel" class="mobile-subproduct-link">ALLOY STEEL</a>
+            <a href="/materials/high-alloy-steel" class="mobile-subproduct-link">HIGH ALLOY STEEL</a>
+            <a href="/materials/nickel-alloys" class="mobile-subproduct-link">NICKEL ALLOYS</a>
+            <a href="/materials/copper" class="mobile-subproduct-link">COPPER</a>
+            <a href="/materials/titanium" class="mobile-subproduct-link">TITANIUM</a>
+            <a href="/materials/aluminium" class="mobile-subproduct-link">ALUMINIUM</a>
+            <a href="/materials/duplex-super-duplex" class="mobile-subproduct-link">DUPLEX &amp; SUPER DUPLEX</a>
+          </div>
+        <li class="mobile-dropdown-item">
+          <button type="button" class="mobile-menu-link mobile-dropdown-toggle" id="mobileCertToggle" aria-expanded="false" aria-controls="mobileCertMenu">
+            <span>Certificate</span>
+            <svg class="mobile-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-menu" id="mobileCertMenu" role="region" aria-label="Certificate categories">
+            <a href="/certificate" class="mobile-subproduct-link" style="font-weight: 700; color: var(--apollo-orange);">VIEW ALL CERTIFICATIONS</a>
+            <a href="/certificate#cert-iso-9001" class="mobile-subproduct-link">ISO 9001:2015 (QMS)</a>
+            <a href="/certificate#cert-iso-15156" class="mobile-subproduct-link">ISO 15156-2:2015 (SOUR SERVICE)</a>
+          </div>
+        </li>
       </ul>
       <div class="mobile-drawer-cta">
-        <span class="btn-mobile-quote is-non-clickable">
+        <a href="/get-quote" class="btn-mobile-quote">
           Get Quote
           <svg class="quote-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:6px;" aria-hidden="true">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
-        </span>
+        </a>
       </div>
     </div>
   </header>
@@ -148,23 +438,23 @@
 
             <!-- Dual CTA Row (Primary Orange + Secondary Charcoal/White) -->
             <div class="slide-cta-row">
-              <button type="button" class="btn-cta-primary" aria-label="Explore Products">
+              <a href="/products/flanges-manufactured-in-mumbai" class="btn-cta-primary" aria-label="Explore Products">
                 <span class="btn-fill-wave"></span>
                 <span class="btn-cta-text">EXPLORE PRODUCTS</span>
                 <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
-              <button type="button" class="btn-cta-secondary" aria-label="View Specifications">
+              <a href="#productsSection" class="btn-cta-secondary" aria-label="View Specifications">
                 <span class="btn-secondary-fill"></span>
                 <span class="btn-secondary-text">VIEW SPECIFICATIONS</span>
                 <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
               <!-- Light Certification Badge -->
               <div class="light-spec-badge">
@@ -211,23 +501,23 @@
             </p>
 
             <div class="slide-cta-row">
-              <button type="button" class="btn-cta-primary" aria-label="Explore Pipes &amp; Fittings">
+              <a href="/products/pipes-tubes-stockist-in-mumbai" class="btn-cta-primary" aria-label="Explore Pipes &amp; Fittings">
                 <span class="btn-fill-wave"></span>
                 <span class="btn-cta-text">EXPLORE PIPES &amp; FITTINGS</span>
                 <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
-              <button type="button" class="btn-cta-secondary" aria-label="Download Catalog">
+              <a href="/get-quote" class="btn-cta-secondary" aria-label="Download Catalog &amp; Quote">
                 <span class="btn-secondary-fill"></span>
                 <span class="btn-secondary-text">DOWNLOAD CATALOG</span>
                 <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
               <div class="light-spec-badge">
                 <span class="badge-dot"></span>
@@ -273,23 +563,23 @@
             </p>
 
             <div class="slide-cta-row">
-              <button type="button" class="btn-cta-primary" aria-label="Explore Fasteners">
+              <a href="/products/fasteners-manufactured-in-mumbai" class="btn-cta-primary" aria-label="Explore Fasteners">
                 <span class="btn-fill-wave"></span>
                 <span class="btn-cta-text">EXPLORE FASTENERS</span>
                 <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
-              <button type="button" class="btn-cta-secondary" aria-label="Material Grades">
+              <a href="/materials" class="btn-cta-secondary" aria-label="Material Grades">
                 <span class="btn-secondary-fill"></span>
                 <span class="btn-secondary-text">MATERIAL GRADES</span>
                 <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
               <div class="light-spec-badge">
                 <span class="badge-dot"></span>
@@ -335,23 +625,23 @@
             </p>
 
             <div class="slide-cta-row">
-              <button type="button" class="btn-cta-primary" aria-label="Discover Our Capabilities">
+              <a href="about.html" class="btn-cta-primary" aria-label="Discover Our Capabilities">
                 <span class="btn-fill-wave"></span>
                 <span class="btn-cta-text">DISCOVER OUR CAPABILITIES</span>
                 <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
-              <button type="button" class="btn-cta-secondary" aria-label="View Products">
+              <a href="#productsSection" class="btn-cta-secondary" aria-label="View Products">
                 <span class="btn-secondary-fill"></span>
                 <span class="btn-secondary-text">VIEW PRODUCTS</span>
                 <svg class="btn-secondary-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </button>
+              </a>
 
               <div class="light-spec-badge">
                 <span class="badge-dot"></span>
@@ -467,7 +757,7 @@
           <!-- Item 01: Stainless Steel Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-flanges.jpg" alt="Stainless Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/weld-neck-flanges.jpg" alt="Stainless Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FLANGES</span>
@@ -478,7 +768,7 @@
           <!-- Item 02: Carbon Steel Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/carbon-steel-flanges.jpg" alt="Carbon Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/Product Images/Flanges/carbon.png" alt="Carbon Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FLANGES</span>
@@ -489,7 +779,7 @@
           <!-- Item 03: Alloy Steel Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/alloy-steel-flanges.jpg" alt="Alloy Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/Product Images/Flanges/alloy steel.jpg" alt="Alloy Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FLANGES</span>
@@ -533,7 +823,7 @@
           <!-- Item 07: Carbon Steel Forged Fittings -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/Product Images/Forged Fittings/carbon.avif" alt="Carbon Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/Product Images/Forged Fittings/forge-fitting-card.png" alt="Carbon Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FORGED FITTINGS</span>
@@ -555,7 +845,7 @@
           <!-- Item 09: Stainless Steel 304/304L Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-304-304l-flanges.jpg" alt="Stainless Steel 304/304L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/blind-flanges.jpg" alt="Stainless Steel 304/304L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">GRADE 304 / 304L</span>
@@ -566,7 +856,7 @@
           <!-- Item 10: Stainless Steel 316/316L Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-316-316l-316h-flanges.jpg" alt="Stainless Steel 316/316L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/threaded-flanges.jpg" alt="Stainless Steel 316/316L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">GRADE 316 / 316L</span>
@@ -577,7 +867,7 @@
           <!-- Item 11: Stainless Steel 310S Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-310-310s-flanges.jpg" alt="Stainless Steel 310S Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/slip-on-flanges.jpg" alt="Stainless Steel 310S Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">GRADE 310S</span>
@@ -646,7 +936,7 @@
           <!-- Item 01: Stainless Steel Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-flanges.jpg" alt="Stainless Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/weld-neck-flanges.jpg" alt="Stainless Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FLANGES</span>
@@ -657,7 +947,7 @@
           <!-- Item 02: Carbon Steel Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/carbon-steel-flanges.jpg" alt="Carbon Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/Product Images/Flanges/carbon.png" alt="Carbon Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FLANGES</span>
@@ -668,7 +958,7 @@
           <!-- Item 03: Alloy Steel Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/alloy-steel-flanges.jpg" alt="Alloy Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/Product Images/Flanges/alloy steel.jpg" alt="Alloy Steel Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FLANGES</span>
@@ -712,7 +1002,7 @@
           <!-- Item 07: Carbon Steel Forged Fittings -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/Product Images/Forged Fittings/carbon.avif" alt="Carbon Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/Product Images/Forged Fittings/forge-fitting-card.png" alt="Carbon Steel Forged Fittings" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">FORGED FITTINGS</span>
@@ -734,7 +1024,7 @@
           <!-- Item 09: Stainless Steel 304/304L Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-304-304l-flanges.jpg" alt="Stainless Steel 304/304L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/blind-flanges.jpg" alt="Stainless Steel 304/304L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">GRADE 304 / 304L</span>
@@ -745,7 +1035,7 @@
           <!-- Item 10: Stainless Steel 316/316L Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-316-316l-316h-flanges.jpg" alt="Stainless Steel 316/316L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/threaded-flanges.jpg" alt="Stainless Steel 316/316L Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">GRADE 316 / 316L</span>
@@ -756,7 +1046,7 @@
           <!-- Item 11: Stainless Steel 310S Flanges -->
           <div class="marquee-card">
             <div class="marquee-card-img-wrap">
-              <img src="assets/flanges/grades/ss-310-310s-flanges.jpg" alt="Stainless Steel 310S Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
+              <img src="assets/flanges/types/slip-on-flanges.jpg" alt="Stainless Steel 310S Flanges" class="marquee-card-img" loading="lazy" width="240" height="150" />
             </div>
             <div class="marquee-card-meta">
               <span class="marquee-card-tag">GRADE 310S</span>
@@ -847,6 +1137,7 @@
       <div class="products-grid">
         
         <!-- Product 1: Flanges -->
+        <!-- Product 1: Flanges -->
         <article class="product-card" data-product="flanges">
           <div class="card-wave-bg" aria-hidden="true">
             <svg viewBox="0 0 400 130" preserveAspectRatio="none">
@@ -860,22 +1151,24 @@
               <span class="product-tag">Forged Components</span>
             </div>
             <div class="product-image-box">
-              <img 
-                src="assets/images/products/flanges.webp" 
-                alt="Apollo Precision Forged Flanges" 
-                class="product-img"
-                loading="lazy"
-                width="1250"
-                height="1150"
-              />
+              <a href="/products/flanges-manufactured-in-mumbai" class="product-image-link" aria-label="Explore Flanges">
+                <img 
+                  src="assets/images/products/flanges.webp" 
+                  alt="Apollo Precision Forged Flanges" 
+                  class="product-img"
+                  loading="lazy"
+                  width="1250"
+                  height="1150"
+                />
+              </a>
             </div>
             <div class="product-details">
-              <h3 class="product-name">Flanges</h3>
+              <h3 class="product-name"><a href="/products/flanges-manufactured-in-mumbai" class="product-title-link">Flanges</a></h3>
               <p class="product-desc">
                 Weld-neck, slip-on, blind, socket weld and threaded flanges manufactured in carbon, alloy and stainless steel to ASME/ANSI standards.
               </p>
               <div class="product-action">
-                <a href="#productsSection" class="explore-btn" aria-label="Explore Flanges">
+                <a href="/products/flanges-manufactured-in-mumbai" class="explore-btn" aria-label="Explore Flanges">
                   <span>Explore Product</span>
                   <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -901,22 +1194,24 @@
               <span class="product-tag">Piping Solutions</span>
             </div>
             <div class="product-image-box">
-              <img 
-                src="assets/images/products/buttweld-fittings.webp" 
-                alt="Apollo Butt Weld Fittings" 
-                class="product-img"
-                loading="lazy"
-                width="1234"
-                height="900"
-              />
+              <a href="/products/butt-weld-fittings-manufactured-in-mumbai" class="product-image-link" aria-label="Explore Butt Weld Fittings">
+                <img 
+                  src="assets/images/products/buttweld-fittings.webp" 
+                  alt="Apollo Butt Weld Fittings" 
+                  class="product-img"
+                  loading="lazy"
+                  width="1234"
+                  height="900"
+                />
+              </a>
             </div>
             <div class="product-details">
-              <h3 class="product-name">Butt Weld Fittings</h3>
+              <h3 class="product-name"><a href="/products/butt-weld-fittings-manufactured-in-mumbai" class="product-title-link">Butt Weld Fittings</a></h3>
               <p class="product-desc">
                 High-integrity seamless &amp; welded 45°/90° elbows, equal/reducing tees, concentric reducers, and pipe caps with flawless hydro-testing.
               </p>
               <div class="product-action">
-                <a href="#productsSection" class="explore-btn" aria-label="Explore Butt Weld Fittings">
+                <a href="/products/butt-weld-fittings-manufactured-in-mumbai" class="explore-btn" aria-label="Explore Butt Weld Fittings">
                   <span>Explore Product</span>
                   <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -942,22 +1237,24 @@
               <span class="product-tag">Tubular Products</span>
             </div>
             <div class="product-image-box">
-              <img 
-                src="assets/images/products/pipes-tubes.webp" 
-                alt="Apollo Pipes and Tubes" 
-                class="product-img"
-                loading="lazy"
-                width="1701"
-                height="805"
-              />
+              <a href="/products/pipes-tubes-stockist-in-mumbai" class="product-image-link" aria-label="Explore Pipes & Tubes">
+                <img 
+                  src="assets/images/products/pipes-tubes.webp" 
+                  alt="Apollo Pipes and Tubes" 
+                  class="product-img"
+                  loading="lazy"
+                  width="1701"
+                  height="805"
+                />
+              </a>
             </div>
             <div class="product-details">
-              <h3 class="product-name">Pipes &amp; Tubes</h3>
+              <h3 class="product-name"><a href="/products/pipes-tubes-stockist-in-mumbai" class="product-title-link">Pipes &amp; Tubes</a></h3>
               <p class="product-desc">
                 Heavy-wall seamless, ERW &amp; welded industrial pipes engineered for high pressure, petrochemical processing, and extreme temperature regimes.
               </p>
               <div class="product-action">
-                <a href="#productsSection" class="explore-btn" aria-label="Explore Pipes & Tubes">
+                <a href="/products/pipes-tubes-stockist-in-mumbai" class="explore-btn" aria-label="Explore Pipes & Tubes">
                   <span>Explore Product</span>
                   <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -983,22 +1280,24 @@
               <span class="product-tag">Rolled Materials</span>
             </div>
             <div class="product-image-box">
-              <img 
-                src="assets/images/products/sheets-plates.webp" 
-                alt="Apollo Sheets and Plates" 
-                class="product-img"
-                loading="lazy"
-                width="1240"
-                height="945"
-              />
+              <a href="/products/sheets-plates-stockist-in-mumbai" class="product-image-link" aria-label="Explore Sheets & Plates">
+                <img 
+                  src="assets/images/products/sheets-plates.webp" 
+                  alt="Apollo Sheets and Plates" 
+                  class="product-img"
+                  loading="lazy"
+                  width="1240"
+                  height="945"
+                />
+              </a>
             </div>
             <div class="product-details">
-              <h3 class="product-name">Sheets &amp; Plates</h3>
+              <h3 class="product-name"><a href="/products/sheets-plates-stockist-in-mumbai" class="product-title-link">Sheets &amp; Plates</a></h3>
               <p class="product-desc">
                 Hot-rolled and cold-rolled stainless, duplex, alloy and carbon steel sheets and boiler plates with precision shear cuts and certified mill test reports.
               </p>
               <div class="product-action">
-                <a href="#productsSection" class="explore-btn" aria-label="Explore Sheets & Plates">
+                <a href="/products/sheets-plates-stockist-in-mumbai" class="explore-btn" aria-label="Explore Sheets & Plates">
                   <span>Explore Product</span>
                   <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1024,22 +1323,24 @@
               <span class="product-tag">Fastening Systems</span>
             </div>
             <div class="product-image-box">
-              <img 
-                src="assets/images/products/fasteners.webp" 
-                alt="Apollo Industrial Fasteners" 
-                class="product-img"
-                loading="lazy"
-                width="1379"
-                height="942"
-              />
+              <a href="/products/fasteners-manufactured-in-mumbai" class="product-image-link" aria-label="Explore Fasteners">
+                <img 
+                  src="assets/images/products/fasteners.webp" 
+                  alt="Apollo Industrial Fasteners" 
+                  class="product-img"
+                  loading="lazy"
+                  width="1379"
+                  height="942"
+                />
+              </a>
             </div>
             <div class="product-details">
-              <h3 class="product-name">Fasteners</h3>
+              <h3 class="product-name"><a href="/products/fasteners-manufactured-in-mumbai" class="product-title-link">Fasteners</a></h3>
               <p class="product-desc">
                 High-tensile heavy hex bolts, fully threaded studs, flange bolts, anchor rods, and precision locking nuts crafted for critical industrial joints.
               </p>
               <div class="product-action">
-                <a href="#productsSection" class="explore-btn" aria-label="Explore Fasteners">
+                <a href="/products/fasteners-manufactured-in-mumbai" class="explore-btn" aria-label="Explore Fasteners">
                   <span>Explore Product</span>
                   <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1065,22 +1366,24 @@
               <span class="product-tag">Long Products</span>
             </div>
             <div class="product-image-box">
-              <img 
-                src="assets/images/products/bars-rods.webp" 
-                alt="Apollo Bars and Rods" 
-                class="product-img"
-                loading="lazy"
-                width="1254"
-                height="1140"
-              />
+              <a href="/products/rods-bars-manufactured-in-mumbai" class="product-image-link" aria-label="Explore Bars & Rods">
+                <img 
+                  src="assets/images/products/bars-rods.webp" 
+                  alt="Apollo Bars and Rods" 
+                  class="product-img"
+                  loading="lazy"
+                  width="1254"
+                  height="1140"
+                />
+              </a>
             </div>
             <div class="product-details">
-              <h3 class="product-name">Bars &amp; Rods</h3>
+              <h3 class="product-name"><a href="/products/rods-bars-manufactured-in-mumbai" class="product-title-link">Bars &amp; Rods</a></h3>
               <p class="product-desc">
                 Precision peeled, ground &amp; bright polished round bars, square rods and hex bars with strict concentricity and superior machinability.
               </p>
               <div class="product-action">
-                <a href="#productsSection" class="explore-btn" aria-label="Explore Bars & Rods">
+                <a href="/products/rods-bars-manufactured-in-mumbai" class="explore-btn" aria-label="Explore Bars & Rods">
                   <span>Explore Product</span>
                   <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1125,110 +1428,170 @@
         <div class="why-cards-track">
           
           <!-- Card 1: Quality Assurance -->
-          <div class="why-card" data-tilt>
-            <div class="card-top-row">
-              <div class="card-icon-wrapper" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  <polyline points="9 12 11 14 15 10"></polyline>
-                </svg>
+          <div class="why-card why-flip-card" tabindex="0" role="region" aria-label="Quality Assurance - Hover or click to flip">
+            <div class="why-card-inner">
+              <!-- FRONT FACE -->
+              <div class="why-card-front">
+                <div class="card-top-row">
+                  <div class="card-icon-wrapper" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                  </div>
+                  <div class="card-number" aria-label="Benefit 01">01</div>
+                </div>
+                <h3 class="card-heading">QUALITY ASSURANCE</h3>
+                <p class="card-description">
+                  Strict quality control and material traceability from raw heat selection through final certified testing.
+                </p>
+                <div class="card-bottom-action">
+                  <span class="card-action-btn" aria-hidden="true">
+                    <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="card-number" aria-label="Benefit 01">01</div>
-            </div>
-            <h3 class="card-heading">QUALITY ASSURANCE</h3>
-            <p class="card-description">
-              Strict quality control and material traceability from raw heat selection through final certified testing.
-            </p>
-            <div class="card-bottom-action">
-              <span class="card-action-btn" aria-hidden="true">
-                <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </span>
+
+              <!-- BACK FACE (Image Only) -->
+              <div class="why-card-back">
+                <img 
+                  src="assets/images/why-quality-assurance.jpg" 
+                  alt="Apollo Quality Inspection &amp; Assurance" 
+                  class="why-back-img"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
 
           <!-- Card 2: Precision Engineering -->
-          <div class="why-card" data-tilt>
-            <div class="card-top-row">
-              <div class="card-icon-wrapper" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <circle cx="12" cy="12" r="6"></circle>
-                  <circle cx="12" cy="12" r="2"></circle>
-                  <line x1="12" y1="2" x2="12" y2="4"></line>
-                  <line x1="12" y1="20" x2="12" y2="22"></line>
-                  <line x1="2" y1="12" x2="4" y2="12"></line>
-                  <line x1="20" y1="12" x2="22" y2="12"></line>
-                </svg>
+          <div class="why-card why-flip-card" tabindex="0" role="region" aria-label="Precision Engineering - Hover or click to flip">
+            <div class="why-card-inner">
+              <!-- FRONT FACE -->
+              <div class="why-card-front">
+                <div class="card-top-row">
+                  <div class="card-icon-wrapper" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                      <line x1="12" y1="2" x2="12" y2="4"></line>
+                      <line x1="12" y1="20" x2="12" y2="22"></line>
+                      <line x1="2" y1="12" x2="4" y2="12"></line>
+                      <line x1="20" y1="12" x2="22" y2="12"></line>
+                    </svg>
+                  </div>
+                  <div class="card-number" aria-label="Benefit 02">02</div>
+                </div>
+                <h3 class="card-heading">PRECISION ENGINEERING</h3>
+                <p class="card-description">
+                  High-tolerance CNC machining and forging crafted for zero-defect dimensional accuracy.
+                </p>
+                <div class="card-bottom-action">
+                  <span class="card-action-btn" aria-hidden="true">
+                    <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="card-number" aria-label="Benefit 02">02</div>
-            </div>
-            <h3 class="card-heading">PRECISION ENGINEERING</h3>
-            <p class="card-description">
-              High-tolerance CNC machining and forging crafted for zero-defect dimensional accuracy.
-            </p>
-            <div class="card-bottom-action">
-              <span class="card-action-btn" aria-hidden="true">
-                <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </span>
+
+              <!-- BACK FACE (Image Only) -->
+              <div class="why-card-back">
+                <img 
+                  src="assets/images/why-precision-engineering.jpg" 
+                  alt="Apollo Precision CNC Machining" 
+                  class="why-back-img"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
 
           <!-- Card 3: Reliable Materials -->
-          <div class="why-card" data-tilt>
-            <div class="card-top-row">
-              <div class="card-icon-wrapper" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                </svg>
+          <div class="why-card why-flip-card" tabindex="0" role="region" aria-label="Reliable Materials - Hover or click to flip">
+            <div class="why-card-inner">
+              <!-- FRONT FACE -->
+              <div class="why-card-front">
+                <div class="card-top-row">
+                  <div class="card-icon-wrapper" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                  </div>
+                  <div class="card-number" aria-label="Benefit 03">03</div>
+                </div>
+                <h3 class="card-heading">RELIABLE MATERIALS</h3>
+                <p class="card-description">
+                  Certified inventory of high-grade carbon, stainless steel, nickel alloys and duplex metals.
+                </p>
+                <div class="card-bottom-action">
+                  <span class="card-action-btn" aria-hidden="true">
+                    <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="card-number" aria-label="Benefit 03">03</div>
-            </div>
-            <h3 class="card-heading">RELIABLE MATERIALS</h3>
-            <p class="card-description">
-              Certified inventory of high-grade carbon, stainless steel, nickel alloys and duplex metals.
-            </p>
-            <div class="card-bottom-action">
-              <span class="card-action-btn" aria-hidden="true">
-                <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </span>
+
+              <!-- BACK FACE (Image Only) -->
+              <div class="why-card-back">
+                <img 
+                  src="assets/images/why-reliable-materials.png" 
+                  alt="Apollo Certified Material Inventory" 
+                  class="why-back-img"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
 
           <!-- Card 4: Industrial Experience -->
-          <div class="why-card" data-tilt>
-            <div class="card-top-row">
-              <div class="card-icon-wrapper" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 20h20"></path>
-                  <path d="M6 20V10l6 4V8l6 4V4h2v16H6z"></path>
-                  <line x1="10" y1="18" x2="10" y2="18.01"></line>
-                  <line x1="14" y1="18" x2="14" y2="18.01"></line>
-                </svg>
+          <div class="why-card why-flip-card" tabindex="0" role="region" aria-label="Industrial Experience - Hover or click to flip">
+            <div class="why-card-inner">
+              <!-- FRONT FACE -->
+              <div class="why-card-front">
+                <div class="card-top-row">
+                  <div class="card-icon-wrapper" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M2 20h20"></path>
+                      <path d="M6 20V10l6 4V8l6 4V4h2v16H6z"></path>
+                      <line x1="10" y1="18" x2="10" y2="18.01"></line>
+                      <line x1="14" y1="18" x2="14" y2="18.01"></line>
+                    </svg>
+                  </div>
+                  <div class="card-number" aria-label="Benefit 04">04</div>
+                </div>
+                <h3 class="card-heading">INDUSTRIAL EXPERIENCE</h3>
+                <p class="card-description">
+                  Decades of specialized manufacturing expertise powering global energy, chemical &amp; piping plants.
+                </p>
+                <div class="card-bottom-action">
+                  <span class="card-action-btn" aria-hidden="true">
+                    <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="card-number" aria-label="Benefit 04">04</div>
-            </div>
-            <h3 class="card-heading">INDUSTRIAL EXPERIENCE</h3>
-            <p class="card-description">
-              Decades of specialized manufacturing expertise powering global energy, chemical &amp; piping plants.
-            </p>
-            <div class="card-bottom-action">
-              <span class="card-action-btn" aria-hidden="true">
-                <svg class="card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </span>
+
+              <!-- BACK FACE (Image Only) -->
+              <div class="why-card-back">
+                <img 
+                  src="assets/images/why-industrial-experience.png" 
+                  alt="Apollo Global Industrial Supply" 
+                  class="why-back-img"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
 
@@ -1825,7 +2188,7 @@
                 Supplying corrosion-resistant nickel alloys, heavy-wall pipes, and forged flanges for high-pressure cracking units, distillation columns, and aggressive refinery environments.
               </p>
               <div class="industry-back-footer">
-                <a href="#industriesSection" class="industry-back-link" aria-label="Explore Oil, Gas and Petrochemical Applications">
+                <a href="/materials/nickel-alloys" class="industry-back-link" aria-label="Explore Oil, Gas and Petrochemical Applications">
                   <span>Explore Industry</span>
                   <svg class="industry-back-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1878,7 +2241,7 @@
                 Delivering high-integrity duplex, super duplex, and cupro-nickel materials certified to resist harsh saltwater pitting, marine bio-fouling, and subsea mechanical fatigue.
               </p>
               <div class="industry-back-footer">
-                <a href="#industriesSection" class="industry-back-link" aria-label="Explore Marine and Offshore Applications">
+                <a href="/materials/duplex-super-duplex" class="industry-back-link" aria-label="Explore Marine and Offshore Applications">
                   <span>Explore Industry</span>
                   <svg class="industry-back-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1931,7 +2294,7 @@
                 Providing high-temperature alloy steel tubes, boiler plates, and precision fittings built for ultra-supercritical steam cycles, nuclear cooling, and thermal plants.
               </p>
               <div class="industry-back-footer">
-                <a href="#industriesSection" class="industry-back-link" aria-label="Explore Power Generation and Nuclear Applications">
+                <a href="/materials/alloy-steel" class="industry-back-link" aria-label="Explore Power Generation and Nuclear Applications">
                   <span>Explore Industry</span>
                   <svg class="industry-back-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1984,7 +2347,7 @@
                 Supplying premium stainless grades, titanium, and specialized alloys with strict concentricity, tight tolerances, and full heat traceability for mission-critical aircraft assembly.
               </p>
               <div class="industry-back-footer">
-                <a href="#industriesSection" class="industry-back-link" aria-label="Explore Aerospace and Defense Applications">
+                <a href="/materials/titanium" class="industry-back-link" aria-label="Explore Aerospace and Defense Applications">
                   <span>Explore Industry</span>
                   <svg class="industry-back-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -2037,7 +2400,7 @@
                 Engineered structural sections, precision ground bars, and high-tensile industrial fasteners powering civil megaprojects, heavy machinery, and industrial crane frameworks.
               </p>
               <div class="industry-back-footer">
-                <a href="#industriesSection" class="industry-back-link" aria-label="Explore Heavy Engineering and Infrastructure Applications">
+                <a href="/products/fasteners-manufactured-in-mumbai" class="industry-back-link" aria-label="Explore Heavy Engineering and Infrastructure Applications">
                   <span>Explore Industry</span>
                   <svg class="industry-back-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -2090,7 +2453,7 @@
                 Engineered seamless pipes, butt weld elbows, and precision flanges ensuring zero-leakage fluid, chemical, and steam conveyance in critical process networks.
               </p>
               <div class="industry-back-footer">
-                <a href="#industriesSection" class="industry-back-link" aria-label="Explore Process Piping and Industrial Plants Applications">
+                <a href="/products/pipes-tubes-stockist-in-mumbai" class="industry-back-link" aria-label="Explore Process Piping and Industrial Plants Applications">
                   <span>Explore Industry</span>
                   <svg class="industry-back-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -2115,7 +2478,7 @@
           <p class="bottom-statement-text">
             <strong>One Reliable Source for Diverse Industrial Requirements.</strong> Certified material traceability, precision cutting, and specialized inventory tailored to project procurement schedules worldwide.
           </p>
-          <a href="#productsSection" class="industries-cta-btn">
+          <a href="/materials" class="industries-cta-btn">
             <span>View All Materials</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -2442,10 +2805,11 @@
             <li><a href="#heroSection" class="footer-link"><span>Home</span></a></li>
             <li><a href="about.html" class="footer-link"><span>About Us</span></a></li>
             <li><a href="#productsSection" class="footer-link"><span>Products</span></a></li>
-            <li><a href="#productsSection" class="footer-link"><span>Materials</span></a></li>
+            <li><a href="/materials" class="footer-link"><span>Materials</span></a></li>
             <li><a href="#industriesSection" class="footer-link"><span>Industries We Serve</span></a></li>
             <li><a href="#exportDestinationsSection" class="footer-link"><span>Global Export Destinations</span></a></li>
-            <li><a href="#contactSection" class="footer-link"><span>Contact Us</span></a></li>
+            <li><a href="/contact" class="footer-link"><span>Contact Us</span></a></li>
+            <li><a href="/get-quote" class="footer-link"><span>Request a Quote</span></a></li>
           </ul>
         </div>
 
@@ -2627,11 +2991,14 @@
         <div class="footer-bottom-left">
           <p>© <span id="currentYear">2026</span> Apollo Forge and Fitting. All Rights Reserved.</p>
         </div>
-        <div class="footer-bottom-right">
+        <div class="footer-bottom-center">
           <p>
             <span>Design &amp; SEO by</span> 
             <a href="https://sunmargindia.com/" target="_blank" rel="noopener noreferrer" class="sunmarg-link">Sunmarg India</a>
           </p>
+        </div>
+        <div class="footer-bottom-right">
+          <p class="footer-bottom-tagline">Steel Makes World Around Us</p>
         </div>
       </div>
     </div>
