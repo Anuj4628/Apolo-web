@@ -39,6 +39,9 @@ export default defineConfig({
           ) {
             const queryIndex = req.url.indexOf('?');
             req.url = '/get-quote.html' + (queryIndex !== -1 ? req.url.slice(queryIndex) : '');
+          } else if (req.url && (req.url === '/about' || req.url === '/about/' || req.url.startsWith('/about?'))) {
+            const queryIndex = req.url.indexOf('?');
+            req.url = '/about.html' + (queryIndex !== -1 ? req.url.slice(queryIndex) : '');
           }
           next();
         });
@@ -77,6 +80,9 @@ export default defineConfig({
           ) {
             const queryIndex = req.url.indexOf('?');
             req.url = '/get-quote.html' + (queryIndex !== -1 ? req.url.slice(queryIndex) : '');
+          } else if (req.url && (req.url === '/about' || req.url === '/about/' || req.url.startsWith('/about?'))) {
+            const queryIndex = req.url.indexOf('?');
+            req.url = '/about.html' + (queryIndex !== -1 ? req.url.slice(queryIndex) : '');
           }
           next();
         });

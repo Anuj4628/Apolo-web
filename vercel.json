@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/products", "destination": "/product-materials.html" },
+    { "source": "/products/(.*)", "destination": "/product-materials.html" },
+    { "source": "/materials", "destination": "/product-materials.html" },
+    { "source": "/materials/(.*)", "destination": "/product-materials.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/contact/(.*)", "destination": "/contact.html" },
+    { "source": "/certificate", "destination": "/certificate.html" },
+    { "source": "/certificates", "destination": "/certificate.html" },
+    { "source": "/certificates/(.*)", "destination": "/certificate.html" },
+    { "source": "/certificate/(.*)", "destination": "/certificate.html" },
+    { "source": "/get-quote", "destination": "/get-quote.html" },
+    { "source": "/get-quote/(.*)", "destination": "/get-quote.html" },
+    { "source": "/rfq", "destination": "/get-quote.html" },
+    { "source": "/rfq/(.*)", "destination": "/get-quote.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/about/(.*)", "destination": "/about.html" }
+  ]
+}
