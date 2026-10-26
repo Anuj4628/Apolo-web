@@ -1,23 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
-    { "source": "/products", "destination": "/product-materials.html" },
-    { "source": "/products/(.*)", "destination": "/product-materials.html" },
-    { "source": "/materials", "destination": "/product-materials.html" },
-    { "source": "/materials/(.*)", "destination": "/product-materials.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/contact/(.*)", "destination": "/contact.html" },
-    { "source": "/certificate", "destination": "/certificate.html" },
-    { "source": "/certificates", "destination": "/certificate.html" },
-    { "source": "/certificates/(.*)", "destination": "/certificate.html" },
-    { "source": "/certificate/(.*)", "destination": "/certificate.html" },
-    { "source": "/get-quote", "destination": "/get-quote.html" },
-    { "source": "/get-quote/(.*)", "destination": "/get-quote.html" },
-    { "source": "/rfq", "destination": "/get-quote.html" },
-    { "source": "/rfq/(.*)", "destination": "/get-quote.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/about/(.*)", "destination": "/about.html" }
+    { "source": "/products", "destination": "/product-materials" },
+    { "source": "/products/:path*", "destination": "/product-materials" },
+    { "source": "/product", "destination": "/product-materials" },
+    { "source": "/product/:path*", "destination": "/product-materials" },
+    { "source": "/materials", "destination": "/product-materials" },
+    { "source": "/materials/:path*", "destination": "/product-materials" },
+    { "source": "/material", "destination": "/product-materials" },
+    { "source": "/material/:path*", "destination": "/product-materials" },
+    { "source": "/certificates", "destination": "/certificate" },
+    { "source": "/certificates/:path*", "destination": "/certificate" },
+    { "source": "/rfq", "destination": "/get-quote" },
+    { "source": "/rfq/:path*", "destination": "/get-quote" }
   ]
 }
