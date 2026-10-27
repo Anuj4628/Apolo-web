@@ -10381,13 +10381,13 @@ img, svg, video, iframe, embed, object {
   line-height: 1.6;
 }
 
-/* 2-Column Symmetrical Grid for 2 Certificates */
+/* Symmetrical Grid for Certificates Gallery (3 Columns on Desktop, 2 on Tablet, 1 on Mobile) */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: 980px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1240px;
   margin: 0 auto;
-  gap: clamp(24px, 2.8vw, 40px);
+  gap: clamp(20px, 2.2vw, 32px);
   align-items: stretch;
 }
 
