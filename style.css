@@ -35,7 +35,7 @@
   --font-mono: 'JetBrains Mono', 'Barlow', monospace;
 
   /* Dimensions */
-  --nav-height: 86px;
+  --nav-height: 104px;
   --slide-duration: 5500ms;
 }
 
@@ -128,10 +128,10 @@ img, svg, video, iframe, embed, object {
 }
 
 .apollo-brand-img {
-  height: clamp(52px, 4.2vw, 64px);
+  height: clamp(80px, 6.2vw, 92px);
   width: auto;
-  max-width: 320px;
-  aspect-ratio: 1023 / 233;
+  max-width: clamp(210px, 20vw, 260px);
+  aspect-ratio: 1024 / 416;
   object-fit: contain;
   display: block;
   transition: opacity 0.2s ease;
@@ -849,6 +849,26 @@ img, svg, video, iframe, embed, object {
   transform: scale(1.0);
   filter: none;
   display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+}
+
+/* Slide 1: Flanges & Fittings
+   Preserves big center slip-on flange, blind flange, front reducers, elbows & unions */
+.slide-img-flanges {
+  object-position: 85% bottom;
+}
+
+/* Slide 2: Industrial Pipes & Tubes
+   Ensures rectangular hollow sections, circular pipes and pipe bundle are all visible */
+.slide-img-pipes {
+  object-position: 96% bottom;
+}
+
+/* Slide 3: Precision Fasteners
+   Ensures hex nuts, washers, socket screws, stud bolts and fasteners are all visible */
+.slide-img-fasteners {
+  object-position: 85% bottom;
 }
 
 .hero-slide.active .slide-img {
@@ -1367,8 +1387,8 @@ img, svg, video, iframe, embed, object {
 /* Laptop screens (1025px to 1440px) */
 @media (max-width: 1440px) {
   .apollo-brand-img {
-    height: clamp(52px, 3.8vw, 60px);
-    max-width: 300px;
+    height: clamp(74px, 5.4vw, 86px);
+    max-width: clamp(190px, 18vw, 240px);
   }
   .slide-bright-panel {
     width: 60%;
@@ -1408,7 +1428,7 @@ img, svg, video, iframe, embed, object {
    Desktop links and Get Quote button are accessible inside opened hamburger drawer. */
 @media (max-width: 1024px) {
   :root {
-    --nav-height: 76px;
+    --nav-height: 92px;
   }
   
   .nav-container {
@@ -1417,8 +1437,9 @@ img, svg, video, iframe, embed, object {
   }
 
   .apollo-brand-img {
-    height: clamp(48px, 6vw, 58px);
-    max-width: clamp(180px, 42vw, 250px);
+    height: clamp(70px, 7.5vw, 80px);
+    max-width: clamp(175px, 42vw, 230px);
+    aspect-ratio: 1024 / 416;
     object-fit: contain;
   }
 
@@ -1480,6 +1501,18 @@ img, svg, video, iframe, embed, object {
     object-position: center center;
   }
 
+  .slide-img-flanges {
+    object-position: 50% 65%;
+  }
+
+  .slide-img-pipes {
+    object-position: 52% 65%;
+  }
+
+  .slide-img-fasteners {
+    object-position: 50% 70%;
+  }
+
   /* Content Panel sits neatly below the image */
   .slide-bright-panel {
     position: relative;
@@ -1534,12 +1567,14 @@ img, svg, video, iframe, embed, object {
 /* Phones & Small Screens (<= 768px) */
 @media (max-width: 768px) {
   :root {
-    --nav-height: 72px;
+    --nav-height: 86px;
   }
 
   .apollo-brand-img {
-    height: clamp(44px, 7vw, 52px);
-    max-width: clamp(160px, 48vw, 220px);
+    height: clamp(64px, 8.5vw, 74px);
+    max-width: clamp(165px, 48vw, 215px);
+    aspect-ratio: 1024 / 416;
+    object-fit: contain;
   }
 
   .slide-image-wrapper {
@@ -1614,12 +1649,14 @@ img, svg, video, iframe, embed, object {
 /* Very Narrow Devices & Small Phones (<= 480px, e.g. 320px–375px) */
 @media (max-width: 480px) {
   :root {
-    --nav-height: 66px;
+    --nav-height: 78px;
   }
 
   .apollo-brand-img {
-    height: 42px;
-    max-width: clamp(140px, 46vw, 185px);
+    height: 62px;
+    max-width: clamp(148px, 48vw, 190px);
+    aspect-ratio: 1024 / 416;
+    object-fit: contain;
   }
 
   .slide-image-wrapper {
@@ -5005,20 +5042,21 @@ img, svg, video, iframe, embed, object {
 .footer-logo-wrapper {
   background: #FFFFFF;
   border-radius: 8px;
-  padding: 10px 16px;
+  padding: 10px 18px;
   display: inline-flex;
   align-items: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   margin-bottom: 18px;
-  max-width: 280px;
+  max-width: 320px;
 }
 
 .footer-brand-logo,
 .footer-brand-img,
 .footer-logo-img {
-  height: clamp(52px, 4vw, 64px);
+  height: clamp(64px, 5.2vw, 78px);
   width: auto;
   max-width: 100%;
+  aspect-ratio: 1024 / 416;
   object-fit: contain;
   display: block;
 }
@@ -5536,12 +5574,16 @@ img, svg, video, iframe, embed, object {
   }
   .footer-logo-card,
   .footer-logo-wrapper {
-    padding: 8px 14px;
+    padding: 6px 12px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
   .footer-brand-logo,
   .footer-brand-img,
   .footer-logo-img {
     height: 48px;
+    aspect-ratio: 1024 / 416;
   }
   .f-phone-row {
     flex-wrap: wrap;

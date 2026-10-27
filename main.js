@@ -117,9 +117,16 @@
       }
     });
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialSlide = urlParams.get('slide');
+    const noAuto = urlParams.has('noauto');
+    const startIdx = initialSlide !== null ? parseInt(initialSlide, 10) : 0;
+
     slideStartTime = Date.now();
-    animationFrameId = requestAnimationFrame(tickSlider);
-    goToSlide(0);
+    if (!noAuto) {
+      animationFrameId = requestAnimationFrame(tickSlider);
+    }
+    goToSlide(isNaN(startIdx) ? 0 : startIdx);
   }
 
   initHeroSlider();
