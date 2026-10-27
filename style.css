@@ -3653,6 +3653,8 @@ img, svg, video, iframe, embed, object {
   display: flex;
   flex-direction: column;
   gap: clamp(14px, 1.4vw, 20px);
+  align-items: center;
+  justify-content: center;
 }
 
 /* Subtle decorative connection ring behind cluster */
@@ -3661,10 +3663,11 @@ img, svg, video, iframe, embed, object {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 92%;
-  height: 92%;
+  width: 102%;
+  max-width: 560px;
+  height: 104%;
   border-radius: 40px;
-  border: 1px dashed rgba(244, 81, 8, 0.35);
+  border: 1px dashed rgba(244, 81, 8, 0.32);
   pointer-events: none;
   z-index: 1;
 }
@@ -3676,23 +3679,25 @@ img, svg, video, iframe, embed, object {
   gap: clamp(14px, 1.5vw, 22px);
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
-/* Offset middle row for organic honeycomb / staggered effect */
-.partner-row-2 {
-  padding: 0 clamp(16px, 2vw, 32px);
+/* Offset rows 2 and 4 for organic honeycomb / staggered effect */
+.partner-row-2,
+.partner-row-4 {
+  padding: 0 clamp(14px, 1.8vw, 28px);
 }
 
 /* White Circular Logo Container */
 .partner-circle {
-  width: clamp(94px, 7.8vw, 114px);
-  height: clamp(94px, 7.8vw, 114px);
+  width: clamp(100px, 7.8vw, 118px);
+  height: clamp(100px, 7.8vw, 118px);
   border-radius: 50%;
   background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(14px, 1.3vw, 20px);
+  padding: clamp(6px, 0.7vw, 10px);
   box-shadow: 
     0 10px 24px -4px rgba(0, 0, 0, 0.07),
     0 2px 6px rgba(0, 0, 0, 0.04);
@@ -3708,9 +3713,9 @@ img, svg, video, iframe, embed, object {
 }
 
 .partner-circle:hover {
-  transform: translateY(-9px) scale(1.08) !important;
+  transform: translateY(-8px) scale(1.08) !important;
   box-shadow: 
-    0 18px 36px -4px rgba(244, 81, 8, 0.24),
+    0 20px 38px -4px rgba(244, 81, 8, 0.24),
     0 4px 12px rgba(0, 0, 0, 0.08),
     0 0 0 3px rgba(244, 81, 8, 0.25);
   border-color: var(--apollo-orange, #F45108);
@@ -3726,16 +3731,94 @@ img, svg, video, iframe, embed, object {
   }
 }
 
+/* Master Logo Image Rule: fills 60-75% of circle with crisp optical centering */
 .partner-logo-img {
-  max-width: 100%;
-  max-height: 100%;
   width: auto;
   height: auto;
+  max-width: 88%;
+  max-height: 82%;
   object-fit: contain;
   object-position: center;
   display: block;
-  filter: contrast(1.03);
+  margin: 0 auto;
+  filter: contrast(1.02);
   pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Specific optical sizing ensuring bold, balanced visual scale across all aspect ratios */
+.partner-logo-hp {
+  max-width: 82%;
+  max-height: 84%;
+}
+
+.partner-logo-bhushan {
+  max-width: 92%;
+  max-height: 72%;
+}
+
+.partner-logo-haldia {
+  max-width: 90%;
+  max-height: 76%;
+}
+
+.partner-logo-godrej {
+  max-width: 90%;
+  max-height: 76%;
+}
+
+.partner-logo-nmdc {
+  max-width: 90%;
+  max-height: 72%;
+}
+
+.partner-logo-ntpc {
+  max-width: 92%;
+  max-height: 70%;
+}
+
+.partner-logo-rcf {
+  max-width: 96%;
+  max-height: 94%;
+  transform: scale(1.18);
+  transform-origin: center center;
+}
+
+.partner-logo-tata {
+  max-width: 92%;
+  max-height: 70%;
+}
+
+.partner-logo-jindal {
+  max-width: 92%;
+  max-height: 72%;
+}
+
+.partner-logo-reliance {
+  max-width: 86%;
+  max-height: 80%;
+}
+
+.partner-logo-jsw {
+  max-width: 88%;
+  max-height: 74%;
+}
+
+.partner-logo-adani {
+  max-width: 90%;
+  max-height: 70%;
+}
+
+.partner-logo-aditya {
+  max-width: 88%;
+  max-height: 76%;
+}
+
+.partner-logo-indianoil {
+  max-width: 82%;
+  max-height: 84%;
 }
 
 /* Right Column: Editorial Typography */
@@ -3919,9 +4002,9 @@ img, svg, video, iframe, embed, object {
     margin: 0 auto;
   }
   .partner-circle {
-    width: 96px;
-    height: 96px;
-    padding: 15px;
+    width: clamp(92px, 10.5vw, 108px);
+    height: clamp(92px, 10.5vw, 108px);
+    padding: clamp(6px, 0.8vw, 8px);
   }
 }
 
@@ -3930,7 +4013,7 @@ img, svg, video, iframe, embed, object {
     padding-top: clamp(48px, 8vw, 64px);
   }
   .partner-cluster-wrapper {
-    overflow: hidden;
+    overflow: visible;
     max-width: 100%;
     gap: 12px;
   }
@@ -3942,13 +4025,14 @@ img, svg, video, iframe, embed, object {
     justify-content: center;
     gap: clamp(8px, 2.4vw, 12px);
   }
-  .partner-row-2 {
+  .partner-row-2,
+  .partner-row-4 {
     padding: 0 !important;
   }
   .partner-circle {
-    width: clamp(62px, 18vw, 76px);
-    height: clamp(62px, 18vw, 76px);
-    padding: clamp(8px, 2vw, 12px);
+    width: clamp(72px, 19vw, 88px);
+    height: clamp(72px, 19vw, 88px);
+    padding: clamp(5px, 1.2vw, 8px);
   }
   .partner-deco-coord {
     display: none;
@@ -3964,6 +4048,17 @@ img, svg, video, iframe, embed, object {
   }
   .strip-separator {
     margin: 0 4px;
+  }
+}
+
+@media (max-width: 380px) {
+  .partner-circle {
+    width: 64px;
+    height: 64px;
+    padding: 7px;
+  }
+  .partner-row {
+    gap: 7px;
   }
 }
 
