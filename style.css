@@ -4925,15 +4925,12 @@ img, svg, video, iframe, embed, object {
 .apollo-cta-section {
   position: relative;
   width: 100%;
-  background-color: var(--apollo-orange, #F45108);
-  background-image: 
-    radial-gradient(circle at 12% 24%, rgba(255, 255, 255, 0.16) 0%, transparent 45%),
-    radial-gradient(circle at 88% 76%, rgba(0, 0, 0, 0.18) 0%, transparent 40%),
-    linear-gradient(135deg, #FF5A00 0%, #F45108 50%, #CD3800 100%);
+  background-color: var(--apollo-orange, #FF5A00);
+  background-image: none;
   padding: clamp(56px, 5.2vw, 80px) 0;
   overflow: hidden;
   border-top: 3px solid rgba(255, 255, 255, 0.25);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
 
 .cta-mesh-overlay {
@@ -7931,6 +7928,19 @@ img, svg, video, iframe, embed, object {
   overflow: hidden;
 }
 
+/* Materials Page Specific CTA Spacing Above Footer */
+.page-materials .pm-quote-section,
+.materials-page-main .pm-quote-section {
+  padding-top: clamp(32px, 4vw, 56px);
+  padding-bottom: clamp(68px, 7vw, 96px);
+}
+
+.page-materials .pm-quote-banner,
+.materials-page-main .pm-quote-banner {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .pm-quote-banner-glow {
   position: absolute;
   top: 50%;
@@ -9131,6 +9141,233 @@ img, svg, video, iframe, embed, object {
   color: #CBD5E1;
   max-width: 720px;
   line-height: 1.6;
+}
+
+/* ==========================================================================
+   SECTION 4: UNIFIED LOCATION & INQUIRY SECTION (Side-by-Side Two-Column)
+   ========================================================================== */
+.contact-dual-section {
+  padding: clamp(64px, 6vw, 96px) 0;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid var(--steel-light-300, #E2E8F0);
+  position: relative;
+}
+
+.contact-dual-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 3.5vw, 48px);
+}
+
+.contact-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(28px, 3vw, 44px);
+  align-items: stretch;
+}
+
+.contact-dual-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.contact-location-card,
+.contact-inquiry-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-top: 4px solid var(--apollo-orange, #FF5A00);
+  border-radius: 14px;
+  padding: clamp(28px, 3vw, 40px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 20px 40px -8px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+/* Unified Column Header */
+.contact-col-header {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #F1F5F9;
+  padding-bottom: 16px;
+}
+
+.contact-col-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading, sans-serif);
+  font-size: 11.5px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  color: var(--apollo-orange, #FF5A00);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.col-eyebrow-bar {
+  width: 16px;
+  height: 2.5px;
+  background-color: var(--apollo-orange, #FF5A00);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.contact-col-title {
+  font-family: var(--font-heading, sans-serif);
+  font-size: clamp(24px, 2.3vw, 32px);
+  font-weight: 900;
+  color: var(--charcoal-900, #0F1216);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+  line-height: 1.2;
+}
+
+.contact-col-subtitle {
+  font-family: var(--font-body, sans-serif);
+  font-size: 14px;
+  color: var(--charcoal-600, #4B5563);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Location Address Box */
+.contact-location-address-box {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+}
+
+.location-address-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.location-icon-pin {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(255, 90, 0, 0.1);
+  color: var(--apollo-orange, #FF5A00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.location-brand-title {
+  display: block;
+  font-family: var(--font-heading, sans-serif);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--charcoal-900, #0F1216);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+.location-address-line {
+  font-family: var(--font-body, sans-serif);
+  font-size: 13.5px;
+  color: var(--charcoal-700, #334155);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.location-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.btn-location-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--apollo-orange, #FF5A00);
+  color: #FFFFFF;
+  font-family: var(--font-heading, sans-serif);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(255, 90, 0, 0.25);
+}
+
+.btn-location-directions:hover {
+  background-color: #0F1216;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 27, 42, 0.25);
+}
+
+.location-timing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body, sans-serif);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--charcoal-600, #64748B);
+}
+
+.contact-map-embed-wrapper {
+  flex: 1;
+  min-height: 420px;
+  border: 2px solid rgba(255, 90, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.contact-map-iframe-element {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Tablet & Mobile Breakpoints for Dual Section */
+@media (max-width: 1024px) {
+  .contact-dual-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .contact-map-embed-wrapper {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-location-card,
+  .contact-inquiry-card {
+    padding: 24px 18px;
+  }
+  .location-actions-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-location-directions {
+    justify-content: center;
+  }
+  .contact-map-embed-wrapper {
+    min-height: 300px;
+  }
 }
 
 /* --- Section 4: Location & Google Maps Section (Orange Frame) --- */

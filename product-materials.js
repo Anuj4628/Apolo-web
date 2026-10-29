@@ -715,7 +715,7 @@ import { MATERIALS_MASTER_DATA, MATERIAL_SLUG_ALIASES, getMaterialMaster } from 
   function renderQuoteBanner(productName, contextSubject) {
     const subject = encodeURIComponent(`Inquiry for ${contextSubject || productName} - Apollo Forge & Fitting`);
     return `
-      <section class="pm-container" aria-label="Request Quote Section">
+      <section class="pm-container pm-quote-section" aria-label="Request Quote Section">
         <div class="pm-quote-banner">
           <div class="pm-quote-banner-glow" aria-hidden="true"></div>
           <div class="pm-quote-banner-content">
